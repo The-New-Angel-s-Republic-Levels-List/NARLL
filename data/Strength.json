@@ -1,0 +1,31 @@
+{
+  "id": 136469020,
+  "length": "0:09",
+  "name": "Strength",
+  "author": "Gaseba",
+  "creators": [
+    "Gaseba"
+  ],
+  "verifier": "Gaseba",
+  "verification": "https://www.youtube.com/watch?v=lEn4SC58GtI",
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
+}

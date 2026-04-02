@@ -1,0 +1,25 @@
+{
+  "id": 135207027,
+  "length": "0:36",
+  "name": "bladeawamba",
+  "author": "itsGalaxie",
+  "creators": [
+    "itsGalaxie"
+  ],
+  "verifier": "xeo_o",
+  "verification": "https://www.youtube.com/watch?v=lEn4SC58GtI",
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
+}

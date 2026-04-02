@@ -1,16 +1,16 @@
 {
-  "id": 131938987,
-  "length": "0:30",
-  "name": "hexa ever clear",
-  "author": "wattiwatt",
+  "id": 132587918,
+  "length": "0:22",
+  "name": "cookie challenge",
+  "author": "sznapis",
   "creators": [
-    "wattiwatt"
+    "sznapis"
   ],
-  "verifier": "xeo_o",
-  "verification": "https://youtu.be/SpHXAk4QYg8",
+  "verifier": "cookie",
+  "verification": "https://www.youtube.com/watch?v=lEn4SC58GtI",
   "records": [
     {
-      "user": "Cala",
+      "user": "xeo_o",
       "link": "",
       "percent": 100,
       "hz": 0
@@ -22,7 +22,7 @@
       "hz": 0
     },
     {
-      "user": "wattiwatt",
+      "user": "humptwe",
       "link": "",
       "percent": 100,
       "hz": 0

@@ -1,0 +1,37 @@
+{
+  "id": 135607560,
+  "length": "0:29",
+  "name": "collapse preview 1",
+  "author": "itsGalaxie",
+  "creators": [
+    "itsGalaxie"
+  ],
+  "verifier": "detempt",
+  "verification": "https://www.youtube.com/watch?v=lEn4SC58GtI",
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "juyeko",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
+}

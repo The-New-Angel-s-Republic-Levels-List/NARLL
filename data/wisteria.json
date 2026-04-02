@@ -1,14 +1,20 @@
 {
-  "id": 131938987,
-  "length": "0:30",
-  "name": "hexa ever clear",
+  "id": 134967058,
+  "length": "0:24",
+  "name": "wisteria",
   "author": "wattiwatt",
   "creators": [
     "wattiwatt"
   ],
-  "verifier": "xeo_o",
-  "verification": "https://youtu.be/SpHXAk4QYg8",
+  "verifier": "mold",
+  "verification": "https://youtu.be/X8GHl2rLQvM",
   "records": [
+    {
+      "user": "JohnHuman",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
     {
       "user": "Cala",
       "link": "",
@@ -16,13 +22,7 @@
       "hz": 0
     },
     {
-      "user": "mold",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "wattiwatt",
+      "user": "xeo_o",
       "link": "",
       "percent": 100,
       "hz": 0

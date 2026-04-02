@@ -1,0 +1,31 @@
+{
+  "id": 133967760,
+  "length": "0:20",
+  "name": "slauherhuse",
+  "author": "itsGalaxie",
+  "creators": [
+    "itsGalaxie"
+  ],
+  "verifier": "vex",
+  "verification": "https://www.youtube.com/watch?v=lEn4SC58GtI",
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "ash8",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
+}
