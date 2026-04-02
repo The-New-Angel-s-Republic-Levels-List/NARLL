@@ -1,12 +1,27 @@
 {
   "id": 134675614,
-  "length": "sznapis",
+  "length": "NA",
   "name": "ohk",
-  "author": "2",
+  "author": "sznapis",
+  "tags": "NA",
+  "notes": "",
   "creators": [
-    "2"
+    "sznapis"
   ],
-  "verifier": "mold, vex",
+  "verifier": "sznapis",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
-  "records": []
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }

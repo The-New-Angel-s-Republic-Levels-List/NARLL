@@ -1,12 +1,63 @@
 {
   "id": 133756817,
-  "length": "itsGalaxie",
+  "length": "NA",
   "name": "level name",
-  "author": "8",
+  "author": "itsGalaxie",
+  "tags": "NA",
+  "notes": "",
   "creators": [
-    "8"
+    "itsGalaxie"
   ],
-  "verifier": "aqrlr, xeo_o, sznapis, vex, troof, Gaseba, hya, humptwe",
+  "verifier": "itsGalaxie",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
-  "records": []
+  "records": [
+    {
+      "user": "aqrlr",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo_o",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "sznapis",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "troof",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "hya",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }

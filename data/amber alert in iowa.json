@@ -1,12 +1,39 @@
 {
   "id": 135984663,
-  "length": "pechenkads",
+  "length": "NA",
   "name": "amber alert in iowa",
-  "author": "4",
+  "author": "pechenkads",
+  "tags": "NA",
+  "notes": "",
   "creators": [
-    "4"
+    "pechenkads"
   ],
-  "verifier": "vex, Gaseba, mold, humptwe",
+  "verifier": "pechenkads",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
-  "records": []
+  "records": [
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }

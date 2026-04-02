@@ -1,12 +1,51 @@
 {
   "id": 133883678,
-  "length": "itsGalaxie",
+  "length": "NA",
   "name": "diddy challenge 1",
-  "author": "6",
+  "author": "itsGalaxie",
+  "tags": "NA",
+  "notes": "",
   "creators": [
-    "6"
+    "itsGalaxie"
   ],
-  "verifier": "Blooddrop, mold, sznapis, druki, vex, xeo_o",
+  "verifier": "itsGalaxie",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
-  "records": []
+  "records": [
+    {
+      "user": "Blooddrop",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "sznapis",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "druki",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo_o",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }
