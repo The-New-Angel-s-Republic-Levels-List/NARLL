@@ -1,0 +1,37 @@
+{
+  "id": 134604605,
+  "length": "0:47",
+  "name": "Final Epstination",
+  "author": "scruffie",
+  "creators": [
+    "scruffie"
+  ],
+  "verifier": "mold",
+  "verification": "https://www.youtube.com/watch?v=lEn4SC58GtI",
+  "records": [
+    {
+      "user": "juyeko",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mono",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "detempt",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
+}

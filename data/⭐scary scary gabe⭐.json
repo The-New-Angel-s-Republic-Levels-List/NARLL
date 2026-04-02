@@ -1,0 +1,43 @@
+{
+  "id": 135417369,
+  "length": "0:11",
+  "name": "\u2B50scary scary gabe\u2B50",
+  "author": "miles",
+  "creators": [
+    "miles"
+  ],
+  "verifier": "mono",
+  "verification": "https://www.youtube.com/watch?v=lEn4SC58GtI",
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo_o",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "ash8",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
+}
