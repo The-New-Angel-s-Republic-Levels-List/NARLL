@@ -51,7 +51,7 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">Length</div>
+                            <div class="type-title-sm">Length (seconds)</div>
                             <p>{{ level.length }}</p>
                         </li>
                     </ul>
