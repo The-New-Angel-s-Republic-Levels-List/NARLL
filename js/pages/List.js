@@ -50,6 +50,10 @@ export default {
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id }}</p>
                         </li>
+                        <li>
+                            <div class="type-title-sm">Length</div>
+                            <p>{{ level.length }}</p>
+                        </li>
                     </ul>
                     <p>Notes: </p>
                     <h2>Records</h2>
