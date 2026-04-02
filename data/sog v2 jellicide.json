@@ -1,28 +1,22 @@
 {
-  "id": 135094808,
+  "id": 132659505,
   "length": "0:10",
-  "name": "avernus startpos 2",
-  "author": "vex",
+  "name": "sog v2 jellicide\n",
+  "author": "Zyrea",
   "creators": [
-    "vex"
+    "Zyrea"
   ],
   "verifier": "vex",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
   "records": [
     {
-      "user": "mold",
+      "user": "aqrlr",
       "link": "",
       "percent": 100,
       "hz": 0
     },
     {
-      "user": "detempt",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "Gaseba",
+      "user": "cookie",
       "link": "",
       "percent": 100,
       "hz": 0
@@ -34,19 +28,31 @@
       "hz": 0
     },
     {
-      "user": "ash8",
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "druki",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "rosieel",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Gaseba",
       "link": "",
       "percent": 100,
       "hz": 0
     },
     {
       "user": "humptwe",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "shittydruki",
       "link": "",
       "percent": 100,
       "hz": 0
