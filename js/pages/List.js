@@ -51,6 +51,7 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                     </ul>
+                    <p>Notes: </p>
                     <h2>Records</h2>
                     <p v-if="selected + 1 > 50">This level does not accept new records.</p>
                     <table class="records">
