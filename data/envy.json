@@ -1,12 +1,63 @@
 {
   "id": 136099532,
-  "length": "rosieel",
+  "length": "NA",
   "name": "envy",
-  "author": "8",
+  "author": "rosieel",
+  "tags": "NA",
+  "notes": "",
   "creators": [
-    "8"
+    "rosieel"
   ],
-  "verifier": "mold, vex, aqrlr, Cala, Blooddrop, troof, Gaseba, humptwe",
+  "verifier": "rosieel",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
-  "records": []
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "aqrlr",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cala",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Blooddrop",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "troof",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }

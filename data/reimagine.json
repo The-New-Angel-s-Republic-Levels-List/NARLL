@@ -1,16 +1,24 @@
 {
   "id": 132711199,
-  "length": "vex",
+  "length": "NA",
   "name": "reimagine",
-  "author": "2",
+  "author": "vex",
+  "tags": "NA",
+  "notes": "",
   "creators": [
-    "2"
+    "vex"
   ],
-  "verifier": "xeo_o, mold",
+  "verifier": "vex",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
   "records": [
     {
-      "user": "I SWEAR IT LOOKEDL IKE THE LIST WAS CRUMBLING AT ONE POINT",
+      "user": "xeo_o",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
       "link": "",
       "percent": 100,
       "hz": 0

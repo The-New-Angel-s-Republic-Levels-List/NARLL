@@ -1,16 +1,30 @@
 {
   "id": 135351645,
-  "length": "mi11ionplayz",
+  "length": "NA",
   "name": "cant let saw",
-  "author": "3",
+  "author": "mi11ionplayz",
+  "tags": "NA",
+  "notes": "",
   "creators": [
-    "3"
+    "mi11ionplayz"
   ],
-  "verifier": "mold, aqrlr, vex",
+  "verifier": "mi11ionplayz",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
   "records": [
     {
-      "user": "yo whys it look like the list is crumbling",
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "aqrlr",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
       "link": "",
       "percent": 100,
       "hz": 0
