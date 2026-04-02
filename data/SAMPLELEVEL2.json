@@ -1,12 +1,16 @@
 {
-    "id": 57436521,
-    "name": "SAMPLELEVEL2",
-    "author": "Solo_Creator",
-    "creators": [],
-    "verifier": "Solo_Creator",
+    "id": 134320925,
+    "name": "hexa ever clear",
+    "author": "wattiwatt",
+    "creators": ["wattiwatt"],
+    "verifier": "xeo_o",
     "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
-    "percentToQualify": "100",
-    "password": "Free To Copy",
     "records": [
+        {
+            "user": "Cala",
+            "link": "https://www.youtube.com/watch?v=MgJeijBGKHU",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
