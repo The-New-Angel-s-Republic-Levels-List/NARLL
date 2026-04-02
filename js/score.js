@@ -14,16 +14,13 @@ export function score(rank, percent, minPercent) {
     if (rank > 50) {
         return 0;
     }
+    // Updated to match rank > 50 requirement
     if (rank > 50 && percent < 100) {
         return 0;
     }
 
-    // Old formula
-    /*
-    let score = (100 / Math.sqrt((rank - 1) / 50 + 0.444444) - 50) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-    */
-    // New formula
+    // New formula: =ROUND(1 + 99 * POWER(1 - (rank-1)/(50-1), 2.1), 2)
+    // Note: (rank-1) replaces (ROW-3) to start at 0 for the first rank.
     let score = (1 + 99 * Math.pow(1 - (rank - 1) / (50 - 1), 2.1)) *
         ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
 
