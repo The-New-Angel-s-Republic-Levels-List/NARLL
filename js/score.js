@@ -1,7 +1,7 @@
 /**
  * Numbers of decimal digits to round to
  */
-const scale = 3;
+const scale = 2;
 
 //REMOVE MINPERCENT
 /**
@@ -36,20 +36,6 @@ export function score(rank, percent) {
 export function round(num) {
     //RETURN 0 IF NAN
     if (isNaN(num)) return 0;
-
-    if (!('' + num).includes('e')) {
-        return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
-    } else {
-        var arr = ('' + num).split('e');
-        var sig = '';
-        if (+arr[1] + scale > 0) {
-            sig = '+';
-        }
-        return +(
-            Math.round(+arr[0] + 'e' + sig + (+arr[1] + scale)) +
-            'e-' +
-            scale
-        );
-    }
+    return Math.round(num * 100) / 100;
 }
 //SCRUFFIE WAS HERE :3
