@@ -168,12 +168,12 @@ export default {
                     <p>
                         Random/pseudorandom triggers that affect visual and/or GP clarity
                     </p>
-                    <h3>Gameplay Restrictions</h3>
+                    <h3>Additional Notes</h3>
                     <p>
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
                     </p>
                     <p>
-                        Want the old spreadsheet version of the list? Here: 
+                        Want the old spreadsheet version of the list? Here: https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI
                 </div>
             </div>
         </main>
