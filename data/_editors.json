@@ -6,22 +6,37 @@
     },
     {
         "role": "admin",
-        "name": "vexenous",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "itsGalaxie",
+        "link": "https://www.youtube.com/watch?v=Ag88kPRFqEo"
     },
     {
         "role": "helper",
-        "name": "List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "cookie",
+        "link": "https://www.youtube.com/@JustAComfyCookie"
+    },
+    {
+        "role": "helper",
+        "name": "xeo_o",
+        "link": "https://www.youtube.com/@xeo_oo"
+    },
+    {
+        "role": "helper",
+        "name": "Soggie",
+        "link": "https://www.youtube.com/watch?v=Ag88kPRFqEo"
+    },
+    {
+        "role": "helper",
+        "name": "aqrlr",
+        "link": "https://www.youtube.com/@aqrl7473"
     },
     {
         "role": "trial",
-        "name": "Trial List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "None",
+        "link": ""
     },
     {
         "role": "dev",
-        "name": "US",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "scruffiebaka",
+        "link": "https://www.youtube.com/@scruffiebaka"
     }
 ]
