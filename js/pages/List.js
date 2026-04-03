@@ -41,7 +41,7 @@ export default {
                     <h1>{{ level.name }}</h1>
                     <div class="tags" v-if="level.tags">
                         <div class="type-title-sm">Tags</div>
-                        <p>{{ level.tags || NA }}</p>
+                        <p>{{ level.tags || N/A }}</p>
                     </div>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
@@ -74,7 +74,7 @@ export default {
                                 <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
                             </td>
                             <td class="hz">
-                                <p>{{ record.hz }}Hz</p>
+                                <p>{{ record.hz === 0 ? 'NA' : record.hz + 'Hz' }}</p>
                             </td>
                         </tr>
                     </table>
