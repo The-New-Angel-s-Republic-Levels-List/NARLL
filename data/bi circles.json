@@ -9,7 +9,7 @@
     "itsGalaxie"
   ],
   "verifier": "vex",
-  "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
+  "verification": "https://youtu.be/JlY_yjLem-g",
   "records": [
     {
       "user": "aqrlr",
@@ -43,6 +43,12 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cala",
       "link": "",
       "percent": 100,
       "hz": 0
