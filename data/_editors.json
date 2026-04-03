@@ -10,9 +10,14 @@
         "link": "https://www.youtube.com/watch?v=Ag88kPRFqEo"
     },
     {
-        "role": "helper",
+        "role": "admin",
         "name": "vexenous",
         "link": "https://www.youtube.com/@vexenous"
+    },
+    {
+        "role": "admin",
+        "name": "Soggie",
+        "link": "https://www.youtube.com/watch?v=Ag88kPRFqEo"
     },
     {
         "role": "helper",
@@ -24,11 +29,7 @@
         "name": "xeo_o",
         "link": "https://www.youtube.com/@xeo_oo"
     },
-    {
-        "role": "helper",
-        "name": "Soggie",
-        "link": "https://www.youtube.com/watch?v=Ag88kPRFqEo"
-    },
+
     {
         "role": "helper",
         "name": "aqrlr",
