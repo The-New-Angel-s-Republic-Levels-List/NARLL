@@ -21,7 +21,7 @@ export default {
                         <label for="main">Main List</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="extended" value="Extended List" v-model="useExtendedList">
+                        <input type="checkbox" id="extended" value="Legacy List" v-model="useExtendedList">
                         <label for="extended">Extended List</label>
                     </div>
                     <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Start' : 'Restart'}}</Btn>
@@ -186,10 +186,10 @@ export default {
                 video: lvl.verification,
             }));
             const list = [];
-            if (this.useMainList) list.push(...fullListMapped.slice(0, 75));
-            if (this.useExtendedList) {
-                list.push(...fullListMapped.slice(75, 150));
-            }
+            if (this.useMainList) list.push(...fullListMapped.slice(0, 50));
+	    if (this.useExtendedList) {
+    	    	list.push(...fullListMapped.slice(50)); // everything after top 50
+	    }
 
             // random 100 levels
             this.levels = shuffle(list).slice(0, 100);
