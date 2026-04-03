@@ -3,37 +3,40 @@
  */
 const scale = 2;
 
+//REMOVE MINPERCENT
 /**
  * Calculate the score awarded when having a certain percentage on a list level
  * @param {Number} rank Position on the list
  * @param {Number} percent Percentage of completion
- * @param {Number} minPercent Minimum percentage required
  * @returns {Number}
  */
-export function score(rank, percent, minPercent) {
-    if (rank > 50) {
-        return 0;
-    }
-    // Updated to match rank > 50 requirement
-    if (rank > 50 && percent < 100) {
-        return 0;
-    }
 
-    // New formula: =ROUND(1 + 99 * POWER(1 - (rank-1)/(50-1), 2.1), 2)
-    // Note: (rank-1) replaces (ROW-3) to start at 0 for the first rank.
-    let score = (1 + 99 * Math.pow(1 - (rank - 1) / (50 - 1), 2.1)) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
+//UPDATED SCORE FUNCTION
+export function score(rank, percent) {
+    rank = Number(rank);
+    percent = Number(percent);
+
+    //if statement cleanup
+    if (isNaN(rank) || isNaN(percent)) return 0;
+    if (rank > 50) return 0;
+
+    //list formula
+    let base = 1 + 99 * Math.pow(1 - (rank - 1) / 49, 2.1);
+    let score = base * (percent / 100);
 
     score = Math.max(0, Math.min(100, score));
 
-    if (percent != 100) {
-        return round(score - score / 3);
+    if (percent !== 100) {
+        score -= score / 3;
     }
 
-    return Math.max(round(score), 0);
+    return round(score);
 }
 
 export function round(num) {
+    //RETURN 0 IF NAN
+    if (isNaN(num)) return 0;
+
     if (!('' + num).includes('e')) {
         return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
     } else {
@@ -49,3 +52,4 @@ export function round(num) {
         );
     }
 }
+//SCRUFFIE WAS HERE :3
