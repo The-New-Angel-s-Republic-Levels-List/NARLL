@@ -62,7 +62,7 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">ID</div>
-                            <p>{{ level.id }}</p>
+                            <p class="type-label-lg link" @click="copyText(level.id)">{{ level.id }}</p>
                         </li>
                         <li>
                             <div class="type-title-sm">Length</div>
@@ -231,5 +231,10 @@ export default {
     methods: {
         embed,
         score,
+        copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(`Copied ID: ${text}`);
+            });
+        },
     },
 };
