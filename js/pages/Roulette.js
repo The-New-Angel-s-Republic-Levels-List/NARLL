@@ -21,8 +21,8 @@ export default {
                         <label for="main">Main List</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="extended" value="Legacy List" v-model="useExtendedList">
-                        <label for="extended">Extended List</label>
+                        <input type="checkbox" id="legacy" value="Legacy List" v-model="useLegacyList">
+                        <label for="legacy">Legacy List</label>
                     </div>
                     <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Start' : 'Restart'}}</Btn>
                 </form>
@@ -107,7 +107,7 @@ export default {
         givenUp: false,
         showRemaining: false,
         useMainList: true,
-        useExtendedList: true,
+        useLegacyList: true,
         toasts: [],
         fileInput: undefined,
     }),
@@ -163,7 +163,7 @@ export default {
                 return;
             }
 
-            if (!this.useMainList && !this.useExtendedList) {
+            if (!this.useMainList && !this.useLegacyList) {
                 return;
             }
 
@@ -187,7 +187,7 @@ export default {
             }));
             const list = [];
             if (this.useMainList) list.push(...fullListMapped.slice(0, 50));
-	    if (this.useExtendedList) {
+	    if (this.useLegacyList) {
     	    	list.push(...fullListMapped.slice(50)); // everything after top 50
 	    }
 
