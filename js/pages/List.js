@@ -98,6 +98,15 @@ export default {
                     <div class="errors" v-show="errors.length > 0">
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
+                    <h3>About</h3>
+                    <p>
+                        This is the official list for the New Angel's Republic Discord Server.
+                        The website is a modified version of TSL template. 
+                    </p>
+                    <p>
+                        Levels highlighted in light pink are Featured, dark purple are Top Featured, and special colored are awarded the Angel Award.
+                        Have fun! :3
+                    </p>
                     <template v-if="editors">
                         <h3>List Editors</h3>
                         <ol class="editors">
