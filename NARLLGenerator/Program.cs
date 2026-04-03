@@ -1,7 +1,9 @@
-﻿// MADE BY SCRUFFIE BAKA >:333
+// MADE BY SCRUFFIE BAKA >:333
 
 using NARLLGenerator;
 using OfficeOpenXml;
+using OfficeOpenXml.Style;
+using System.Drawing;
 using System.IO;
 using System.Text.Json;
 
@@ -61,23 +63,31 @@ Level ProcessRowMAIN(ExcelWorksheet sheet, int row)
             hz = 0
         })
         .ToList();
-    
+
     var notes = sheet.Cells[row, 11].Text;
 
-    return new Level
-        {
-            id = id,
-            name = name,
-            length = length,
-            author = author,
-            tags = tags,
-            creators = new List<string> { author },
-            verifier = verifier,
-            verification = link,
-            records = records,
-            notes = notes
-        };
+    var feature = "";
+    ExcelColor fillColor = sheet.Cells[row, 2].Style.Fill.BackgroundColor;
+    if (fillColor.Rgb != null)
+    {
+        feature = GetFeatureStatus(fillColor.Rgb.Substring(2));
     }
+
+    return new Level
+    {
+        id = id,
+        name = name,
+        featured = feature,
+        length = length,
+        author = author,
+        tags = tags,
+        creators = new List<string> { author },
+        verifier = verifier,
+        verification = link,
+        records = records,
+        notes = notes
+    };
+}
 
 Level ProcessRowLEGACY(ExcelWorksheet sheet, int row)
 {
@@ -108,23 +118,47 @@ Level ProcessRowLEGACY(ExcelWorksheet sheet, int row)
             hz = 0
         })
         .ToList();
-    
+
     var notes = sheet.Cells[row, 8].Text;
 
-    return new Level
-        {
-            id = id,
-            name = name,
-            length = "NA",
-            author = author,
-            tags = "NA",
-            creators = new List<string> { author },
-            verifier = verifier,
-            verification = link,
-            records = records,
-            notes = notes
-        };
+    var feature = "";
+    ExcelColor fillColor = sheet.Cells[row, 2].Style.Fill.BackgroundColor;
+    if (fillColor.Rgb != null)
+    {
+        feature = GetFeatureStatus(fillColor.Rgb.Substring(2));
     }
+
+    return new Level
+    {
+        id = id,
+        name = name,
+        featured = feature,
+        length = "NA",
+        author = author,
+        tags = "NA",
+        creators = new List<string> { author },
+        verifier = verifier,
+        verification = link,
+        records = records,
+        notes = notes
+    };
+}
+
+string GetFeatureStatus(string hexa)
+{
+    if (hexa == "90FFFF")
+    {
+        return "top";
+    }
+    else if (hexa == "FF0000")
+    {
+        return "featured";
+    }
+    else
+    {
+        return "";
+    }
+}
 
 string MakeSafeFileName(string name)
 {
