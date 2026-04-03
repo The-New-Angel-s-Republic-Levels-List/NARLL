@@ -120,6 +120,35 @@ export default {
                     <p>
                         Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
                     </p>
+                    <p>
+                        If you are to use a camera recording instead of a screen recording, please ensure that it is high quality, 30fps minimum, and that the Geometry Dash window covers a minimum of half of the height of the window on both sides and half of the width of the window on top and bottom.
+                    </p>
+                    <h3>Level Creation Rules</h3>
+                    <p>
+                        Levels must be made specifically for the NARLL.
+                    </p>
+                    <p>
+                        Updates are generally only allowed for bugfixes.
+                    </p>
+                    <p>
+                        There is a minimum quality baseline. Your level might be rejected if we don't deem it good enough. How do we decide? ITS ALL SUBJECTIVE
+                    </p>
+                    <p>
+                        Obviously, no NSFW art or anything that would violate the NAR Discord rules.
+                    </p>
+                    <p>
+                        Levels must be made possible for any framerate above 60FPS
+                    </p>
+                    <h3>Gameplay Restrictions</h3>
+                    <p>
+                        Spam of ≥12 CPS in any stint of 3+ inputs
+                    </p>
+                    <p>
+                        Minigames.
+                    </p>
+                    <p>
+                        Random/pseudorandom triggers that affect visual and/or GP clarity
+                    </p>
                 </div>
             </div>
         </main>
