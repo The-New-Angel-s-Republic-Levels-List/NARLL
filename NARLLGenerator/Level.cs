@@ -6,6 +6,7 @@ class Level
 {
     public int id { get; set; }
     public string length {get; set;}
+    public string featured {get; set;}
     public string name { get; set; }
     public string author { get; set; }
     public string tags {get; set;}
