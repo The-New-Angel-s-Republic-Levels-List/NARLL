@@ -45,11 +45,28 @@
     color: var(--color-on-primary);
 }
 .page-list .level-container .level {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-right: 2rem;
     max-width: 48rem;
+}
+.page-list .level-container .level h1{
+    padding-right: 5rem;
+}
+.page-list .level-container .level .tags {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+.page-list .level-container .level .tags .type-title-sm {
+    font-size: 20px;
+    line-height: 28px;
 }
 .page-list .level-container .level .level-authors {
     display: grid;
