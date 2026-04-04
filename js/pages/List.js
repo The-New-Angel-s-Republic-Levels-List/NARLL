@@ -47,12 +47,6 @@ export default {
                 </table>
             </div>
             <div class="level-container">
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: fit-content; background: #fc8bf475; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin-bottom: 20px; text-align: center; line-height: 1.2;">
-                     <span style="font-size: 10px; text-transform: uppercase; opacity: 0.9;">Enjoyment Rating</span>
-                     <span style="font-size: 20px;">100.00</span>
-                </div>
-
-                </div
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
                     <div class="tags" v-if="level.tags">
