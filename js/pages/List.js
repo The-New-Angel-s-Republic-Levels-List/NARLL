@@ -47,9 +47,10 @@ export default {
                 </table>
             </div>
             <div class="level-container">
-                <div style="position: absolute; top: 10px; right: 10px; background: #fcbaf846; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; z-index: 100; text-align: center; line-height: 1.2;">
-                    <span style="font-size: 10px; text-transform: uppercase; opacity: 0.9;">Points</span><br>
+                <div style="position: absolute; top: 10px; right: 10px; width: fit-content; background: #fcbaf846; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; z-index: 100; text-align: center; line-height: 1.2;">
+                     <span style="font-size: 10px; text-transform: uppercase; opacity: 0.9;">Points</span><br>
                     <span style="font-size: 20px;">100.00</span>
+                </div>
                 </div
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
