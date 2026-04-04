@@ -62,7 +62,10 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">ID</div>
-                            <p class="type-label-lg link" @click="copyText(level.id)">{{ level.id }}</p>
+                            <div class="id-copy" @click="copyText(level.id)">
+                                <p class="type-label-lg link">{{ level.id }}</p>
+                                <span class="tooltip">{{ copied ? 'Copied!' : 'Click to copy' }}</span>
+                            </div>
                         </li>
                         <li>
                             <div class="type-title-sm">Length</div>
@@ -185,7 +188,8 @@ export default {
         selected: 0,
         errors: [],
         roleIconMap,
-        store
+        store,
+        copied: false
     }),
     computed: {
         level() {
@@ -232,9 +236,12 @@ export default {
         embed,
         score,
         copyText(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert(`Copied ID: ${text}`);
-            });
+            navigator.clipboard.writeText(text);
+            this.copied = true;
+
+            setTimeout(() => {
+                this.copied = false;
+            }, 1000);
         },
     },
 };
