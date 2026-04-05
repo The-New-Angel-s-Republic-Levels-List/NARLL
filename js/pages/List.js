@@ -66,7 +66,10 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">ID</div>
-                            <p class="type-label-lg link" @click="copyText(level.id)">{{ level.id }}</p>
+                            <div class="id-copy" @click="copyText(level.id)">
+                                <p class="type-label-lg link">{{ level.id }}</p>
+                                <span class="tooltip">{{ copied ? 'Copied!' : 'Click to copy' }}</span>
+                            </div>
                         </li>
                         <li>
                             <div class="type-title-sm">Length</div>
@@ -177,7 +180,7 @@ export default {
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
                     </p>
                     <p>
-                        Want the old spreadsheet version of the list? Here: https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI
+                        Want the old spreadsheet version of the list? Here: <a href="https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI">https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI</a>
                 </div>
             </div>
         </main>
@@ -189,7 +192,8 @@ export default {
         selected: 0,
         errors: [],
         roleIconMap,
-        store
+        store,
+        copied: false
     }),
     computed: {
         level() {
@@ -236,9 +240,12 @@ export default {
         embed,
         score,
         copyText(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert(`Copied ID: ${text}`);
-            });
+            navigator.clipboard.writeText(text);
+            this.copied = true;
+
+            setTimeout(() => {
+                this.copied = false;
+            }, 1000);
         },
     },
 };
