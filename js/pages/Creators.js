@@ -1,32 +1,55 @@
-import creators from '../dataextra/creators.json';
+import { fetchCreators } from '../content.js';
+
 import Spinner from '../components/Spinner.js';
 
 export default {
     components: { Spinner },
+
     data: () => ({
         creators: [],
-        loading: true
+        loading: true,
+        err: null
     }),
+
     template: `
         <main v-if="loading">
             <Spinner></Spinner>
         </main>
 
         <main v-else class="page-creators">
-            <table class="board">
+            <p v-if="err" class="error">{{ error }}</p>
+
+            <table v-else class="board">
+                <tr>
+                    <th>#</th>
+                    <th>User</th>
+                    <th>Points</th>
+                    <th>Featured</th>
+                    <th>Best</th>
+                </tr>
+
                 <tr v-for="(c, i) in creators">
-                    <td class="rank">#{{ i + 1 }}</td>
-                    <td class="user">{{ c.user }}</td>
-                    <td class="points">{{ c.points }}</td>
-                    <td class="featured">{{ c.featured.join(', ') }}</td>
-                    <td class="best">{{ c.best }}</td>
+                    <td>#{{ i + 1 }}</td>
+                    <td class="user">
+                        <span class="type-label-lg">{{ c.user }}</span>
+                    </td>
+                    <td>{{ c.points }}</td>
+                    <td>{{ c.featured.join(', ') }}</td>
+                    <td>{{ c.best }}</td>
                 </tr>
             </table>
         </main>
     `,
-    mounted() {
-        // optional: sort by points
-        this.creators = creators.sort((a, b) => b.points - a.points);
+
+    async mounted() {
+        const creators = await fetchCreators();
+
+        if (!creators) {
+            this.err = "Failed to load creators.";
+        } else {
+            this.creators = creators.sort((a, b) => b.points - a.points);
+        }
+
         this.loading = false;
     }
 };
