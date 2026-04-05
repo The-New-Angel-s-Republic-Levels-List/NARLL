@@ -125,7 +125,7 @@ export async function fetchLeaderboard() {
 
 export async function fetchCreators() {
     try {
-        const res = await fetch('/dataextras/creators.json');
+        const res = await fetch('/dataextra/creators.json');
         const creators = await res.json();
         return creators;
     } catch {
