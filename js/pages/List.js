@@ -170,6 +170,8 @@ export default {
                         Spam of 10+ CPS in any stint of 3+ inputs
                     </p>
                     <p>
+                    If a level is verified with CPS above the limit, we will not accept it until it is verified with a lower CPS.
+                    <p>
                         Minigames.
                     </p>
                     <p>
