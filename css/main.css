@@ -12,11 +12,11 @@
 main.dark,
 header.dark {
     color-scheme: dark;
-    --color-background: #292026;
+    --color-background: #362a32;
     --color-on-background: white;
     --color-background-hover: #2c212a;
     --color-on-background-hover: white;
-    --color-primary: #d96ff7;
+    --color-primary: #a759a0;
     --color-primary-disabled: #1f213c;
     --color-on-primary: white;
     --color-error: #de0000;
