@@ -17,7 +17,7 @@ export default {
         </main>
 
         <main v-else class="page-creators">
-            <p v-if="err" class="error">{{ error }}</p>
+            <p v-if="err" class="error">{{ err }}</p>
 
             <table v-else class="board">
                 <tr>
