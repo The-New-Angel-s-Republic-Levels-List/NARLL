@@ -36,8 +36,8 @@ export default {
                                 <p>#{{ i + 1 }}</p>
                             </td>
 
-                            <td class="points">
-                                <p>{{ c.points }}</p>
+                            <td class="total">
+                                <p class="type-label-lg">{{ c.points }}</p>
                             </td>
 
                             <td class="user" :class="{ 'active': selected == i }">
