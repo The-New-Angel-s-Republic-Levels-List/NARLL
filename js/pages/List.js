@@ -167,7 +167,7 @@ export default {
                     </p>
                     <h3>Gameplay Restrictions</h3>
                     <p>
-                        Spam of ≥12 CPS in any stint of 3+ inputs
+                        Spam of less than or equal to 12 CPS in any stint of 3+ inputs
                     </p>
                     <p>
                         Minigames.
