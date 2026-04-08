@@ -149,6 +149,9 @@ export default {
                     <p>
                         If you are to use a camera recording instead of a screen recording, please ensure that it is high quality, 30fps minimum, and that the Geometry Dash window covers a minimum of half of the height of the window on both sides and half of the width of the window on top and bottom.
                     </p>
+                    <p>
+                        The verifier of a level must be in the New Angels' Republic Discord Server.
+                    </p>
                     <h3>Level Creation Rules</h3>
                     <p>
                         Levels must be made specifically for the NARLL.
