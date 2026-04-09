@@ -126,7 +126,7 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed)
+                        Achieved the record without using hacks (FPS bypass is allowed, Show Hitboxes On Death not allowed for mostly invisible memory levels. (eg. Miss Information))
                     </p>
                     <p>
                         Have either source audio or clicks/taps in the video. Edited audio only does not count
