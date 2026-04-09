@@ -11,5 +11,12 @@
   ],
   "verifier": "danman",
   "verification": "https://youtu.be/NeJdwTCGXjw",
-  "records": []
+  "records": [
+    {
+      "user": "DeadXM",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }
