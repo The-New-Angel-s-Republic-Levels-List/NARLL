@@ -9,9 +9,15 @@
   "creators": [
     "scruffie"
   ],
-  "verifier": "markehl",
+  "verifier": "amy",
   "verification": "https://youtu.be/sULWkGNrQ6A",
   "records": [
+    {
+      "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
     {
       "user": "mold",
       "link": "",
