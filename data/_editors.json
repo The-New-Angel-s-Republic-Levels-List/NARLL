@@ -25,6 +25,11 @@
         "link": "https://www.youtube.com/@Eternal_Sogginess"
     },
     {
+        "role": "dev",
+        "name": "scruffiebaka",
+        "link": "https://github.com/scruffiebaka"
+    },
+    {
         "role": "helper",
         "name": "cookie",
         "link": "https://www.youtube.com/@JustAComfyCookie"
@@ -44,10 +49,5 @@
         "role": "trial",
         "name": "",
         "link": ""
-    },
-    {
-        "role": "dev",
-        "name": "scruffiebaka",
-        "link": "https://github.com/scruffiebaka"
     }
 ]
