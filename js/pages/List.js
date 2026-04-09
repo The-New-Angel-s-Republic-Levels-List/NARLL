@@ -132,6 +132,9 @@ export default {
                         Have either source audio or clicks/taps in the video. Edited audio only does not count
                     </p>
                     <p>
+                        The following indicators must be in the completion: FPS counter, CPS counter, cheat indicator  (if multiple mod menus, all cheat indicators.)
+                    </p>
+                    <p>
                         The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
                     </p>
                     <p>
