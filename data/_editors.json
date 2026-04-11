@@ -46,8 +46,8 @@
         "link": "https://www.youtube.com/@aqrl7473"
     },
     {
-        "role": "trial",
+        "role": "",
         "name": "",
         "link": ""
-    }
+    } //add trial in the role thingy for trial mods
 ]
