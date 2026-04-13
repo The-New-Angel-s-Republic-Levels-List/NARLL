@@ -160,7 +160,7 @@ export default {
     }),
     computed: {
         level() {
-            return this.filteredList[this.selected]?.[0];
+            return this.list[this.selected]?.[0];
         },
         filteredList() {
             if (!this.search) {
