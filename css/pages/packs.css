@@ -1,0 +1,8 @@
+.meta-container {
+    padding-left: 1rem;
+}
+
+.meta-container {
+    max-height: 80vh;
+    overflow-y: auto;
+}
