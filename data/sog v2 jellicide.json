@@ -1,10 +1,10 @@
 {
   "id": 132659505,
-  "length": "0:10",
+  "length": "NA",
   "featured": "",
   "name": "sog v2 jellicide",
   "author": "Sevras",
-  "tags": "qalli duals",
+  "tags": "NA",
   "notes": "",
   "creators": [
     "Sevras"
@@ -56,6 +56,18 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "nyziol",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "rosieel",
       "link": "",
       "percent": 100,
       "hz": 0

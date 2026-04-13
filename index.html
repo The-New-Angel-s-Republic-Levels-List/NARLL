@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=1024" />
         <title>New Angels Republic Levels List</title>
 
-        <!-- Replace your server icon by uploading an image file named "list_icon.png"-->
         <link rel="icon" href="/list_icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,7 +37,7 @@
         <header :class="{ dark: store.dark }">
             <div class="logo">
                 <h2>NARLL</h2>
-                <p>beta4.0.2</p>
+                <p>beta4.1.2</p>
             </div>
             <nav class="nav">
                 <router-link class="nav__tab" to="/">
@@ -53,29 +52,29 @@
                 <router-link class="nav__tab" to="/roulette">
                     <span class="type-label-lg">Roulette</span>
                 </router-link>
-                <div class="nav__actions">
-                    <button
-                        class="nav__icon"
-                        @click.prevent="store.toggleDark()"
-                    >
-                        <img
-                            :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'"
-                            alt=""
-                        />
-                    </button>
-                    <!-- Replace the '#' with your discord server's invite-->
-                    <a class="nav__icon" href="https://discord.gg/zeroshi">
-                        <img src="/assets/discord.svg" alt="Discord Logo" />
-                    </a>
-                    <!-- List record submission form, add a link to replace the '#' when putting a link to your list submission form-->
-                    <a
-                        class="nav__cta type-label-lg"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSd6XNTbss-yyXm5-TnK55tBbhnQ6fwv23S55i_q3mQPv9t44w/viewform?usp=preview"
-                        target="_blank"
-                        >Submit Record</a
-                    >
-                </div>
             </nav>
+            <div class="nav__actions">
+                <button
+                    class="nav__icon"
+                    @click.prevent="store.toggleDark()"
+                >
+                    <img
+                        :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'"
+                        alt=""
+                    />
+                </button>
+
+                <a class="nav__icon" href="https://discord.gg/zeroshi">
+                    <img src="/assets/discord.svg" alt="Discord Logo" />
+                </a>
+                
+                <a
+                    class="nav__cta type-label-lg"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd6XNTbss-yyXm5-TnK55tBbhnQ6fwv23S55i_q3mQPv9t44w/viewform?usp=preview"
+                    target="_blank"
+                    >Submit Record</a
+                >
+            </div>
         </header>
         <router-view :class="{ dark: store.dark }"></router-view>
     </body>

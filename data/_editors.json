@@ -1,27 +1,27 @@
 [
     {
         "role": "owner",
-        "name": "mold 🪽 [WEBSITE OWNER]",
-        "link": "https://www.youtube.com/@deliciousmold"
-    },
-    {
-        "role": "owner",
         "name": "itsGalaxie [LIST OWNER]",
         "link": "https://www.youtube.com/@itsGalaxie"
     },
     {
+        "role": "owner",
+        "name": "mold 🪽 [WEBSITE OWNER]",
+        "link": "https://www.youtube.com/@deliciousmold"
+    },
+    {
         "role": "admin",
-        "name": "vexenous               [wave deficient]",
+        "name": "vexenous 🦈 [wave deficient]",
         "link": "https://www.youtube.com/@vexenous"
     },
     {
         "role": "admin",
-        "name": "amylova 🌸                  [wave carried]",
+        "name": "amylova 🌸 [wave carried]",
         "link": "https://www.youtube.com/@add4line906"
     },
     {
         "role": "admin",
-        "name": "Soggie               [soggie]",
+        "name": "Soggie [soggie]",
         "link": "https://www.youtube.com/@Eternal_Sogginess"
     },
     {
@@ -39,15 +39,9 @@
         "name": "xeo_o",
         "link": "https://www.youtube.com/@xeo_oo"
     },
-
     {
         "role": "helper",
         "name": "aqrlr",
         "link": "https://www.youtube.com/@aqrl7473"
-    },
-    {
-        "role": "trial",
-        "name": "",
-        "link": ""
     }
 ]

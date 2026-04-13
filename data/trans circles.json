@@ -11,5 +11,12 @@
   ],
   "verifier": "cookie",
   "verification": "https://youtu.be/R5yBrBdMBPQ",
-  "records": []
+  "records": [
+    {
+      "user": "Astrotism",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }
