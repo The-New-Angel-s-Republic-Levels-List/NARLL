@@ -33,13 +33,13 @@ public static class CreatorList
                 }
 
                 creator.points += pointsPerCreator;
-                if (!creator.featured.Contains(level.id.ToString()))
-                    creator.featured.Add(level.id.ToString());
+                if (!creator.featured.Contains(level.name))
+                    creator.featured.Add(level.name);
 
                 if (!bestLevel.ContainsKey(c) || pointsPerCreator > bestLevel[c].points)
                 {
-                    bestLevel[c] = (level.id.ToString(), pointsPerCreator);
-                    creator.best = level.id.ToString();
+                    bestLevel[c] = (level.name, pointsPerCreator);
+                    creator.best = level.name;
                 }
             }
         }
