@@ -139,8 +139,7 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h2><a href="https://docs.google.com/document/d/13Tmtj1G1ydiBz4_banBFvjvMiIXlnpYhOzq-GMohPxs/edit?usp=sharing" target="_blank">NARLL Guidelines</a></h2>
-                    <h8>^ clickable link</h8>
+                    <h2><a href="https://docs.google.com/document/d/13Tmtj1G1ydiBz4_banBFvjvMiIXlnpYhOzq-GMohPxs/edit?usp=sharing" target="_blank" style="color: var(--color-primary)">NARLL Guidelines</a></h2>
                     <h3>Notes:</h3>
                     <p>
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
