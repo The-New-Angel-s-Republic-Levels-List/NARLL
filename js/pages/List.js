@@ -124,10 +124,8 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h2><a href="https://docs.google.com/document/d/13Tmtj1G1ydiBz4_banBFvjvMiIXlnpYhOzq-GMohPxs/edit?usp=sharing">NARLL Guidelines</a></h2>
-                    <p>
-                         
-                    </p>
+                    <h2><a href="https://google.com" target="_blank">NARLL Guidelines</a></h2>
+                    <h7>^ clickable link</h7>
                     <h3>Notes:</h3>
                     <p>
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
