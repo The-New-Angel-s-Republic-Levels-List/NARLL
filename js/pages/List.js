@@ -88,7 +88,7 @@ export default {
                         </li>
                     </ul>
                     <p>Notes: {{ level.notes }}</p>
-                    <h2>Records{{ level.records?.length ? ` (${level.records.length})` : '' }}</h2>
+                    <h2>Records{{ recordCountText }}</h2>
                     <p v-if="selected + 1 > 50">This level does not accept new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
@@ -162,6 +162,10 @@ export default {
         search: "",
     }),
     computed: {
+        recordCountText() {
+            const n = this.level?.records?.length;
+            return n ? ` (${n})` : '';
+        },
         level() {
             return this.list[this.selected]?.[0];
         },
