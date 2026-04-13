@@ -160,14 +160,6 @@ string GetFeatureStatus(string hexa)
     }
 }
 
-string MakeSafeFileName(string name)
-{
-    var invalid = Path.GetInvalidFileNameChars();
-    return new string(name.Where(c => !invalid.Contains(c)).ToArray())
-        .Replace("\n", "")
-        .Replace("\r", "");
-}
-
 var sheet1 = package.Workbook.Worksheets[2];
 var sheet2 = package.Workbook.Worksheets["Legacy List"];
 
@@ -181,8 +173,7 @@ for (int row = 3; row <= 52; row++)
         WriteIndented = true
     });
 
-    var safeName = MakeSafeFileName(level.name);
-    File.WriteAllText($"data/{safeName}.json", json);
+    File.WriteAllText($"data/{level.id.ToString()}.json", json);
     allLevels.Add(level);
 }
 
@@ -196,12 +187,11 @@ for (int row = 3; row <= 18; row++)
         WriteIndented = true
     });
 
-    var safeName = MakeSafeFileName(level.name);
-    File.WriteAllText($"data/{safeName}.json", json);
+    File.WriteAllText($"data/{level.id.ToString()}.json", json);
     allLevels.Add(level);
 }
 
-var nameList = allLevels.Select(l => l.name).ToList();
+var nameList = allLevels.Select(l => l.id).ToList();
 
 var listJson = JsonSerializer.Serialize(nameList, new JsonSerializerOptions
 {

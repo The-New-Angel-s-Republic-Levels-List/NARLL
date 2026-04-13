@@ -68,7 +68,7 @@ export default {
                         <div class="type-title-sm">Enjoyment</div>
                         <p>{{ level.enjoyment || NA }}</p>
                     </div>
-                    <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
+                    <LevelAuthors :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
