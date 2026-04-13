@@ -30,6 +30,34 @@
 .page-leaderboard .board-container {
     padding-inline: 1rem;
 }
+.page-leaderboard .board-container .selector {
+    padding: 7px 7px 0px 7px;
+    height: 3em;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: -0.8em 1.2em 1.2em 0;
+    background-color: var(--color-primary);
+}
+.page-leaderboard .board-container .selector .nav__tab {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding-top: 4px;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    padding-inline: 0.5rem;
+    transition: border-color 100ms ease;
+    color: var(--color-on-primary);
+}
+.page-leaderboard .board-container .selector .nav__tab:hover {
+    border-color: var(--color-on-primary);
+}
+.page-leaderboard .board-container .selector .nav__tab.active-tab {
+    border-bottom-color: var(--color-on-primary);
+}
+
 .page-leaderboard .board {
     table-layout: auto;
     display: block;
@@ -85,6 +113,16 @@
 .page-leaderboard .player .table .score p {
     text-align: end;
 }
+.page-leaderboard .player .packs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+}
+.page-leaderboard .player .packs .tag {
+    display: flex;
+    flex-shrink: 0;
+    background-size: 100% 100% !important;
+}
 .page-leaderboard .player .table .level {
     width: 100%;
 }
@@ -95,13 +133,9 @@
 .page-leaderboard .board tr.top-1 button {
     background: linear-gradient(90deg,rgba(255, 189, 3, 0.4) 10%, rgba(250, 243, 110, 0.4) 75%);
 }
-
-
 .page-leaderboard .board tr.top-2 button {
     background: linear-gradient(90deg,rgba(191, 191, 191, 0.4) 10%, rgba(235, 235, 235, 0.4) 75%);
 }
-
-
 .page-leaderboard .board tr.top-3 button {
     background: linear-gradient(90deg,rgba(181, 147, 85, 0.4) 10%, rgba(201, 178, 143, 0.4) 75%);
 }
@@ -113,4 +147,6 @@
     color: var(--color-on-primary);
 }
 
-/*scruffie: im starting to figure things out :33*/
+/*scruffie: i figured shit out!!! :333333*/
+/*scruffie was here*/
+/*secret scruffie note: its been days. im locked in molds basement. hes held my family captive. somebody help. PLEASE.*/
