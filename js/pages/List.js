@@ -164,7 +164,7 @@ export default {
         list: [],
         editors: [],
         loading: true,
-        selected: 0,
+        selected: null,
         errors: [],
         roleIconMap,
         store,
