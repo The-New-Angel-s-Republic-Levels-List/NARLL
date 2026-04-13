@@ -11,5 +11,12 @@
   ],
   "verifier": "lrexx",
   "verification": "https://www.youtube.com/watch?v=dSUwaSZkGgw",
-  "records": []
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }
