@@ -24,9 +24,14 @@ using var package = new ExcelPackage(stream);
 
 var dataDir = "data";
 Directory.CreateDirectory("data");
+Directory.CreateDirectory("dataextra");
 foreach (var file in Directory.GetFiles(dataDir, "*.json"))
 {
     if (Path.GetFileName(file) == "_editors.json") continue;
+    File.Delete(file);
+}
+foreach (var file in Directory.GetFiles("dataextra", "*.json"))
+{
     File.Delete(file);
 }
 
