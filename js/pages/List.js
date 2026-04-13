@@ -88,7 +88,7 @@ export default {
                         </li>
                     </ul>
                     <p>Notes: {{ level.notes }}</p>
-                    <h2>Records</h2>
+                    <h2>Records{{ level.records?.length ? ` (${level.records.length})` : '' }}</h2>
                     <p v-if="selected + 1 > 50">This level does not accept new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
