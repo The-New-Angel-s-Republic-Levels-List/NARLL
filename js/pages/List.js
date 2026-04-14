@@ -22,24 +22,16 @@ export default {
         </main>
         <main v-else class="page-list">
             <div class="list-container">
-            <div class="search-box">
-                <input 
-                    type="text" 
-                    v-model="search" 
-                    placeholder="Search levels..." 
-                    class="search-bar"
-                />
-            </div>
                 <table class="list" v-if="list">
-                    <tr v-for="([level, err, originalIndex], i) in filteredList">
+                    <tr v-for="([level, err], i) in list">
                         <td class="rank">
-                            <p v-if="originalIndex + 1 <= 50" class="type-label-lg">#{{ originalIndex + 1 }}</p>
+                            <p v-if="i + 1 <= 50" class="type-label-lg">#{{ i + 1 }}</p>
                             <p v-else class="type-label-lg">Legacy</p>
                         </td>
                         <td 
                             class="level" 
                             :class="[
-                                { 'active': selected == originalIndex, 'error': !level },
+                                { 'active': selected == i, 'error': !level },
                                 {
                                 'level-top': level?.featured === 'top',
                                 'level-featured': level?.featured === 'featured',
@@ -47,15 +39,12 @@ export default {
                                 }
                             ]"
                         >
-                            <button @click="selected = originalIndex">
+                            <button @click="selected = i">
                                 <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
                             </button>
                         </td>
                     </tr>
                 </table>
-                <p v-if="filteredList.length === 0">
-                    No results found.
-                </p>
             </div>
             <div class="level-container">
                 <div class="level" v-if="level">
@@ -68,7 +57,7 @@ export default {
                         <div class="type-title-sm">Enjoyment</div>
                         <p>{{ level.enjoyment || NA }}</p>
                     </div>
-                    <LevelAuthors :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
+                    <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
@@ -88,7 +77,7 @@ export default {
                         </li>
                     </ul>
                     <p>Notes: {{ level.notes }}</p>
-                    <h2>Records{{ recordCountText }}</h2>
+                    <h2>Records</h2>
                     <p v-if="selected + 1 > 50">This level does not accept new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
@@ -107,21 +96,8 @@ export default {
                         </tr>
                     </table>
                 </div>
-                <div v-else-if="selected == null" class="level" style="height: 100%; display: flex; justify-content: center; align-items: center; text-align: center;">
-                    <h2>Welcome to the New Angels Republic Level List!</h2>
-                    <p>On your left is the level list, click any level to know more about it!</p>
-                    <p>On your right are the list editors and the guidelines to submitting records and levels!</p>
-                    <h3>About</h3>
-                    <p>
-                        This is the official list for the New Angel's Republic Discord Server.
-                        The website is a modified version of TSL. 
-                    </p>
-                    <p>
-                        Levels highlighted in light pink are Featured, dark purple are Top Featured, and special colored are awarded the Angel Award.
-                    </p>
-                    <p>
-                        Have fun and don't forget to join the discord! :3
-                    </p>
+                <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
+                    <p>An error occured.</p>
                 </div>
             </div>
             <div class="meta-container">
@@ -129,6 +105,15 @@ export default {
                     <div class="errors" v-show="errors.length > 0">
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
+                    <h3>About</h3>
+                    <p>
+                        This is the official list for the New Angel's Republic Discord Server.
+                        The website is a modified version of TSL template. 
+                    </p>
+                    <p>
+                        Levels highlighted in light pink are Featured, dark purple are Top Featured, and special colored are awarded the Angel Award.
+                        Have fun! :3
+                    </p>
                     <template v-if="editors">
                         <h3>List Editors</h3>
                         <ol class="editors">
@@ -139,13 +124,30 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h2><a href="https://docs.google.com/document/d/13Tmtj1G1ydiBz4_banBFvjvMiIXlnpYhOzq-GMohPxs/edit?usp=sharing" target="_blank" style="color: blue; text-decoration: underline;">NARLL Guidelines</a></h2>
+                    <h2><a href="https://docs.google.com/document/d/13Tmtj1G1ydiBz4_banBFvjvMiIXlnpYhOzq-GMohPxs/edit?usp=sharing" target="_blank">NARLL Guidelines</a></h2>
+                    <h8>^ clickable link</h8>
                     <h3>Notes:</h3>
                     <p>
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
                     </p>
                     <p>
-                        Want the old spreadsheet version of the list? Here: <a href="https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI" style="color: blue; text-decoration: underline;">spreadsheet</a>
+                        Want the old spreadsheet version of the list? Here: <a href="https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI">spreadsheet</a>
+                    </p>
+                    <p>
+                        ....................................................
+                    </p>
+                    <h4>Stuff to fix/finish and Features to add:</h4>
+                    <p>
+                        Upload all verification videos
+                    </p>
+                    <p>
+                        Make clicking on records actually send you to said record
+                    </p>
+                    <p>
+                        Enjoyment rating
+                    </p>
+                    <p>
+                        Changelog + Pending list changes
                 </div>
             </div>
         </main>
@@ -154,33 +156,15 @@ export default {
         list: [],
         editors: [],
         loading: true,
-        selected: null,
+        selected: 0,
         errors: [],
         roleIconMap,
         store,
-        copied: false,
-        search: "",
+        copied: false
     }),
     computed: {
-        recordCountText() {
-            const n = this.level?.records?.length;
-            return n ? ` (${n})` : '';
-        },
         level() {
-            return this.list[this.selected]?.[0];
-        },
-        filteredList() {
-            if (!this.search) {
-                return this.list.map((item, i) => [...item, i]);
-            }
-
-            const q = this.search.toLowerCase();
-
-            return this.list
-                .map((item, i) => [...item, i])
-                .filter(([level]) =>
-                    level?.name?.toLowerCase().includes(q)
-                );
+            return this.list[this.selected][0];
         },
         video() {
             if (!this.level.showcase) {
@@ -230,10 +214,5 @@ export default {
                 this.copied = false;
             }, 1000);
         },
-    },
-    watch: {
-        search() {
-            this.selected = 0;
-        }
     },
 };
