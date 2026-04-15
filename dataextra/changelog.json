@@ -8,45 +8,53 @@
   {
     "date": "2026-04-11",
     "changes": [
-      "<strong>Final Aggression</strong> has been placed at <strong><em>#15</em></strong>. This change pushes <b>sog v2 jellicide</b> out of the <i>main list</i>.",
-      "<b>im at the club</b> has been lowered from #13 to <b><i>#17</i></b>.",
-      "<b>why does</b> has been lowered from #15 to <b><i>#19</i></b>."
+      "<strong>Final Aggression</strong> has been placed at <strong><em>#15</em></strong>. This change pushes <strong>sog v2 jellicide</strong> out of the <em>main list</em>.",
+      "<strong>im at the club</strong> has been lowered from #13 to <strong><em>#17</em></strong>.",
+      "<strong>why does</strong> has been lowered from #15 to <strong><em>#19</em></strong>."
     ]
-  }
+  },
   {
     "date": "2026-04-10",
     "changes": [
-      "<b>hexa ever clear</b> and <b>Spaceless Unleashed</b> have been swapped, with <b>Spaceless Unleashed/b> now sitting above at <b><i>#2</i></b>."
+      "<strong>hexa ever clear</strong> and <strong>Spaceless Unleashed</strong> have been swapped, with <strong>Spaceless Unleashed/b> now sitting above at <strong><em>#2</em></strong>."
     ]
   },
   {
     "date": "2026-04-09",
     "changes": [
-      "<b>pollux 🦋</b> and <b>anino</b> have been added back following creator request at <b><i>#18</i></b> and <b><i>#39</i></b> respectively. This change pushes <b>Cookie Cat 🍪🍪🍪</b> and <b>level name</b> back into the <i>legacy list</i>.",
-      "<b>sgog channelg</b> and <b>slope level</b> have been removed following a majority mod vote to remove them. This change brings <b>Cookie Cat 🍪🍪🍪</b> and <b>level name</b> back into the <i>legacy list</i>."
-    ],
+      "<strong>pollux 🦋</strong> and <strong>anino</strong> have been added back following creator request at <strong><em>#18</em></strong> and <strong><em>#39</em></strong> respectively. This change pushes <strong>Cookie Cat 🍪🍪🍪</strong> and <strong>level name</strong> back into the <em>legacy list</em>.",
+      "<strong>sgog channelg</strong> and <strong>slope level</strong> have been removed following a majority mod vote to remove them. This change brings <strong>Cookie Cat 🍪🍪🍪</strong> and <strong>level name</strong> back into the <em>legacy list</em>."
+    ]
+  },
+  {
     "date": "2026-04-07",
     "changes": [
-      "<b>bi circles</b> has been raised from #45 to <b><i>#39</i></b>",
-      "<b>Deception</b> has been lowered from #31 to <b><i>#45</i></b>"
-    ],
+      "<strong>bi circles</strong> has been raised from #45 to <strong><em>#39</em></strong>",
+      "<strong>Deception</strong> has been lowered from #31 to <strong><em>#45</em></strong>"
+    ]
+  },
+  {
     "date": "2026-04-05",
     "changes": [
-      "<b>elixir of despair</b> has been lowered from #21 to <b><i>#37</i></b>",
-      "<b>bladeawamba</b> has been raised from #36 to <b><i>#29</i></b>",
-      "<b>hell but uwu ig idk</b> has been removed following a majority mod vote to remove it. This change brings <b>slope level</b> back into the <i>mainlist</i>"
-    ],
+      "<strong>elixir of despair</strong> has been lowered from #21 to <strong><em>#37</em></strong>",
+      "<strong>bladeawamba</strong> has been raised from #36 to <strong><em>#29</em></strong>",
+      "<strong>hell but uwu ig idk</strong> has been removed following a majority mod vote to remove it. This change brings <strong>slope level</strong> back into the <em>mainlist</em>"
+    ]
+  },
+  {
     "date": "2026-04-03",
     "changes": [
-      "<b>Claustromorphic</b> has been placed at <b><i>#5</i></b>. This change pushes <b>slope level</b> out of the <i>mainlist</i>",
-      "<b>AREA 33</b> has been given a <b><i>featured</i></b>"
-    ],
+      "<strong>Claustromorphic</strong> has been placed at <strong><em>#5</em></strong>. This change pushes <strong>slope level</strong> out of the <em>mainlist</em>",
+      "<strong>AREA 33</strong> has been given a <strong><em>featured</em></strong>"
+    ]
+  },
+  {
     "date": "2026-04-02",
     "changes": [
-      "<b>scary scary john</b> has been placed at <b><i>#22</i></b>.",
-      "<b>ariamacina</b> has been placed at <b><i>#12</i></b>.",
-      "<b>AREA 33</b> has been placed at <b><i>#4</i></b>.",
-      "<b>These changes push <i>level name, envy</i>, and <i>amber alert in iowa</i> into the <i>legacy list</i>"
+      "<strong>scary scary john</strong> has been placed at <strong><em>#22</em></strong>.",
+      "<strong>ariamacina</strong> has been placed at <strong><em>#12</em></strong>.",
+      "<strong>AREA 33</strong> has been placed at <strong><em>#4</em></strong>.",
+      "<strong>These changes push <em>level name, envy</em>, and <em>amber alert in iowa</em> into the <em>legacy list</em>"
     ]
   }
 ]
