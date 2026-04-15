@@ -39,9 +39,9 @@ export default {
 
                         <td 
                             class="level" 
-                            :class="{ 'active': selected == originalIndex, 'error': !level }"
+                            :class="{ 'active': store.selected == originalIndex, 'error': !level }"
                         >
-                            <button @click="selected = originalIndex">
+                            <button @click="store.selected = originalIndex">
                                 <span class="type-label-lg">
                                     {{ level?.name || \`Error (\${err}.json)\` }}
                                 </span>
@@ -79,7 +79,7 @@ export default {
                     </ul>
                 </div>
 
-                <div v-else-if="selected == null" class="level center">
+                <div v-else-if="store.selected == null" class="level center">
                     <h2>Unverified Levels</h2>
                     <p>The following levels on the left are unverified and thus cannot be on the list.</p>
                     <p>
@@ -143,7 +143,6 @@ export default {
         list: [],
         editors: [],
         loading: true,
-        selected: null,
         errors: [],
         search: "",
         store,
@@ -152,8 +151,8 @@ export default {
 
     computed: {
         level() {
-            if (this.selected === null) return null;
-            return this.list[this.selected]?.[0];
+            if (store.selected === null) return null;
+            return this.list[store.selected]?.[0];
         },
 
         filteredList() {
@@ -200,7 +199,7 @@ export default {
 
     watch: {
         search() {
-            this.selected = 0;
+            store.selected = 0;
         }
     }
 };
