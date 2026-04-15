@@ -167,3 +167,21 @@ export async function fetchCreators() {
         return null;
     }
 }
+
+export async function fetchPacks() {
+    try {
+        const res = await fetch('/dataextra/packs.json');
+        return await res.json();
+    } catch {
+        return null;
+    }
+}
+
+export async function fetchChangelog(){
+    try {
+        const res = await fetch('/dataextra/changelog.json');
+        return await res.json();
+    } catch{
+        return null;
+    }
+}
