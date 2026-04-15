@@ -1,6 +1,7 @@
 .page-list .list-container,
 .page-list .level-container,
 .page-list .meta-container {
+    padding-top: 1rem;
     padding-block: 2rem;
 }
 .page-list .list-container {
@@ -50,6 +51,7 @@
     flex-direction: column;
     gap: 2rem;
     padding-right: 2rem;
+    min-height: 0;
     max-width: 48rem;
 }
 .page-list .level-container .level h1{
@@ -224,9 +226,11 @@
 }
 
 .changelog-box {
-    height: 40vh;
-    min-height: 300px;
+    flex: 1;
+    min-height: 200px;
     min-width: 500px;
+    max-height: 400px;
+
     overflow-y: auto;
 
     padding: 1rem;
