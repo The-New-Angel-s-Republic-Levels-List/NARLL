@@ -1,6 +1,7 @@
 .page-list .list-container,
 .page-list .level-container,
 .page-list .meta-container {
+    padding-top: 1rem;
     padding-block: 2rem;
 }
 .page-list .list-container {
@@ -227,6 +228,7 @@
 .changelog-box {
     flex: 1;
     min-height: 200px;
+    min-width: 500px;
     max-height: 400px;
 
     overflow-y: auto;
