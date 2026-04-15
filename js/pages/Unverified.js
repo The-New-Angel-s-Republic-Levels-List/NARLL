@@ -73,6 +73,9 @@ export default {
 
                 <div v-else-if="selected == null" class="level center">
                     <h2>Unverified Levels</h2>
+                    <p>The following levels on the left are unverified and thus cannot be on the list.</p>
+                    <p>Keep in mind, a lot of the levels may not be list worthy (i.e not on par with the current standards) as they were created a long time ago.
+                        Please confirm with a moderator before attempting to verify one.</p>
                     <p>Select a level to view details.</p>
                 </div>
             </div>
