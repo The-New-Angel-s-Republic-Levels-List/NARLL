@@ -124,4 +124,27 @@ public static class List
         };
     }
 
+    public static UnverifiedLevel ProcessRowUNVERIFIED(ExcelWorksheet sheet, int row)
+    {
+        var name = sheet.Cells[row, 1].Text;
+        if (string.IsNullOrWhiteSpace(name)) return null;
+
+        var idText = sheet.Cells[row, 2].Text;
+        if (!int.TryParse(idText, out var id)) return null;
+        
+        var author = sheet.Cells[row, 3].Text;
+        var verifier = sheet.Cells[row, 4].Text;
+
+        var progress = sheet.Cells[row, 5].Text;
+
+        return new UnverifiedLevel
+        {
+            name = name,
+            id = id,
+            author = author,
+            verifier = verifier,
+            progress = progress
+        };
+    }
+
 }

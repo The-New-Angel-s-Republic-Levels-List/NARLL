@@ -25,6 +25,7 @@ using var package = new ExcelPackage(stream);
 var dataDir = "data";
 Directory.CreateDirectory("data");
 Directory.CreateDirectory("dataextra");
+Directory.CreateDirectory("dataextra/unverified");
 foreach (var file in Directory.GetFiles(dataDir, "*.json"))
 {
     if (Path.GetFileName(file) == "_editors.json") continue;
@@ -34,13 +35,19 @@ foreach (var file in Directory.GetFiles("dataextra", "*.json"))
 {
     File.Delete(file);
 }
+foreach (var file in Directory.GetFiles("dataextra/unverified", "*.json"))
+{
+    File.Delete(file);
+}
 
 var allLevels = new List<Level>();
+var unverifiedLevels = new List<UnverifiedLevel>();
 var features = new List<Level>();
 
 
 var sheet1 = package.Workbook.Worksheets["NARLL"];
 var sheet2 = package.Workbook.Worksheets["Legacy List"];
+var sheet3 = package.Workbook.Worksheets["NARUL"];
 
 for (int row = 3; row <= 52; row++)
 {
@@ -80,14 +87,34 @@ for (int row = 3; row <= 18; row++)
     }
 }
 
-var nameList = allLevels.Select(l => l.id).ToList();
+for (int row = 40; row > 0; row--)
+{
+    var level = List.ProcessRowUNVERIFIED(sheet3, row);
+    if (level == null) continue;
 
+    var json = JsonSerializer.Serialize(level, new JsonSerializerOptions
+    {
+        WriteIndented = true
+    });
+
+    File.WriteAllText($"dataextra/unverified/{level.id.ToString()}.json", json);
+    unverifiedLevels.Add(level);
+}
+
+var nameList = allLevels.Select(l => l.id).ToList();
 var listJson = JsonSerializer.Serialize(nameList, new JsonSerializerOptions
 {
     WriteIndented = true
 });
 
+var unv_nameList = unverifiedLevels.Select(l => l.id).ToList();
+var unv_listJson = JsonSerializer.Serialize(unv_nameList, new JsonSerializerOptions
+{
+    WriteIndented = true
+});
+
 File.WriteAllText("data/_list.json", listJson);
+File.WriteAllText("dataextra/unverified/_list.json", unv_listJson);
 
 List<Creator> creatorList = CreatorList.ProcessCreators(features);
 
