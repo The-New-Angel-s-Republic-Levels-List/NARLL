@@ -106,18 +106,31 @@ export default {
                                 <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role">
                                 <a v-if="editor.link" class="type-label-lg link" target="_blank" :href="editor.link">{{ editor.name }}</a>
                                 <p v-else>{{ editor.name }}</p>
-                                
+
                             </li>
                         </ol>
                     </template>
 
-                    <h2><a href="https://docs.google.com/document/d/13Tmtj1G1ydiBz4_banBFvjvMiIXlnpYhOzq-GMohPxs/edit?usp=sharing" target="_blank" style="color: blue; text-decoration: underline;">NARLL Guidelines</a></h2>
+                    <h2>
+                        <a href="https://docs.google.com/document/d/13Tmtj1G1ydiBz4_banBFvjvMiIXlnpYhOzq-GMohPxs/edit?usp=sharing" 
+                            target="_blank" 
+                            style="color: blue; 
+                            text-decoration: underline;">
+                            NARLL Guidelines
+                        </a>
+                    </h2>
                     <h3>Notes:</h3>
                     <p>
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
                     </p>
                     <p>
-                        Want the old spreadsheet version of the list? Here: <a href="https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI" style="color: blue; text-decoration: underline;">spreadsheet</a>
+                        Want the old spreadsheet version of the list? Here: <a href="https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI" 
+                            style="color: blue; 
+                            text-decoration: 
+                            underline;"
+                        >
+                            spreadsheet
+                        </a>
                     </p>
 
                 </div>

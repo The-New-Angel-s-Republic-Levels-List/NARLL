@@ -145,8 +145,12 @@ export default {
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
                     </p>
                     <p>
+<<<<<<< HEAD
                         Want the old spreadsheet version of the list? Here: <a href="https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI" style="color: blue; text-decoration: underline;">spreadsheet</a>
                     </p>
+=======
+                        Want the old spreadsheet version of the list? Here: <a href="https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI" target="_blank" style="color: blue; text-decoration: underline;">spreadsheet</a>
+>>>>>>> 8507c3807a08829def18915a82d8a3300af4372b
                 </div>
             </div>
         </main>
