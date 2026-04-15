@@ -1,5 +1,4 @@
 :root {
-    --background: #f7cbf1;
     --background: linear-gradient(359deg, rgba(247, 203, 241, 1) 0%, rgba(255, 242, 254, 1) 77%, rgba(255, 255, 255, 1) 100%);
     --color-on-background: black;
     --color-background-hover: #eee;
@@ -13,7 +12,6 @@
 main.dark,
 header.dark {
     color-scheme: dark;
-    --color-background: #382734;
     --background: linear-gradient(359deg, rgba(56, 39, 52, 1) 0%, rgba(88, 58, 99, 1) 77%, rgba(125, 95, 135, 1) 100%);   
     --color-on-background: white;
     --color-background-hover: #2c212a;
