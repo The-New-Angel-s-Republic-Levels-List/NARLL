@@ -39,6 +39,38 @@ export async function fetchList() {
     }
 }
 
+export async function fetchUnverifiedList() {
+    const listResult = await fetch(`/dataextra/unverified/_list.json`);
+
+    try {
+        const list = await listResult.json();
+
+        return await Promise.all(
+            list.map(async (id, index) => {
+                const res = await fetch(`/dataextra/unverified/${id}.json`);
+
+                try {
+                    const level = await res.json();
+
+                    return [
+                        {
+                            ...level,
+                            id,
+                        },
+                        null,
+                    ];
+                } catch {
+                    console.error(`Failed to load unverified level #${index + 1} (${id}).`);
+                    return [null, id];
+                }
+            })
+        );
+    } catch {
+        console.error(`Failed to load unverified list.`);
+        return null;
+    }
+}
+
 export async function fetchEditors() {
     try {
         const editorsResults = await fetch(`${dir}/_editors.json`);
