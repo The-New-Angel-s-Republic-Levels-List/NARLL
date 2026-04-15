@@ -225,10 +225,6 @@
     border-color: var(--color-primary);
 }
 
-.page-list{
-    padding-top: 4rem;
-}
-
 .changelog-box {
     flex: 1;
     min-height: 200px;
