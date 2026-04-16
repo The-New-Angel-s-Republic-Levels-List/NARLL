@@ -260,12 +260,12 @@
 }
 
 .changelog-list li {
-    color: rgba(var(--color-on-background), 0.7);
+    color: rgba(var(--color-on-background-rgb), 0.7);
     margin-bottom: 1.25rem;
 }
 
 .changelog-list b {
-    color: rgb(var(--color-on-background));
+    color: rgb(var(--color-on-background-rgb));
     font-size: 1.05em;
     font-weight: 1000;
 }
