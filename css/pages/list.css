@@ -266,11 +266,6 @@
 
 .changelog-list b {
     font-weight: 800;
-    color: white;
-    text-shadow:
-        0 0 2px rgba(255,255,255,0.8),
-        0 0 6px rgba(255,255,255,0.6),
-        0 0 10px rgba(255,255,255,0.4);
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
