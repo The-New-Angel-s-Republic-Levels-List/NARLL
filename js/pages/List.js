@@ -129,7 +129,7 @@ export default {
                         <div v-for="entry in changelog" class="changelog-entry">
                             <h3 class="changelog-date">{{ formatDate(entry.date) }}</h3>
                             <ul class="changelog-list">
-                                <li v-for="change in entry.changes">
+                                <li v-for="change in entry.changes" v-html="formatChange(change)"></li>
                                     - {{ change }}
                                 </li>
                             </ul>
@@ -251,6 +251,11 @@ export default {
             month: 'short',
             year: 'numeric'
             });
+        },
+        formatChange(text) {
+            return text
+                .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
+                .replace(/\*(.*?)\*/g, "<i>$1</i>");
         },
     },
     watch: {
