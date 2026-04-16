@@ -261,11 +261,14 @@
 }
 
 .changelog-list li {
+    color: rgba(var( --color-on-background), 0.7);
     opacity: 0.7;
+    margin-bottom: 1.25rem;
 }
 
 .changelog-list b {
     opacity: 1;
+    color: rgb(var( --color-on-background));
     font-size: 1.05em;
     font-weight: 1000;
 }
