@@ -256,18 +256,16 @@
 .changelog-list {
     font-family: "Lexend Deca", sans-serif;
     padding-left: 1rem;
+    font-size: 0.9rem;
 }
 
 .changelog-list li {
-    color: rgba(var( --color-on-background), 0.7);
-    opacity: 0.7;
-    font-size: 0.9rem;
+    color: rgba(var(--color-on-background), 0.7);
     margin-bottom: 1.25rem;
 }
 
 .changelog-list b {
-    opacity: 1;
-    color: rgb(var( --color-on-background));
+    color: rgb(var(--color-on-background));
     font-size: 1.05em;
     font-weight: 1000;
 }
