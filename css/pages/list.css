@@ -260,7 +260,7 @@
 }
 
 .changelog-list li {
-    color: rgba(var(--color-on-background-rgb), 0.7);
+    color: rgba(var(--color-on-background-rgb), 0.5);
     margin-bottom: 1.25rem;
 }
 
