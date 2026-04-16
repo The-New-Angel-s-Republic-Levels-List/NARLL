@@ -129,8 +129,8 @@ export default {
                         <div v-for="entry in changelog" class="changelog-entry">
                             <h3 class="changelog-date">{{ formatDate(entry.date) }}</h3>
                             <ul class="changelog-list">
-                                <li v-for="change in entry.changes" v-html="formatChange(change)"></li>
-                                    - {{ change }}
+                                <li v-for="change in entry.changes">
+                                    - <span v-html="formatChange(change)"></span>
                                 </li>
                             </ul>
                         </div>
