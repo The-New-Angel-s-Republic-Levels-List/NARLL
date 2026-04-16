@@ -31,9 +31,9 @@ foreach (var file in Directory.GetFiles(dataDir, "*.json"))
     if (Path.GetFileName(file) == "_editors.json") continue;
     File.Delete(file);
 }
-foreach (var file in Directory.GetFiles("dataextra", "*.json"))
+if (File.Exists("dataextra/creators.json"))
 {
-    File.Delete(file);
+    File.Delete("dataextra/creators.json");
 }
 foreach (var file in Directory.GetFiles("dataextra/unverified", "*.json"))
 {
