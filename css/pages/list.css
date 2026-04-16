@@ -12,7 +12,8 @@
 }
 
 .page-list .list {
-    table-layout: auto;
+    width: 100%;
+    table-layout: fixed;
 }
 .page-list .list .rank {
     text-align: end;
@@ -22,12 +23,15 @@
     width: 100%;
 }
 .page-list .list .level button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     background-color: var(--color-background);
     color: var(--color-on-background);
     border: none;
     border-radius: 0.5rem;
     padding: 1rem;
-    text-align: start;
+    text-align: center;
     word-break: normal;
     overflow-wrap: anywhere;
     cursor: pointer;
