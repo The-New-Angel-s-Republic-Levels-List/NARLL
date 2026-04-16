@@ -16,12 +16,13 @@
     table-layout: fixed;
 }
 .page-list .list .rank {
-    text-align: end;
+    text-align: right;
+    width: 4rem;
     padding-right: 1.5rem;
     white-space: nowrap;
 }
 .page-list .list .level {
-    width: 100%;
+    width: auto;
 }
 .page-list .list .level button {
     display: block;
