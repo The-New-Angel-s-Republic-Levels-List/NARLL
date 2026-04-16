@@ -17,7 +17,8 @@
 }
 .page-list .list .rank {
     text-align: end;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
+    white-space: nowrap;
 }
 .page-list .list .level {
     width: 100%;
