@@ -34,7 +34,7 @@ export default {
                     <tr v-for="([level, err, originalIndex], i) in filteredList">
                         <td class="rank">
                             <p v-if="originalIndex + 1 <= 50" class="type-label-lg">#{{ originalIndex + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
+                            <p v-else class="type-label-lg">L</p>
                         </td>
                         <td 
                             class="level" 
