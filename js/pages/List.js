@@ -154,8 +154,8 @@ export default {
                         </template>
 
                         <template v-else>
-                            <div v-for="entry in pending" class="pending-entry">
-                                <p class="pending-text">
+                            <div v-for="entry in pending" class="changelog-entry">
+                                <p class="changelog-list">
                                     - <span v-html="formatChange(entry.text)"></span> places on {{ formatDate(entry.date) }}
                                 </p>
                             </div>
