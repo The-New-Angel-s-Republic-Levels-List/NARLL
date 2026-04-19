@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchChangelog, fetchEditors, fetchList } from "../content.js";
+import { fetchChangelog, fetchPending, fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -123,19 +123,44 @@ export default {
                         Have fun and don't forget to join the discord! :3
                     </p>
 
-                    <h2>Changelog</h2>
+                     <div class="nav selector">
+                        <button 
+                            class="nav__tab" 
+                            :class="{ 'active-tab': mode === 'changelog' }" 
+                            @click="mode = 'changelog'"
+                        >
+                            <span class="type-label-lg">Changelog</span>
+                        </button>
 
-                    <div class="changelog-box">
-                        <div v-for="entry in changelog" class="changelog-entry">
-                            <h3 class="changelog-date">{{ formatDate(entry.date) }}</h3>
-                            <ul class="changelog-list">
-                                <li v-for="change in entry.changes">
-                                    - <span v-html="formatChange(change)"></span>
-                                </li>
-                            </ul>
-                        </div>
+                        <button 
+                            class="nav__tab" 
+                            :class="{ 'active-tab': mode === 'pending' }" 
+                            @click="mode = 'pending'"
+                        >
+                            <span class="type-label-lg">Pending</span>
+                        </button>
                     </div>
 
+                    <div class="changelog-box">
+                        <template v-if="mode === 'changelog'">
+                            <div v-for="entry in changelog" class="changelog-entry">
+                                <h3 class="changelog-date">{{ formatDate(entry.date) }}</h3>
+                                <ul class="changelog-list">
+                                    <li v-for="change in entry.changes">
+                                        - <span v-html="formatChange(change)"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </template>
+
+                        <template v-else>
+                            <div v-for="entry in pending" class="pending-entry">
+                                <p class="pending-text">
+                                    - <span v-html="formatChange(entry.text)"></span> places on {{ formatDate(entry.date) }}
+                                </p>
+                            </div>
+                        </template>
+                    </div>
                 </div>
             </div>
             <div class="meta-container">
@@ -168,6 +193,8 @@ export default {
         list: [],
         editors: [],
         loading: true,
+        mode: "changelog",
+        pending: [],
         changelog: [], 
         errors: [],
         roleIconMap,
@@ -212,7 +239,9 @@ export default {
         // Hide loading spinner
         this.list = await fetchList();
         this.editors = await fetchEditors();
+
         this.changelog = await fetchChangelog();
+        this.pending = await fetchPending();
 
         // Error handling
         if (!this.list) {
