@@ -34,7 +34,7 @@ export default {
                     <tr v-for="([level, err, originalIndex], i) in filteredList">
                         <td class="rank">
                             <p v-if="originalIndex + 1 <= 50" class="type-label-lg">#{{ originalIndex + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
+                            <p v-else class="type-label-lg">L</p>
                         </td>
                         <td 
                             class="level" 
@@ -130,7 +130,7 @@ export default {
                             <h3 class="changelog-date">{{ formatDate(entry.date) }}</h3>
                             <ul class="changelog-list">
                                 <li v-for="change in entry.changes">
-                                    - {{ change }}
+                                    - <span v-html="formatChange(change)"></span>
                                 </li>
                             </ul>
                         </div>
@@ -251,6 +251,11 @@ export default {
             month: 'short',
             year: 'numeric'
             });
+        },
+        formatChange(text) {
+            return text
+                .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
+                .replace(/\*(.*?)\*/g, "<i>$1</i>");
         },
     },
     watch: {
