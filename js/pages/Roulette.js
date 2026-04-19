@@ -86,6 +86,22 @@ export default {
                     </template>
                 </div>
             </section>
+
+            <div v-if="showDialog" class="dialog-backdrop">
+                <div class="dialog">
+                    <h1>Congratulations!!</h1>
+                    <p>You finished the roulette! Heres your reward!</p>
+
+                    <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0?autoplay=1" target="_blank" class="reward-link">
+                        https://www.youtube.com/watch?v=oHg5SJYRHA0
+                    </a>
+
+                    <Btn @click.native="showDialog = false">Close</Btn>
+                </div>
+            </div>
+
+            <audio id="winSound" src="assets/sounds/completion.mp3"></audio>
+
             <div class="toasts-container">
                 <div class="toasts">
                     <div v-for="toast in toasts" class="toast">
@@ -106,6 +122,7 @@ export default {
         useExtendedList: true,
         toasts: [],
         fileInput: undefined,
+        showDialog: false,
     }),
     mounted() {
         this.fileInput = document.createElement('input');
@@ -119,6 +136,13 @@ export default {
 
         this.levels = roulette.levels;
         this.progression = roulette.progression;
+    },
+    watch: {
+        hasCompleted(val) {
+            if (val) {
+                this.onComplete();
+            }
+        }
     },
     computed: {
         currentLevel() {
@@ -219,6 +243,36 @@ export default {
         onGiveUp() {
             this.givenUp = true;
             localStorage.removeItem('roulette');
+        },
+        onComplete() {
+            const duration = 4000;
+            const end = Date.now() + duration;
+
+            const frame = () => {
+                window.confetti({
+                    particleCount: 8,
+                    spread: 70,
+                    angle: 60,
+                    origin: { x: 0 }
+                });
+                window.confetti({
+                    particleCount: 8,
+                    spread: 70,
+                    angle: 120,
+                    origin: { x: 1 }
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            };
+
+            frame();
+
+            const audio = document.getElementById('winSound');
+            if (audio) audio.play();
+
+            this.showDialog = true;
         },
         onImport() {
             if (
