@@ -237,7 +237,7 @@ export default {
                 return;
             }
 
-            this.progression.push(this.targetPercentage);
+            this.progression.push(this.percentage);
             this.percentage = undefined;
             this.save();
         },
