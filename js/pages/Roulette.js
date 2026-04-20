@@ -159,7 +159,8 @@ export default {
         },
         targetPercentage() {
             const steps = this.stepIncrements;
-            return steps.slice(0, this.progression.length + 1).reduce((a, b) => a + b, 0);
+            const nextStep = steps[this.progression.length] || 0;
+            return Math.min(100, this.currentPercentage + nextStep);
         },
         placeholder() {
             return `At least ${this.targetPercentage}%`;
