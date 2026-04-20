@@ -21,8 +21,8 @@ export default {
                         <label for="main">Main List</label>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="extended" value="Extended List" v-model="useExtendedList">
-                        <label for="extended">Extended List</label>
+                        <input type="checkbox" id="legacy" value="Legacy List" v-model="useLegacyList">
+                        <label for="legacy">Legacy List</label>
                     </div>
                     <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Start' : 'Restart'}}</Btn>
                 </form>
@@ -119,7 +119,7 @@ export default {
         givenUp: false,
         showRemaining: false,
         useMainList: true,
-        useExtendedList: true,
+        useLegacyList: true,
         toasts: [],
         fileInput: undefined,
         showDialog: false,
@@ -188,7 +188,7 @@ export default {
                 return;
             }
 
-            if (!this.useMainList && !this.useExtendedList) return;
+            if (!this.useMainList && !this.useLegacyList) return;
 
             this.loading = true;
 
@@ -208,8 +208,8 @@ export default {
             }));
 
             const list = [];
-            if (this.useMainList) list.push(...fullListMapped.slice(0, 75));
-            if (this.useExtendedList) list.push(...fullListMapped.slice(75, 150));
+            if (this.useMainList) list.push(...fullListMapped.slice(0, 50));
+            if (this.useLegacyList) list.push(...fullListMapped.slice(50));
 
             this.levels = shuffle(list).slice(0, 100);
             this.showRemaining = false;
