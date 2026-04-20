@@ -12,12 +12,5 @@
   ],
   "verifier": "Cala",
   "verification": "https://youtu.be/FfTt6AmD2f8",
-  "records": [
-    {
-      "user": "JohnHuman",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    }
-  ]
+  "records": []
 }

@@ -12,12 +12,5 @@
   ],
   "verifier": "mold",
   "verification": "https://youtu.be/SqFQ805Vadc",
-  "records": [
-    {
-      "user": "JohnHuman",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    }
-  ]
+  "records": []
 }
