@@ -3,17 +3,23 @@
   "length": "0:15",
   "featured": "",
   "name": "hell but uwu ig idk",
-  "author": "Galaxie",
+  "author": "itsGalaxie",
   "tags": "Learny, All-Around",
   "notes": "",
   "creators": [
-    "Galaxie"
+    "itsGalaxie"
   ],
-  "verifier": "Galaxie",
+  "verifier": "itsGalaxie",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
   "records": [
     {
       "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
       "link": "",
       "percent": 100,
       "hz": 0
