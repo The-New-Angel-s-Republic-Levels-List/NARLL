@@ -178,6 +178,7 @@ export default {
                             </li>
                         </ol>
                     </template>
+                    <h2><a>target="_blank" style="color: blue; text-decoration: underline;">NARLL Guidelines</a></h2>
                     <h3>Notes:</h3>
                     <p>
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
