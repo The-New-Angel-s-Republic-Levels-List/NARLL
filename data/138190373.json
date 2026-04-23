@@ -9,15 +9,9 @@
   "creators": [
     "Rosieel"
   ],
-  "verifier": "amylova",
+  "verifier": "markehl",
   "verification": "https://www.youtube.com/watch?v=3QiQcE0rZHU",
   "records": [
-    {
-      "user": "markehl",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
     {
       "user": "Cala",
       "link": "",
