@@ -9,11 +9,23 @@
   "creators": [
     "amylova"
   ],
-  "verifier": "mold",
+  "verifier": "amy",
   "verification": "https://www.youtube.com/watch?v=zdzJdt8bsqg",
   "records": [
     {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
       "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "cookie",
       "link": "",
       "percent": 100,
       "hz": 0

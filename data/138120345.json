@@ -9,7 +9,14 @@
   "creators": [
     "imorii"
   ],
-  "verifier": "mold",
+  "verifier": "amy",
   "verification": "https://youtu.be/R-KKQ5-65zU",
-  "records": []
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ]
 }
