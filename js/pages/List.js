@@ -178,7 +178,7 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h2>NARLL Guidelines will be back shortly</h2>
+                      <h2><a href="https://docs.google.com/document/d/1_xeCrzN2xmG1X5PQix6BEqDfBCg22rB08TNjXyRXg4M/edit?usp=sharing" target="_blank" style="color: blue; text-decoration: underline;">NARLL Guidelines</a></h2>
                     <h3>Notes:</h3>
                     <p>
                         The NARLL Website is in beta, so expect some stuff to be unfinished or bugged.
