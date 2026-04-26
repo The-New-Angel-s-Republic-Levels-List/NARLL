@@ -1,5 +1,12 @@
 [
-      {
+  {
+    "date": "2026-04-24",
+    "changes": [
+      "**turn the lights on** has been placed at ***#23***.",
+      "**Pink Hell** has been placed at ***#22***."
+    ]
+  },
+  {
     "date": "2026-04-23",
     "changes": [
       "**its so dark** has been placed at ***#3***.",
@@ -8,7 +15,8 @@
       "**elixir of despair** has been raised from ***#31*** to ***#23***."
     ]
   },
-  {    "date": "2026-04-20",
+  {    
+    "date": "2026-04-20",
     "changes": [
       "**hell but uwu ig idk** has been placed at ***#39***.",
       "**Takis Crunch** has been placed at ***#4***.",
