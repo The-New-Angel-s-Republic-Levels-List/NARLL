@@ -1,15 +1,15 @@
 {
-  "id": 133370941,
+  "id": 135886078,
   "length": "NA",
   "featured": "",
-  "name": "envy 2",
-  "author": "rosieel",
+  "name": "the sog files",
+  "author": "itsGalaxie",
   "tags": "NA",
-  "notes": "",
+  "notes": "\u003C\u003C move up?",
   "creators": [
-    "rosieel"
+    "itsGalaxie"
   ],
-  "verifier": "rosieel",
+  "verifier": "itsGalaxie",
   "verification": "https://www.youtube.com/watch?v=JLUHNV2zcV4",
   "records": [
     {
@@ -20,6 +20,18 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Zequori",
       "link": "",
       "percent": 100,
       "hz": 0
