@@ -78,7 +78,7 @@
 }
 .page-list .level-container .level .enjoyment {
     position: absolute;
-    top: 7.5rem;
+    top: 4.5rem;
     right: 1rem;
 
     display: flex;
@@ -354,6 +354,11 @@
 @keyframes spin {
     from { transform: rotate(0deg) scale(1.5); }
     to   { transform: rotate(360deg) scale(1.5); }
+}
+
+.page-list > div {
+    overflow-y: auto;
+    overflow-x: visible;
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
