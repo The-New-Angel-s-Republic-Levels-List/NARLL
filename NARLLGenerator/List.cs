@@ -42,6 +42,7 @@ public static class List
             .Split(',', StringSplitOptions.TrimEntries).ToList();
 
         var notes = sheet.Cells[row, 11].Text;
+        var nong = sheet.Cells[row, 12].Text;
 
         var feature = "";
         ExcelColor fillColor = sheet.Cells[row, 2].Style.Fill.BackgroundColor;
@@ -62,7 +63,8 @@ public static class List
             verifier = verifier,
             verification = link,
             records = records,
-            notes = notes
+            notes = notes,
+            nong = nong
         };
     }
 

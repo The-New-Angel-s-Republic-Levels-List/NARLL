@@ -15,6 +15,7 @@ public class Level
     public string verifier { get; set; }
     public string verification { get; set; }
     public List<Record> records { get; set; }
+    public string nong {get; set;}
 }
 
 public class Record
