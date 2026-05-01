@@ -5,7 +5,7 @@
   "name": "gleeger",
   "author": "imorii",
   "tags": "Cube, Timings, Chokepoints",
-  "enjoyment": "",
+  "enjoyment": "7.83",
   "notes": "",
   "creators": [
     "imorii"
@@ -21,6 +21,12 @@
     },
     {
       "user": "xeo_o",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "danman",
       "link": "",
       "percent": 100,
       "hz": 0
