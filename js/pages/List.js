@@ -87,8 +87,6 @@ export default {
                             <p>{{ level.length }}</p>
                         </li>
                         <li v-if="level.nong === 'yes'">
-                            <div class="type-title-sm">NONG</div>
-
                             <div class="id-copy nong-icon">
                                 <img src="/assets/nong/back.png" class="back">
                                 <img src="/assets/nong/front.png" class="front">
