@@ -6,7 +6,7 @@ namespace NARLLGenerator;
 
 public static class List
 {
-    public static Level ProcessRowMAIN(ExcelWorksheet sheet, int row)
+    public static Level ProcessRowMAIN(ExcelWorksheet sheet, int row, Dictionary<string, double> enjoymentDict)
     {
         var name = sheet.Cells[row, 2].Text;
         if (string.IsNullOrWhiteSpace(name)) return null;
@@ -51,6 +51,14 @@ public static class List
             feature = Util.GetFeatureStatus(fillColor.Rgb.Substring(2));
         }
 
+        string enjoyment = "";
+        string key = idText;
+
+        if (enjoymentDict.TryGetValue(key, out var val))
+        {
+            enjoyment = val.ToString();
+        }
+
         return new Level
         {
             id = id,
@@ -59,6 +67,7 @@ public static class List
             length = length,
             author = author,
             tags = tags,
+            enjoyment = enjoyment,
             creators = creators,
             verifier = verifier,
             verification = link,
@@ -68,7 +77,7 @@ public static class List
         };
     }
 
-    public static Level ProcessRowLEGACY(ExcelWorksheet sheet, int row)
+    public static Level ProcessRowLEGACY(ExcelWorksheet sheet, int row, Dictionary<string, double> enjoymentDict)
     {
         var name = sheet.Cells[row, 2].Text;
         if (string.IsNullOrWhiteSpace(name)) return null;
@@ -110,6 +119,14 @@ public static class List
             feature = Util.GetFeatureStatus(fillColor.Rgb.Substring(2));
         }
 
+        string enjoyment = "";
+        string key = idText;
+
+        if (enjoymentDict.TryGetValue(key, out var val))
+        {
+            enjoyment = val.ToString();
+        }
+
         return new Level
         {
             id = id,
@@ -118,6 +135,7 @@ public static class List
             length = "NA",
             author = author,
             tags = "NA",
+            enjoyment = enjoyment,
             creators = creators,
             verifier = verifier,
             verification = link,

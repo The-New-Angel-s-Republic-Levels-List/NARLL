@@ -10,6 +10,7 @@ public class Level
     public string name { get; set; }
     public string author { get; set; }
     public string tags {get; set;}
+    public string enjoyment { get; set; }
     public string notes {get; set;}
     public List<string> creators { get; set; }
     public string verifier { get; set; }
