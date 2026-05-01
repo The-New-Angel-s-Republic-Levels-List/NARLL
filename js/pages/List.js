@@ -74,7 +74,7 @@ export default {
                                 v-if="!level.enjoyment || level.enjoyment === ''"
                                 class="tooltip"
                             >
-                                This level does not have any victors
+                                This level does not have enough victors
                             </span>
                         </div>
                     </div>
