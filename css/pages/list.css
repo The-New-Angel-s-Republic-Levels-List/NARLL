@@ -77,7 +77,7 @@
     line-height: 28px;
 }
 .page-list .level-container .level .enjoyment {
-    position: absolute;
+    position: relative;
     top: 4.5rem;
     right: 1rem;
 
@@ -85,6 +85,8 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 0.25rem;
+    z-index: 50;
+    overflow: visible;
 }
 .page-list .level-container .level .level-authors {
     display: grid;
@@ -360,6 +362,10 @@
 .page-list .level-container .level .enjoyment .id-copy .tooltip {
     left: 50%;
     transform: translateX(-60%);
+}
+
+.page-list .level-container {
+    overflow: visible;
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
