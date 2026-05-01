@@ -76,6 +76,16 @@
     font-size: 20px;
     line-height: 28px;
 }
+.page-list .level-container .level .enjoyment {
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
 .page-list .level-container .level .level-authors {
     display: grid;
     grid-template-columns: max-content 1fr;
