@@ -68,7 +68,7 @@ export default {
                         <div class="type-title-sm">Enjoyment</div>
 
                         <div class="id-copy">
-                            <p>{{ level.enjoyment && level.enjoyment !== "" ? level.enjoyment : "NA" }}</p>
+                            <p>{{ formatEnjoyment(level.enjoyment) }}</p>
 
                             <span 
                                 v-if="!level.enjoyment || level.enjoyment === ''"
@@ -296,6 +296,10 @@ export default {
             return text
                 .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
                 .replace(/\*(.*?)\*/g, "<i>$1</i>");
+        },
+        formatEnjoyment(val) {
+            if (val === null || val === undefined || val === "") return "NA";
+            return `${val}/10`;
         },
     },
     watch: {
