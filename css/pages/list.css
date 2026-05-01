@@ -153,6 +153,7 @@
 }
 
 .page-list .list .level.level-top button {
+    background-color: transparent;
     background: linear-gradient(90deg,rgba(219, 156, 255, 0.4) 0%, rgba(157, 0, 255, 0.4) 85%);
     color: var(--color-on-background);
 }
@@ -162,6 +163,7 @@
 }
 
 .page-list .list .level.level-featured button {
+    background-color: transparent;
     background: linear-gradient(90deg,rgba(228, 191, 255, 0.3) 0%, rgba(226, 158, 232, 0.3) 70%);
     color: var(--color-on-background);
 }
