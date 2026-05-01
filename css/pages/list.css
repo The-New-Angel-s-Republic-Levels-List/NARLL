@@ -320,9 +320,10 @@
 
 .nong-icon {
     position: relative;
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     isolation: isolate;
+    transform: translateY(4px);
 }
 
 .nong-icon img {
@@ -333,7 +334,7 @@
 
 .nong-icon .back {
     z-index: 0;
-    animation: spin 2s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 .nong-icon .front {
