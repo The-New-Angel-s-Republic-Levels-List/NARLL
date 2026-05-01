@@ -211,6 +211,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.15s ease;
+    z-index: 9999;
 }
 
 .id-copy:hover .tooltip {
@@ -359,6 +360,7 @@
 .page-list > div {
     overflow-y: auto;
     overflow-x: visible;
+    position: relative;
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
