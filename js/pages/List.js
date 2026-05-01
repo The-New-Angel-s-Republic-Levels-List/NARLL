@@ -65,18 +65,23 @@ export default {
                         <p>{{ level.tags || NA }}</p>
                     </div>
                     <div class="enjoyment">
-                        <div class="type-title-sm">Enjoyment</div>
+                    <div class="type-title-sm">Enjoyment</div>
 
-                        <div class="id-copy">
-                            <p>{{ formatEnjoyment(level.enjoyment) }}</p>
+                    <div class="id-copy">
+                        <p>
+                        <span class="score" :class="enjoymentClass(level.enjoyment)">
+                            {{ formatEnjoyment(level.enjoyment) }}
+                        </span>
 
-                            <span 
-                                v-if="!level.enjoyment || level.enjoyment === ''"
-                                class="tooltip"
-                            >
-                                This level does not have enough victors
-                            </span>
-                        </div>
+                        <span v-if="level.enjoyment !== null && level.enjoyment !== ''" class="outof">
+                            /10
+                        </span>
+                        </p>
+
+                        <span v-if="!level.enjoyment || level.enjoyment === ''" class="tooltip">
+                        This level does not have enough victors
+                        </span>
+                    </div>
                     </div>
                     <LevelAuthors :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
@@ -299,8 +304,16 @@ export default {
         },
         formatEnjoyment(val) {
             if (val === null || val === undefined || val === "") return "NA";
-            return `${val}/10`;
+            return val;
         },
+        enjoymentClass(val) {
+            const n = Number(val);
+            if (isNaN(n)) return "";
+
+            if (n <= 4) return "enjoyment--bad";
+            if (n < 7) return "enjoyment--mid";
+            return "enjoyment--good";
+        }
     },
     watch: {
         search() {

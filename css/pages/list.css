@@ -359,7 +359,30 @@
 
 .page-list .level-container .level .enjoyment .id-copy .tooltip {
     left: 50%;
-    transform: translateX(-100%) translateY(25%);
+    transform: translateX(-108%) translateY(40%);
+}
+
+.enjoyment .score {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.enjoyment .outof {
+  font-size: 0.65rem;
+  opacity: 0.7;
+  margin-left: 2px;
+}
+
+.enjoyment--bad {
+  color: #e74c3c;
+}
+
+.enjoyment--mid {
+  color: #f1c40f;
+}
+
+.enjoyment--good {
+  color: #2ecc71;
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
