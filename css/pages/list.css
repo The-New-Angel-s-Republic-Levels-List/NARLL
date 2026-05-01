@@ -322,23 +322,27 @@
     position: relative;
     width: 1.75rem;
     height: 1.75rem;
+    isolation: isolate;
 }
+
 .nong-icon img {
     position: absolute;
     width: 100%;
     height: 100%;
 }
+
 .nong-icon .back {
     z-index: 0;
     animation: spin 2s linear infinite;
-    transform: scale(1.5);
 }
+
 .nong-icon .front {
     z-index: 1;
 }
+
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+    from { transform: rotate(0deg) scale(1.5); }
+    to   { transform: rotate(360deg) scale(1.5); }
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
