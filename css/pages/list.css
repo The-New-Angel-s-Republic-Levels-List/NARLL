@@ -331,6 +331,7 @@
 .nong-icon .back {
     z-index: 0;
     animation: spin 2s linear infinite;
+    transform: scale(1.5);
 }
 .nong-icon .front {
     z-index: 1;
