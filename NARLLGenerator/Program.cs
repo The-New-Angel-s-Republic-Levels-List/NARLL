@@ -2,19 +2,40 @@
 
 using NARLLGenerator;
 using OfficeOpenXml;
-using OfficeOpenXml.Style;
-using System.Drawing;
-using System.IO;
 using System.Text.Json;
 
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Drive.v3;
+using Google.Apis.Services;
 
 async Task<MemoryStream> DownloadSheetAsync()
 {
-    using var client = new HttpClient();
-    var url = "https://docs.google.com/spreadsheets/d/1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI/export?format=xlsx";
-    var bytes = await client.GetByteArrayAsync(url);
+    var json = Environment.GetEnvironmentVariable("GOOGLE_CREDENTIALS");
 
-    return new MemoryStream(bytes);
+    if (json == null)
+        throw new Exception("Missing GOOGLE_CREDENTIALS");
+
+    var credential = GoogleCredential.FromJson(json)
+        .CreateScoped(DriveService.Scope.DriveReadonly);
+
+    var service = new DriveService(new BaseClientService.Initializer
+    {
+        HttpClientInitializer = credential,
+        ApplicationName = "NARLLGenerator",
+    });
+
+    var fileId = "1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI";
+
+    var request = service.Files.Export(
+        fileId,
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    );
+
+    var stream = new MemoryStream();
+    await request.DownloadAsync(stream);
+
+    stream.Position = 0;
+    return stream;
 }
 
 using var stream = await DownloadSheetAsync();

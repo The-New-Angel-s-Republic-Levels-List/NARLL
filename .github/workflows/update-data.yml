@@ -12,6 +12,9 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
