@@ -67,13 +67,14 @@ export default {
                     <div class="enjoyment">
                         <div class="type-title-sm">Enjoyment</div>
 
-                        <div class="tooltip-container">
-                            <p>{{ level.enjoyment ?? 'NA' }}</p>
+                        <div class="id-copy">
+                            <p>{{ level.enjoyment && level.enjoyment !== "" ? level.enjoyment : "NA" }}</p>
+
                             <span 
-                                v-if="level.enjoyment == null" 
+                                v-if="!level.enjoyment || level.enjoyment === ''"
                                 class="tooltip"
                             >
-                                This level does not have enough victors
+                                This level does not have any victors
                             </span>
                         </div>
                     </div>
