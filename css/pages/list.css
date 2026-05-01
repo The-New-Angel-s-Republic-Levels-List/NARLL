@@ -359,8 +359,7 @@
 
 .page-list .level-container .level .enjoyment .id-copy .tooltip {
     left: 50%;
-    transform: translateX(-120%);
-
+    transform: translateX(-100%) translateY(25%);
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
