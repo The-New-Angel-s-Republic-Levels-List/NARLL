@@ -4,7 +4,7 @@
   "featured": "",
   "name": "sog v2 jellicide",
   "author": "Sevras",
-  "tags": "Duals",
+  "tags": "Duals, High-CPS",
   "notes": "",
   "creators": [
     "Sevras"
@@ -62,12 +62,6 @@
     },
     {
       "user": "nyziol",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "rosieel",
       "link": "",
       "percent": 100,
       "hz": 0
