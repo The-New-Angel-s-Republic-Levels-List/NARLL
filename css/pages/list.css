@@ -373,12 +373,12 @@
 }
 
 .enjoyment .score {
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 .enjoyment .outof {
-  font-size: 0.65rem;
+  font-size: 1rem;
   opacity: 0.7;
   margin-left: 2px;
 }
