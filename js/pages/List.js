@@ -174,8 +174,19 @@ export default {
                     <h3>Statistics</h3>
                     <div class="list-stats">
                         <p>The list currently has <span ref="levelCount"></span> levels</p>
-                        <p>Best player: {{ stats.bestPlayer }}</p>
-                        <p>Best creator: {{ stats.bestCreator }}</p>
+                        <p>
+                            Best player:
+                            <span class="rainbow-text glow-text">
+                                {{ stats.bestPlayer }}
+                            </span>
+                        </p>
+
+                        <p>
+                            Best creator:
+                            <span class="rainbow-text glow-text">
+                                {{ stats.bestCreator }}
+                            </span>
+                        </p>
                     </div>
 
                     <h3>About</h3>

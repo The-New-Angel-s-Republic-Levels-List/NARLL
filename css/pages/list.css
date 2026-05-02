@@ -534,6 +534,33 @@
     line-height: 1.4;
 }
 
+.rainbow-text {
+    background: linear-gradient(
+        90deg,red, orange, yellow, green, cyan, blue, violet, red
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowMove 3s linear infinite;
+}
+
+.glow-text {
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.6),
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes rainbowMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.list-stats span {
+    font-size: 2.5rem;
+    font-weight: 850;
+}
+
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
 /* scruffie: it appears i have figured it out :333333 */
 /* scrffie: i leave comments everytime i come here and nobody is gonna notice*/
