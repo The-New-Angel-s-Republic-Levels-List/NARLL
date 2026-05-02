@@ -172,7 +172,7 @@ export default {
                     <p>On your right are the list editors and the guidelines to submitting records and levels!</p>
                     
                     <div class="list-stats">
-                        <p>The list currently has {{ stats.levelCount }} levels.</p>
+                        <p>The list currently has <span ref="levelCount"></span> levels</p>
                         <p>Best player: {{ stats.bestPlayer }}</p>
                         <p>Best creator: {{ stats.bestCreator }}</p>
                     </div>
@@ -411,6 +411,16 @@ export default {
         }
 
         this.loading = false;
+
+        this.$nextTick(() => {
+            const counter = new window.CountUp(
+                this.$refs.levelCount,
+                this.list.length,
+                { duration: 1 }
+            );
+
+            counter.start();
+        });
     },
     methods: {
         embed,
