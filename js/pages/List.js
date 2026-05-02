@@ -267,7 +267,7 @@ export default {
     computed: {
         recordCountText() {
             const n = this.level?.records?.length ?? 0;
-            return ` (${n} records)`;
+            return ` (${n})`;
         },
         level() {
             return this.list[store.selected]?.[0];
