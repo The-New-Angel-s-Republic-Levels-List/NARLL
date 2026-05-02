@@ -166,6 +166,9 @@
     background-color: transparent;
     background: linear-gradient(90deg,rgba(219, 156, 255, 0.4) 0%, rgba(157, 0, 255, 0.4) 85%);
     color: var(--color-on-background);
+
+    border-radius: 0.5rem;
+    border: 3px solid var(--color-primary);
 }
 .page-list .list .level.level-top.active button {
     background: var(--color-primary);
@@ -176,6 +179,9 @@
     background-color: transparent;
     background: linear-gradient(90deg,rgba(228, 191, 255, 0.3) 0%, rgba(226, 158, 232, 0.3) 70%);
     color: var(--color-on-background);
+
+    border-radius: 0.5rem;
+    border: 3px solid var(--color-primary);
 }
 .page-list .list .level.level-featured.active button {
     background: var(--color-primary);
@@ -185,6 +191,9 @@
 .page-list .list .level.level-angel button {
     background: linear-gradient(90deg,rgba(0, 183, 255, 0.3) 0%, rgba(255, 191, 250, 0.3) 20%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 191, 250, 0.3) 75%, rgba(0, 183, 255, 0.3) 100%);
     color: var(--color-on-background);
+
+    border-radius: 0.5rem;
+    border: 3px solid var(--color-primary);
 }
 .page-list .list .level.level-angel.active button {
     background: var(--color-primary);
