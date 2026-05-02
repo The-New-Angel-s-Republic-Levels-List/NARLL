@@ -417,9 +417,11 @@ export default {
                 const el = this.$refs.levelCount;
                 if (!el) return;
 
-                const counter = new window.CountUp(el, this.list.length, {
-                    duration: 1
-                });
+                const counter = new window.countUp.CountUp(
+                    this.$refs.levelCount,
+                    this.list.length,
+                    { duration: 1 }
+                );
 
                 counter.start();
             });
