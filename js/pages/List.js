@@ -99,7 +99,7 @@ export default {
                     <h1>{{ level.name }}</h1>
                     <div class="tags" v-if="level.tags">
                         <div class="type-title-sm">Tags</div>
-                        <p>{{ level.tags || NA }}</p>
+                        <p>{{ level.tags || "NA" }}</p>
                     </div>
                     <div class="enjoyment">
                     <div class="type-title-sm">Enjoyment</div>
@@ -221,7 +221,7 @@ export default {
                             </div>
                         </template>
 
-                        <template v-else>
+                        <template v-else-if="mode === 'pending'">
                             <div v-for="entry in pending" class="changelog-entry">
                                 <p class="changelog-list">
                                     - <span v-html="formatChange(entry.text)"></span> places on {{ formatDate(entry.date) }}
