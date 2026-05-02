@@ -266,8 +266,8 @@ export default {
     }),
     computed: {
         recordCountText() {
-            const n = this.level?.records?.length;
-            return n ? ` (${n})` : '';
+            const n = this.level?.records?.length ?? 0;
+            return ` (${n} records)`;
         },
         level() {
             return this.list[store.selected]?.[0];
