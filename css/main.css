@@ -15,7 +15,7 @@ main.dark,
 header.dark {
     color-scheme: dark;
     --color-background: transparent;
-    --color-background-gradient: linear-gradient(333deg,rgba(36, 18, 31, 1) 30%, rgba(77, 51, 73, 1) 70%);
+    --color-background-gradient: linear-gradient(347deg,rgba(51, 34, 57, 1) 0%, rgba(50, 13, 66, 1) 33%, rgba(66, 17,66, 1) 100%);
     --color-on-background: white;
     --color-on-background-rgb: 255, 255, 255;
     --color-background-hover: #2c212a;
