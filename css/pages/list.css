@@ -496,6 +496,19 @@
     font-family: "Lexend Deca", sans-serif;
 }
 
+.page-list .selector {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.page-list .selector {
+    margin-bottom: 0.4rem;
+}
+
+.changelog-box {
+    margin-top: 0.4rem;
+}
+
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
 /* scruffie: it appears i have figured it out :333333 */
 /* scrffie: i leave comments everytime i come here and nobody is gonna notice*/
