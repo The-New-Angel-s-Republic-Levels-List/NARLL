@@ -425,18 +425,7 @@ export default {
         this.loading = false;
 
         this.$nextTick(() => {
-            requestAnimationFrame(() => {
-                const el = this.$refs.levelCount;
-                if (!el) return;
-
-                const counter = new window.countUp.CountUp(
-                    this.$refs.levelCount,
-                    this.list.length,
-                    { duration: 2 }
-                );
-
-                counter.start();
-            });
+            this.animateCounter();
         });
     },
     methods: {
@@ -480,11 +469,32 @@ export default {
             this.filters.creator = "";
             this.filters.enjoymentMin = null;
             this.filters.enjoymentMax = null;
+        },
+        animateCounter() {
+            if (!this.$refs.levelCount) return;
+
+            const CountUp = window.countUp?.CountUp;
+            if (!CountUp) return;
+
+            const counter = new CountUp(
+                this.$refs.levelCount,
+                this.list.length,
+                { duration: 1 }
+            );
+
+            counter.start();
         }
     },
     watch: {
         search() {
             store.selected = null;
+        },
+        "store.selected"(val) {
+            if (val === null) {
+                this.$nextTick(() => {
+                    this.animateCounter();
+                });
+            }
         }
     },
 };

@@ -557,8 +557,14 @@
 }
 
 .list-stats span {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#levelCount {
     font-size: 2.5rem;
     font-weight: 850;
+    line-height: 1;
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
