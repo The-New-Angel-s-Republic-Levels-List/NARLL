@@ -172,7 +172,7 @@ export default {
                     <p>On your right are the list editors and the guidelines to submitting records and levels!</p>
                     
                     <div class="list-stats">
-                        <p>The list currently has {{ animatedLevelCount }} levels.</p>
+                        <p>The list currently has {{ stats.levelCount }} levels.</p>
                         <p>Best player: {{ stats.bestPlayer }}</p>
                         <p>Best creator: {{ stats.bestCreator }}</p>
                     </div>
@@ -295,7 +295,6 @@ export default {
             enjoymentMax: null
         },
         
-        animatedLevelCount: 0,
         leaderboard: [],
         creatorsBoard: []
     }),
@@ -454,29 +453,11 @@ export default {
             this.filters.creator = "";
             this.filters.enjoymentMin = null;
             this.filters.enjoymentMax = null;
-        },
-        animateCount(target) {
-            let start = this.animatedLevelCount;
-            let diff = target - start;
-            let duration = 600; // ms
-            let startTime = performance.now();
-
-            const step = (t) => {
-                let progress = Math.min((t - startTime) / duration, 1);
-                this.animatedLevelCount = Math.floor(start + diff * progress);
-
-                if (progress < 1) requestAnimationFrame(step);
-            };
-
-            requestAnimationFrame(step);
         }
     },
     watch: {
         search() {
             store.selected = null;
-        },
-        "stats.levelCount"(newVal) {
-            this.animateCount(newVal);
         }
     },
 };
