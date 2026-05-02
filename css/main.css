@@ -1,5 +1,5 @@
 :root {
-    --color-background: rgb(255, 231, 251);
+    --color-background: transparent;
     --color-background-gradient: linear-gradient(333deg,rgba(255, 145, 248, 1) 26%, rgba(255, 231, 251, 1) 70%);
     --color-on-background: black;
     --color-on-background-rgb: 0, 0, 0;
@@ -14,7 +14,7 @@
 main.dark,
 header.dark {
     color-scheme: dark;
-    --color-background: #382734;
+    --color-background: transparent;
     --color-background-gradient: linear-gradient(333deg,rgba(36, 18, 31, 1) 30%, rgba(77, 51, 73, 1) 70%);
     --color-on-background: white;
     --color-on-background-rgb: 255, 255, 255;
