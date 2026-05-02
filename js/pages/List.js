@@ -370,6 +370,13 @@ export default {
                     : this.level.verification
             );
         },
+        stats() {
+            return {
+                levelCount: this.list?.length ?? 0,
+                bestPlayer: this.leaderboard?.[0]?.user ?? "NA",
+                bestCreator: this.creatorsBoard?.[0]?.user ?? "NA"
+            };
+        }
     },
     async mounted() {
         // Hide loading spinner
@@ -448,13 +455,6 @@ export default {
             this.filters.enjoymentMin = null;
             this.filters.enjoymentMax = null;
         },
-        stats() {
-            return {
-                levelCount: this.list?.length ?? 0,
-                bestPlayer: this.leaderboard?.[0]?.user ?? "NA",
-                bestCreator: this.creatorsBoard?.[0]?.user ?? "NA"
-            };
-        },
         animateCount(target) {
             let start = this.animatedLevelCount;
             let diff = target - start;
@@ -474,12 +474,9 @@ export default {
     watch: {
         search() {
             store.selected = null;
-        }
-        
-    },
-    watch: {
+        },
         "stats.levelCount"(newVal) {
             this.animateCount(newVal);
         }
-    }
+    },
 };
