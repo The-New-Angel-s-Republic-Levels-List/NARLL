@@ -171,6 +171,7 @@ export default {
                     <p>On your left is the level list, click any level to know more about it!</p>
                     <p>On your right are the list editors and the guidelines to submitting records and levels!</p>
                     
+                    <h3>Statistics</h3>
                     <div class="list-stats">
                         <p>The list currently has <span ref="levelCount"></span> levels</p>
                         <p>Best player: {{ stats.bestPlayer }}</p>
@@ -420,7 +421,7 @@ export default {
                 const counter = new window.countUp.CountUp(
                     this.$refs.levelCount,
                     this.list.length,
-                    { duration: 1 }
+                    { duration: 2 }
                 );
 
                 counter.start();
