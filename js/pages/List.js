@@ -176,14 +176,14 @@ export default {
                         <p>The list currently has <span ref="levelCount"></span> levels</p>
                         <p>
                             Best player:
-                            <span class="rainbow-text glow-text">
+                            <span class="rainbow-text">
                                 {{ stats.bestPlayer }}
                             </span>
                         </p>
 
                         <p>
                             Best creator:
-                            <span class="rainbow-text glow-text">
+                            <span class="rainbow-text">
                                 {{ stats.bestCreator }}
                             </span>
                         </p>
