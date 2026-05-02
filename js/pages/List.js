@@ -282,8 +282,12 @@ export default {
                 const e = Number(level?.enjoyment);
                 if (isNaN(e)) return true;
 
-                if (this.filters.enjoymentMin != null && e < this.filters.enjoymentMin) return false;
-                if (this.filters.enjoymentMax != null && e > this.filters.enjoymentMax) return false;
+                const min = isNaN(this.filters.enjoymentMin) ? null : this.filters.enjoymentMin;
+                const max = isNaN(this.filters.enjoymentMax) ? null : this.filters.enjoymentMax;
+
+                if (min !== null && e < min) return false;
+                if (max !== null && e > max) return false;
+
                 return true;
             });
 
@@ -383,6 +387,13 @@ export default {
             if (n <= 4) return "enjoyment--bad";
             if (n < 7) return "enjoyment--mid";
             return "enjoyment--good";
+        },
+        clearFilters() {
+            this.sortBy = null;
+            this.sortDir = "asc";
+            this.filters.creator = "";
+            this.filters.enjoymentMin = null;
+            this.filters.enjoymentMax = null;
         }
     },
     watch: {
