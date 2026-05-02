@@ -194,3 +194,12 @@ export async function fetchPending(){
         return null;
     }
 }
+
+export async function fetchBanned(){
+    try {
+        const res = await fetch('/dataextra/banned.json');
+        return await res.json();
+    } catch{
+        return null;
+    }
+}

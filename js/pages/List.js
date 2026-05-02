@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchChangelog, fetchPending, fetchEditors, fetchList } from "../content.js";
+import { fetchChangelog, fetchPending, fetchBanned, fetchEditors, fetchList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -182,7 +182,7 @@ export default {
                         Have fun and don't forget to join the discord! :3
                     </p>
 
-                     <div class="nav selector">
+                    <div class="nav selector">
                         <button 
                             class="nav__tab" 
                             :class="{ 'active-tab': mode === 'changelog' }" 
@@ -198,6 +198,15 @@ export default {
                         >
                             <span class="type-label-lg">Pending</span>
                         </button>
+
+                        <button 
+                            class="nav__tab" 
+                            :class="{ 'active-tab': mode === 'banned' }" 
+                            @click="mode = 'banned'"
+                        >
+                            <span class="type-label-lg">Banned</span>
+                        </button>
+
                     </div>
 
                     <div class="changelog-box">
@@ -219,6 +228,18 @@ export default {
                                 </p>
                             </div>
                         </template>
+
+                        <template v-else-if="mode === 'banned'">
+                            <div class="changelog-entry">
+                                <h3 class="changelog-date">Banned Users</h3>
+                                <ul class="changelog-list">
+                                    <li v-for="name in banned">
+                                        - {{ name }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </template>
+
                     </div>
                 </div>
             </div>
@@ -251,6 +272,7 @@ export default {
         mode: "changelog",
         pending: [],
         changelog: [], 
+        banned: [],
         errors: [],
         roleIconMap,
         store,
@@ -345,6 +367,7 @@ export default {
 
         this.changelog = await fetchChangelog();
         this.pending = await fetchPending();
+        this.banned = await fetchBanned();
 
         // Error handling
         if (!this.list) {
