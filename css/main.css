@@ -9,6 +9,7 @@
     --color-on-primary: white;
     --color-error: #de0000;
     --color-on-error: white;
+    --color-changelog: #FFE3F8
 }
 
 main.dark,
@@ -25,6 +26,7 @@ header.dark {
     --color-on-primary: white;
     --color-error: #de0000;
     --color-on-error: white;
+     --color-changelog: #494370
 }
 
 html,
