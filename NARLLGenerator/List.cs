@@ -22,7 +22,7 @@ public static class List
         var link = sheet.Cells[row, 2].Hyperlink?.ToString();
         if (link == null)
         {
-            link = "https://www.youtube.com/watch?v=JLUHNV2zcV4";
+            link = "https://www.youtube.com/watch?v=-r92Mzkd3Z0";
         }
 
         var victorsRaw = sheet.Cells[row, 10].Text;
@@ -91,7 +91,7 @@ public static class List
         var link = sheet.Cells[row, 2].Hyperlink?.ToString();
         if (link == null)
         {
-            link = "https://www.youtube.com/watch?v=JLUHNV2zcV4";
+            link = "https://www.youtube.com/watch?v=-r92Mzkd3Z0";
         }
 
         var victorsRaw = sheet.Cells[row, 7].Text;
