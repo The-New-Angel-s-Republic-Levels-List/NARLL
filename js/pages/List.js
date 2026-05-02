@@ -198,7 +198,7 @@ export default {
                         Levels highlighted in light pink are Featured, dark purple are Top Featured, and special colored are awarded the Angel Award.
                     </p>
                     <p>
-                        Have fun and don't forget to join the discord! :3
+                        Have fun and don't forget to join the <a href="https://discord.gg/zeroshi" target="_blank" text-decoration: underline;">discord! :3</a>
                     </p>
 
                     <div class="nav selector">
