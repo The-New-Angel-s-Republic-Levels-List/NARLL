@@ -303,6 +303,7 @@
     border-radius: 1rem;
     display: flex;
     justify-content: space-evenly;
+    gap: 1rem;
     margin: 0 0 1rem 0;
     background-color: var(--color-primary);
 }
@@ -507,6 +508,12 @@
 
 .changelog-box {
     margin-top: 0.4rem;
+}
+
+.page-list .selector .nav__tab {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
