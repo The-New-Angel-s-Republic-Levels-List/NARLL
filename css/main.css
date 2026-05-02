@@ -1,6 +1,6 @@
 :root {
     --color-background: transparent;
-    --color-background-gradient: linear-gradient(333deg,rgba(255, 145, 248, 1) 26%, rgba(255, 231, 251, 1) 70%);
+    --color-background-gradient: linear-gradient(342deg,rgba(237, 133, 235, 1) 0%, rgba(241, 156, 247, 1) 35%, rgba(255, 219, 245, 1) 90%);
     --color-on-background: black;
     --color-on-background-rgb: 0, 0, 0;
     --color-background-hover: #eee;
