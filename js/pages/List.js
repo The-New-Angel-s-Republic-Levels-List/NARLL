@@ -413,13 +413,16 @@ export default {
         this.loading = false;
 
         this.$nextTick(() => {
-            const counter = new window.CountUp(
-                this.$refs.levelCount,
-                this.list.length,
-                { duration: 1 }
-            );
+            requestAnimationFrame(() => {
+                const el = this.$refs.levelCount;
+                if (!el) return;
 
-            counter.start();
+                const counter = new window.CountUp(el, this.list.length, {
+                    duration: 1
+                });
+
+                counter.start();
+            });
         });
     },
     methods: {
