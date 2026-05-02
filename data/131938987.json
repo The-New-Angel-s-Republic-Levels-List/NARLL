@@ -5,13 +5,26 @@
   "name": "hexa ever clear",
   "author": "wattiwatt",
   "tags": "Timings",
-  "enjoyment": "5.92",
+  "enjoyment": "",
   "notes": "bruh i think hexa never cleared",
   "creators": [
     "wattiwatt"
   ],
   "verifier": "wattiwatt",
-  "verification": "https://youtu.be/SpHXAk4QYg8",
-  "records": [],
+  "verification": "https://www.youtube.com/watch?v=cW_BbpInAfE",
+  "records": [
+    {
+      "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo_o",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
