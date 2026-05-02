@@ -51,8 +51,8 @@ export default {
 
                         <input v-model="filters.creator" placeholder="Creator" />
 
-                        <input type="number" v-model.number="filters.enjoymentMin" placeholder="Min Enjoyment" />
-                        <input type="number" v-model.number="filters.enjoymentMax" placeholder="Max Enjoyment" />
+                        <input type="number" v-model="filters.enjoymentMin" @input="filters.enjoymentMin = $event.target.value === '' ? null : Number($event.target.value)"/>
+                        <input type="number" v-model="filters.enjoymentMax" @input="filters.enjoymentMax = $event.target.value === '' ? null : Number($event.target.value)"/>
                     </div>
                 </div>
 
