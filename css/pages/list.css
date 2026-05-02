@@ -265,7 +265,7 @@
 
     border-radius: 0.5rem;
     border: 2px solid var(--color-primary);
-    background-color: var(--color-background-hover);
+    background-color: var(--color-changelog);
 
     text-align: left;
 }

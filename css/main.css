@@ -1,14 +1,15 @@
 :root {
     --color-background: transparent;
-    --color-background-gradient: linear-gradient(214deg,rgba(237, 133, 235, 1) 0%, rgba(241, 156, 247, 1) 35%, rgba(255, 219, 245, 1) 90%);
+    --color-background-gradient: linear-gradient(266deg,rgba(237, 133, 235, 1) 0%, rgba(241, 156, 247, 1) 35%, rgba(255, 219, 245, 1) 90%);
     --color-on-background: black;
     --color-on-background-rgb: 0, 0, 0;
     --color-background-hover: #eee;
     --color-on-background-hover: black;
-    --color-primary: #ff5fea;
+    --color-primary: #fa7ce9;
     --color-on-primary: white;
     --color-error: #de0000;
     --color-on-error: white;
+    --color-changelog: #FFE3F8
 }
 
 main.dark,
@@ -25,6 +26,7 @@ header.dark {
     --color-on-primary: white;
     --color-error: #de0000;
     --color-on-error: white;
+     --color-changelog: #4B2F4D
 }
 
 html,
