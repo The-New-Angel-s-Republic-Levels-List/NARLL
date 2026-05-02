@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchChangelog, fetchPending, fetchBanned, fetchEditors, fetchList } from "../content.js";
+import { fetchChangelog, fetchPending, fetchBanned, fetchEditors, fetchList, fetchLeaderboard, fetchCreators } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -170,6 +170,13 @@ export default {
                     <h2>Welcome to the New Angels Republic Level List!</h2>
                     <p>On your left is the level list, click any level to know more about it!</p>
                     <p>On your right are the list editors and the guidelines to submitting records and levels!</p>
+                    
+                    <div class="list-stats">
+                        <p>The list currently has {{ animatedLevelCount }} levels.</p>
+                        <p>Best player: {{ stats.bestPlayer }}</p>
+                        <p>Best creator: {{ stats.bestCreator }}</p>
+                    </div>
+
                     <h3>About</h3>
                     <p>
                         This is the official list for the New Angel's Republic Discord Server.
@@ -286,7 +293,11 @@ export default {
             creator: "",
             enjoymentMin: null,
             enjoymentMax: null
-        }
+        },
+        
+        animatedLevelCount: 0,
+        leaderboard: [],
+        creatorsBoard: []
     }),
     computed: {
         recordCountText() {
@@ -369,6 +380,12 @@ export default {
         this.pending = await fetchPending();
         this.banned = await fetchBanned();
 
+        const [leaderboard] = await fetchLeaderboard();
+        this.leaderboard = leaderboard || [];
+
+        const creators = await fetchCreators();
+        this.creatorsBoard = creators || [];
+
         // Error handling
         if (!this.list) {
             this.errors = [
@@ -430,11 +447,39 @@ export default {
             this.filters.creator = "";
             this.filters.enjoymentMin = null;
             this.filters.enjoymentMax = null;
+        },
+        stats() {
+            return {
+                levelCount: this.list?.length ?? 0,
+                bestPlayer: this.leaderboard?.[0]?.user ?? "NA",
+                bestCreator: this.creatorsBoard?.[0]?.user ?? "NA"
+            };
+        },
+        animateCount(target) {
+            let start = this.animatedLevelCount;
+            let diff = target - start;
+            let duration = 600; // ms
+            let startTime = performance.now();
+
+            const step = (t) => {
+                let progress = Math.min((t - startTime) / duration, 1);
+                this.animatedLevelCount = Math.floor(start + diff * progress);
+
+                if (progress < 1) requestAnimationFrame(step);
+            };
+
+            requestAnimationFrame(step);
         }
     },
     watch: {
         search() {
             store.selected = null;
         }
+        
     },
+    watch: {
+        "stats.levelCount"(newVal) {
+            this.animateCount(newVal);
+        }
+    }
 };
