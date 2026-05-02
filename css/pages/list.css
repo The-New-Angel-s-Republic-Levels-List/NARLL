@@ -385,8 +385,111 @@
   color: #2ecc71;
 }
 
+.sort-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 0.6rem;
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin-top: 0.5rem;
+    box-shadow: 0 1px 0.5rem 0 rgba(0, 0, 102, 0.5);
+    animation: fadeSlide 0.2s ease;
+}
+
+.sort-filter input,
+.sort-filter select,
+.sort-filter button {
+    height: 32px;
+    padding: 0 0.5rem;
+    border-radius: 0.4rem;
+    border: 1.5px solid #666;
+    font-size: 0.85rem;
+    transition: border 0.15s ease, box-shadow 0.15s ease, transform 100ms ease;
+}
+
+.sort-filter input {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+}
+
+.sort-filter input::placeholder {
+    color: #aaa;
+}
+
+.sort-filter select {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.sort-filter button {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.search-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-toggle {
+    height: 32px;
+    padding: 0 0.7rem;
+    border-radius: 0.4rem;
+    border: 1px solid #dfdfdf;
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    cursor: pointer;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.sort-filter {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.search-bar {
+    flex: 1;
+    min-width: 0;
+}
+
+.filter-toggle {
+    flex-shrink: 0;
+}
+
+.sort-filter button,
+.sort-filter input,
+.sort-filter select,
+.filter-toggle {
+    font-family: "Lexend Deca", sans-serif;
+}
+
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
 /* scruffie: it appears i have figured it out :333333 */
 /* scrffie: i leave comments everytime i come here and nobody is gonna notice*/
 /* mold: p*/
 /* scruffie: yo what why r u here mold*/
+/*scruffie: bro... has.... the.... keys.....*/

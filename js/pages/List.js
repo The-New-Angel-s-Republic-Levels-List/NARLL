@@ -22,14 +22,40 @@ export default {
         </main>
         <main v-else class="page-list">
             <div class="list-container">
-            <div class="search-box">
-                <input 
-                    type="text" 
-                    v-model="search" 
-                    placeholder="Search levels..." 
-                    class="search-bar"
-                />
-            </div>
+
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        v-model="search" 
+                        placeholder="Search levels..." 
+                        class="search-bar"
+                    />
+
+                    <button @click="showFilters = !showFilters" class="filter-toggle">
+                        <img src="/assets/filter.svg" alt="Filters">
+                    </button>
+
+                    <div v-if="showFilters" class="sort-filter">
+                        <select v-model="sortBy">
+                            <option :value="null">None</option>
+                            <option value="name">Name</option>
+                            <option value="enjoyment">Enjoyment</option>
+                            <option value="victors">Victors</option>
+                        </select>
+
+                        <button @click="sortDir = sortDir === 'asc' ? 'desc' : 'asc'">
+                            {{ sortDir === 'asc' ? '⬆️' : '⬇️' }}
+                        </button>
+
+                        <button @click="clearFilters">Clear</button>
+
+                        <input v-model="filters.creator" placeholder="Creator" />
+
+                        <input type="number" v-model.number="filters.enjoymentMin" placeholder="Min Enjoyment" />
+                        <input type="number" v-model.number="filters.enjoymentMax" placeholder="Max Enjoyment" />
+                    </div>
+                </div>
+
                 <table class="list" v-if="list">
                     <tr v-for="([level, err, originalIndex], i) in filteredList">
                         <td class="rank">
@@ -217,6 +243,15 @@ export default {
         store,
         copied: false,
         search: "",
+
+        showFilters: false,
+        sortBy: null,
+        sortDir: "asc",
+        filters: {
+            creator: "",
+            enjoymentMin: null,
+            enjoymentMax: null
+        }
     }),
     computed: {
         recordCountText() {
@@ -227,17 +262,52 @@ export default {
             return this.list[store.selected]?.[0];
         },
         filteredList() {
-            if (!this.search) {
-                return this.list.map((item, i) => [...item, i]);
-            }
-
+            let arr = this.list.map((item, i) => [...item, i]);
             const q = this.search.toLowerCase();
 
-            return this.list
-                .map((item, i) => [...item, i])
-                .filter(([level]) =>
+            if (q) {
+                arr = arr.filter(([level]) =>
                     level?.name?.toLowerCase().includes(q)
                 );
+            }
+
+            if (this.filters.creator) {
+                const c = this.filters.creator.toLowerCase();
+                arr = arr.filter(([level]) =>
+                    level?.creators?.some(x => x.toLowerCase().includes(c))
+                );
+            }
+
+            arr = arr.filter(([level]) => {
+                const e = Number(level?.enjoyment);
+                if (isNaN(e)) return true;
+
+                if (this.filters.enjoymentMin != null && e < this.filters.enjoymentMin) return false;
+                if (this.filters.enjoymentMax != null && e > this.filters.enjoymentMax) return false;
+                return true;
+            });
+
+            if (this.sortBy) {
+                const dir = this.sortDir === "asc" ? 1 : -1;
+
+                arr.sort(([a], [b]) => {
+                    switch (this.sortBy) {
+                        case "name":
+                            const clean = s => (s || "")
+                                .toLowerCase()
+                                .replace(/[^a-z0-9]/g, "");
+
+                            return dir * clean(a.name).localeCompare(clean(b.name));
+                        case "enjoyment":
+                            return dir * ((a.enjoyment ?? -1) - (b.enjoyment ?? -1));
+                        case "victors":
+                            return dir * ((a.records?.length ?? 0) - (b.records?.length ?? 0));
+                    }
+                    return 0;
+                });
+            }
+
+            return arr;
         },
         video() {
             if (!this.level.showcase) {
