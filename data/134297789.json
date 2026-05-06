@@ -5,7 +5,7 @@
   "name": "ifasteio anglou",
   "author": "mold",
   "tags": "Click-Sync",
-  "enjoyment": "7.83",
+  "enjoyment": "7.6",
   "notes": " best level ever !!!1!1!!!!!!",
   "creators": [
     "mold"
@@ -21,6 +21,12 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "DeadXM",
       "link": "",
       "percent": 100,
       "hz": 0
