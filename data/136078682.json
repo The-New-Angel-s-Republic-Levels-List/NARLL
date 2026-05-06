@@ -5,7 +5,7 @@
   "name": "Brokilicide",
   "author": "Feefs11",
   "tags": "Overall, Timings",
-  "enjoyment": "",
+  "enjoyment": "6.7",
   "notes": "",
   "creators": [
     "Feefs11"
@@ -33,6 +33,12 @@
     },
     {
       "user": "danman",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "DeadXM",
       "link": "",
       "percent": 100,
       "hz": 0
