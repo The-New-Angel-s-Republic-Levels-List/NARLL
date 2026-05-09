@@ -1,5 +1,13 @@
 [
   {
+    "date" :"2026-05-09",
+    "changes": [
+      "**elixir of despair** has been raised from #37 to ***#34***.",
+
+      "**low tide** has been placed at ***#38***. This change pushes **spaceless** out of the *main list*"
+    ]
+  },
+  {
     "date" :"2026-05-08",
     "changes": [
       "**Corruption** has been raised from #50 to ***#47***.",
