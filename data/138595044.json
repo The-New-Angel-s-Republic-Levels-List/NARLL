@@ -5,13 +5,20 @@
   "name": "Xy76",
   "author": "valk",
   "tags": "Wave, High-CPS",
-  "enjoyment": "",
+  "enjoyment": "4.83",
   "notes": "",
   "creators": [
     "valk"
   ],
   "verifier": "markehl",
   "verification": "https://www.youtube.com/watch?v=6pQFbqjstiI",
-  "records": [],
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

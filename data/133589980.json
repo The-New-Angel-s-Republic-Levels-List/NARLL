@@ -11,7 +11,7 @@
     "sznapis"
   ],
   "verifier": "sznapis",
-  "verification": "https://youtu.be/jyCgcsRo1PE",
+  "verification": "https://youtu.be/7ov3zrAxFqk",
   "records": [
     {
       "user": "mold",
@@ -57,6 +57,12 @@
     },
     {
       "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "valk",
       "link": "",
       "percent": 100,
       "hz": 0

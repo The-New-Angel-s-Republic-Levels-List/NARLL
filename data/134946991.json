@@ -5,7 +5,7 @@
   "name": "\u2605 LXVI \u2605",
   "author": "blue_orbe",
   "tags": "Ship",
-  "enjoyment": "6.5",
+  "enjoyment": "6",
   "notes": "mini ship is RANCID",
   "creators": [
     "blue_orbe"
@@ -21,6 +21,12 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo_o",
       "link": "",
       "percent": 100,
       "hz": 0
