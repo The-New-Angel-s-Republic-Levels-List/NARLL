@@ -6,7 +6,7 @@
   "author": "amy",
   "tags": "Wave, Consistency",
   "enjoyment": "5.9",
-  "notes": "\u003C\u003C stupid level",
+  "notes": "stupid level",
   "creators": [
     "amy"
   ],
@@ -39,6 +39,18 @@
     },
     {
       "user": "DeadXM",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "valk",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
       "link": "",
       "percent": 100,
       "hz": 0
