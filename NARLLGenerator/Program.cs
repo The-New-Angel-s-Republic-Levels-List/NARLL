@@ -41,28 +41,9 @@ var stream2 = await Util.DownloadSheetAsync("1WKjdpJr67pCnjRGVtIWpUx3PE-P4PBHXgl
 Dictionary<string, double> enjoymentValues = Enjoyment.GetEnjoymentMappings(stream2);
 
 
-for (int row = 3; row <= 52; row++)
+for (int row = 3; row <= 100; row++)
 {
     var level = List.ProcessRowMAIN(sheet1, row, enjoymentValues);
-    if (level == null) continue;
-
-    var json = JsonSerializer.Serialize(level, new JsonSerializerOptions
-    {
-        WriteIndented = true
-    });
-
-    File.WriteAllText($"data/{level.id.ToString()}.json", json);
-    allLevels.Add(level);
-
-    if(level.featured != "")
-    {
-        features.Add(level);
-    }
-}
-
-for (int row = 3; row <= 18; row++)
-{
-    var level = List.ProcessRowLEGACY(sheet2, row, enjoymentValues);
     if (level == null) continue;
 
     var json = JsonSerializer.Serialize(level, new JsonSerializerOptions
