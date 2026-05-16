@@ -5,7 +5,7 @@
   "name": "gleeger",
   "author": "imorii",
   "tags": "Cube, Timings, Chokepoints",
-  "enjoyment": "8",
+  "enjoyment": "8.2",
   "notes": "its gleeging time (this needs to be moved down ngl)",
   "creators": [
     "imorii"
@@ -33,6 +33,12 @@
     },
     {
       "user": "DeadXM",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Drag0nB0rn07",
       "link": "",
       "percent": 100,
       "hz": 0
