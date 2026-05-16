@@ -5,7 +5,7 @@
   "name": "why does",
   "author": "sznapis",
   "tags": "Wave, Chokepoints",
-  "enjoyment": "7.3",
+  "enjoyment": "6.08",
   "notes": "it is",
   "creators": [
     "sznapis"
@@ -33,6 +33,12 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "DeadXM",
       "link": "",
       "percent": 100,
       "hz": 0
