@@ -96,14 +96,41 @@ File.WriteAllText(
     JsonSerializer.Serialize(creatorList, new JsonSerializerOptions { WriteIndented = true })
 );
 
-var idMappings = allLevels.ToDictionary(
-    l => l.name,
-    l => l.id
-);
+string CleanLevelName(string name)
+{
+    if (!string.IsNullOrWhiteSpace(name) && name[0] == '★')
+    {
+        int firstSpace = name.IndexOf(' ');
+        if (firstSpace >= 0 && firstSpace + 1 < name.Length)
+        {
+            name = name[(firstSpace + 1)..];
+        }
+    }
+    
+    name = name.Trim();
+    if (name.EndsWith('★'))
+    {
+        name = name[..^1].TrimEnd();
+    }
+
+    return name;
+}
+
+var idMappings = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+
+foreach (var level in allLevels)
+{
+    string cleanedName = CleanLevelName(level.name);
+
+    if (!idMappings.ContainsKey(cleanedName))
+    {
+        idMappings[cleanedName] = level.id;
+    }
+}
 
 var idMappingsJson = JsonSerializer.Serialize(idMappings, new JsonSerializerOptions
 {
     WriteIndented = true
 });
 
-File.WriteAllText("dataextra/idmappings.json", idMappingsJson);
+File.WriteAllText("data/idmappings.json", idMappingsJson);
