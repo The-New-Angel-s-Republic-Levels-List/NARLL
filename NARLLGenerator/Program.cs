@@ -133,4 +133,4 @@ var idMappingsJson = JsonSerializer.Serialize(idMappings, new JsonSerializerOpti
     WriteIndented = true
 });
 
-File.WriteAllText("data/idmappings.json", idMappingsJson);
+File.WriteAllText("dataextra/idmappings.json", idMappingsJson);
