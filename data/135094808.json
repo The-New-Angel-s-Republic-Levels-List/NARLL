@@ -5,7 +5,7 @@
   "name": "avernus startpos 2",
   "author": "vex",
   "tags": "Click-Sync",
-  "enjoyment": "7.16",
+  "enjoyment": "7.08",
   "notes": "",
   "creators": [
     "vex"
@@ -87,6 +87,12 @@
     },
     {
       "user": "Drag0nB0rn07",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "ggunkp1",
       "link": "",
       "percent": 100,
       "hz": 0
