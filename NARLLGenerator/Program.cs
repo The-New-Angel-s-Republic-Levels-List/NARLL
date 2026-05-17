@@ -143,3 +143,15 @@ var idMappingsJson = JsonSerializer.Serialize(idMappings, new JsonSerializerOpti
 });
 
 File.WriteAllText("dataextra/idmappings.json", idMappingsJson);
+
+var levelNames = new List<string>();
+foreach (var level in allLevels)
+{
+    string cleaned = CleanLevelName(level.name);
+    if (!string.IsNullOrWhiteSpace(cleaned))
+    {
+        levelNames.Add(cleaned);
+    }
+}
+
+File.WriteAllLines("dataextra/levelnames.txt", levelNames);
