@@ -95,3 +95,15 @@ File.WriteAllText(
     "dataextra/creators.json",
     JsonSerializer.Serialize(creatorList, new JsonSerializerOptions { WriteIndented = true })
 );
+
+var idMappings = allLevels.ToDictionary(
+    l => l.name,
+    l => l.id
+);
+
+var idMappingsJson = JsonSerializer.Serialize(idMappings, new JsonSerializerOptions
+{
+    WriteIndented = true
+});
+
+File.WriteAllText("dataextra/idmappings.json", idMappingsJson);
