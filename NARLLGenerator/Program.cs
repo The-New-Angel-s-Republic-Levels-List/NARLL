@@ -4,6 +4,8 @@ using NARLLGenerator;
 using OfficeOpenXml;
 using System.Text.Json;
 
+using System.Globalization;
+using System.Text;
 
 using var stream = await Util.DownloadSheetAsync("1gsfQKeiUm-mlEayo3e4FskkvuFJtIPjF_ad18j9q9XI");
 
@@ -98,22 +100,28 @@ File.WriteAllText(
 
 string CleanLevelName(string name)
 {
-    if (!string.IsNullOrWhiteSpace(name) && name[0] == '★')
+    if (string.IsNullOrWhiteSpace(name))
+        return name;
+
+    var sb = new StringBuilder();
+
+    foreach (char c in name)
     {
-        int firstSpace = name.IndexOf(' ');
-        if (firstSpace >= 0 && firstSpace + 1 < name.Length)
+        var category = CharUnicodeInfo.GetUnicodeCategory(c);
+
+        if (category == UnicodeCategory.OtherSymbol ||
+            category == UnicodeCategory.Surrogate)
         {
-            name = name[(firstSpace + 1)..];
+            continue;
         }
+
+        sb.Append(c);
     }
     
-    name = name.Trim();
-    if (name.EndsWith('★'))
-    {
-        name = name[..^1].TrimEnd();
-    }
+    string cleaned = sb.ToString();
+    cleaned = string.Join(" ", cleaned.Split(' ', StringSplitOptions.RemoveEmptyEntries));
 
-    return name;
+    return cleaned.Trim();
 }
 
 var idMappings = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
@@ -122,7 +130,8 @@ foreach (var level in allLevels)
 {
     string cleanedName = CleanLevelName(level.name);
 
-    if (!idMappings.ContainsKey(cleanedName))
+    if (!string.IsNullOrWhiteSpace(cleanedName) &&
+        !idMappings.ContainsKey(cleanedName))
     {
         idMappings[cleanedName] = level.id;
     }
