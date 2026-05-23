@@ -9,6 +9,10 @@ function computeRanks(arr, key) {
     return arr.map((item) => {
         const value = item[key];
 
+        if (value === 0) {
+            return { ...item, rank: "-" };
+        }
+
         if (value !== prevValue) {
             rank += 1;
             prevValue = value;
@@ -69,7 +73,9 @@ export default {
                             }"
                         >
                             <td class="rank">
-                                <p class="type-label-lg">#{{ ientry.rank }}</p>
+                                <p class="type-label-lg">
+                                    {{ ientry.rank === "-" ? "-" : "#" + ientry.rank }}
+                                </p>
                             </td>
 
                             <td class="total">
@@ -91,7 +97,7 @@ export default {
                     <div class="player" v-if="mode === 'list' ? entry : creator">
 
                         <h1>
-                            #{{ selected + 1 }}
+                            #{{ mode === 'list' ? entry.rank : creator.rank }}
                             {{ mode === 'list' ? entry.user : creator.user }}
                         </h1>
 
