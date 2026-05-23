@@ -12,6 +12,13 @@
   ],
   "verifier": "DeadXM",
   "verification": "https://youtu.be/c9wsm-eFG74?si=jA5etLybMnTpwnSZ",
-  "records": [],
+  "records": [
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
