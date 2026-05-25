@@ -5,7 +5,7 @@
   "name": "overdose",
   "author": "FearFlora",
   "tags": "Fast-paced, High-CPS, Click-Sync",
-  "enjoyment": "5",
+  "enjoyment": "3.8",
   "notes": "FUN FUN FUN FUN FUN",
   "creators": [
     "FearFlora"
@@ -21,6 +21,12 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "amy",
       "link": "",
       "percent": 100,
       "hz": 0
