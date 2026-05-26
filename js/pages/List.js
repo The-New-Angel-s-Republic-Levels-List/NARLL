@@ -49,6 +49,30 @@ export default {
 
                         <button @click="clearFilters">Clear</button>
 
+                        <details class="tag-dropdown">
+                            <summary class="type-label-lg">
+                                Tags ({{ selectedTags.length }})
+                            </summary>
+
+                            <div class="tag-filter">
+                                <label
+                                    v-for="tag in availableTags"
+                                    :key="tag.tag"
+                                    class="tag-chip"
+                                >
+                                    <input
+                                        type="checkbox"
+                                        :value="tag.tag"
+                                        v-model="selectedTags"
+                                    >
+
+                                    <span>
+                                        {{ tag.tag }} ({{ tag.count }})
+                                    </span>
+                                </label>
+                            </div>
+                        </details>
+
                         <input v-model="filters.creator" placeholder="Creator" />
 
                         <input 
@@ -306,6 +330,7 @@ export default {
             enjoymentMin: null,
             enjoymentMax: null
         },
+        selectedTags: [],
         
         leaderboard: [],
         creatorsBoard: []
@@ -333,6 +358,22 @@ export default {
                 arr = arr.filter(([level]) =>
                     level?.creators?.some(x => x.toLowerCase().includes(c))
                 );
+            }
+
+            if (this.selectedTags.length > 0) {
+                arr = arr.filter(([level]) => {
+                    if (!level?.tags) return false;
+
+                    const tags = Array.isArray(level.tags)
+                        ? level.tags
+                        : String(level.tags)
+                            .split(",")
+                            .map(t => t.trim());
+
+                    return this.selectedTags.some(tag =>
+                        tags.includes(tag)
+                    );
+                });
             }
 
             arr = arr.filter(([level]) => {
@@ -369,6 +410,30 @@ export default {
             }
 
             return arr;
+        },
+        availableTags() {
+            const counts = {};
+
+            for (const [level] of this.list) {
+                if (!level?.tags) continue;
+
+                const tags = Array.isArray(level.tags)
+                    ? level.tags
+                    : String(level.tags)
+                        .split(",")
+                        .map(t => t.trim());
+
+                for (const tag of tags) {
+                    counts[tag] = (counts[tag] || 0) + 1;
+                }
+            }
+
+            return Object.entries(counts)
+                .sort((a, b) => a[0].localeCompare(b[0]))
+                .map(([tag, count]) => ({
+                    tag,
+                    count
+                }));
         },
         video() {
             if (!this.level.showcase) {
@@ -469,6 +534,7 @@ export default {
             this.filters.creator = "";
             this.filters.enjoymentMin = null;
             this.filters.enjoymentMax = null;
+            this.selectedTags = [];
         },
         animateCounter() {
             if (!this.$refs.levelCount) return;
