@@ -1,7 +1,7 @@
 import List from './pages/List.js';
 import Leaderboard from './pages/Leaderboard.js';
 import Roulette from './pages/Roulette.js';
-import Unverified from './pages/Impossible.js';
+import Impossible from './pages/Impossible.js';
 import Packs from './pages/Packs.js';
 import Unverified from './pages/Unverified.js';
 
