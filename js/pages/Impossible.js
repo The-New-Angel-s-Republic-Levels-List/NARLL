@@ -88,35 +88,27 @@ export default {
 
                     </ul>
 
-                    <h2>World Records</h2>
+                    <h2>Records</h2>
 
-                    <table class="records">
+                    <div class="wr-grid">
 
-                        <tr class="record">
-                            <td>
-                                <div class="type-title-sm">WR from 0%</div>
-                                <p>{{ level.wr_0 }}</p>
-                            </td>
+                        <div class="wr-card">
+                            <div class="type-title-sm">WR from 0%</div>
+                            <p class="wr-score">{{ level.wr_0 }}</p>
 
-                            <td>
-                                <div class="type-title-sm">Holder</div>
-                                <p>{{ level.wr_0_holder }}</p>
-                            </td>
-                        </tr>
+                            <div class="type-title-sm holder-label">Holder</div>
+                            <p>{{ level.wr_0_holder }}</p>
+                        </div>
 
-                        <tr class="record">
-                            <td>
-                                <div class="type-title-sm">WR Run</div>
-                                <p>{{ level.wr_run }}</p>
-                            </td>
+                        <div class="wr-card">
+                            <div class="type-title-sm">WR Run</div>
+                            <p class="wr-score">{{ level.wr_run }}</p>
 
-                            <td>
-                                <div class="type-title-sm">Holder</div>
-                                <p>{{ level.wr_run_holder }}</p>
-                            </td>
-                        </tr>
+                            <div class="type-title-sm holder-label">Holder</div>
+                            <p>{{ level.wr_run_holder }}</p>
+                        </div>
 
-                    </table>
+                    </div>
 
                 </div>
 
@@ -125,13 +117,12 @@ export default {
                     <h2>Impossible Levels List</h2>
 
                     <p>
-                        The following levels are considered impossible
-                        or near-impossible under current human capabilities.
+                        The levels are the left are considered impossible
+                        or near impossible under human limits.
                     </p>
 
                     <p>
-                        Rankings are based on theoretical execution difficulty,
-                        precision, consistency, and FPS requirements.
+                        On the right are the additional rules for submitting levels and records.
                     </p>
 
                     <p>Select a level to view details.</p>
