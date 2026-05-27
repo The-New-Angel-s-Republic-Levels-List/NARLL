@@ -50,7 +50,7 @@ public class ImpossibleLevel
     public int id {get; set;}
     public string fps {get; set;}
     public string author {get; set;}
-    public int botting_enjoyment {get; set;}
+    public double botting_enjoyment {get; set;}
 
     public string wr_0 {get; set;}
     public string wr_0_holder {get; set;}

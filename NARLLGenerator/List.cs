@@ -116,7 +116,7 @@ public static class List
             .Split(',', StringSplitOptions.TrimEntries).ToList();
 
         var bottingText = sheet.Cells[row, 6].Text;
-        if (!int.TryParse(bottingText, out var bottingEnjoyment)) return null;
+        if (!double.TryParse(bottingText, out var bottingEnjoyment)) return null;
 
         var wr_0 = sheet.Cells[row, 7].Text;
         var wr_0_holder = sheet.Cells[row, 8].Text;
