@@ -5,7 +5,7 @@
   "name": "Xy76",
   "author": "valk",
   "tags": "Wave, High-CPS",
-  "enjoyment": "5.88",
+  "enjoyment": "7.38",
   "notes": "",
   "creators": [
     "valk"
@@ -27,6 +27,12 @@
     },
     {
       "user": "lrexx",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "9b3b",
       "link": "",
       "percent": 100,
       "hz": 0

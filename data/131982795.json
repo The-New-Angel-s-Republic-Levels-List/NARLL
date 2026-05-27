@@ -5,7 +5,7 @@
   "name": "balance",
   "author": "sznapis",
   "tags": "Cube, Ball, Ship, Chokepoints",
-  "enjoyment": "4.67",
+  "enjoyment": "4.34",
   "notes": "fun \u003C\u003Csecret top 0 \u003C\u003C not true \u003C\u003Ctop 10 in disguise",
   "creators": [
     "sznapis"
@@ -57,6 +57,12 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "lrexx",
       "link": "",
       "percent": 100,
       "hz": 0

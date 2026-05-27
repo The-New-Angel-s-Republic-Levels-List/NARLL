@@ -5,7 +5,7 @@
   "name": "tear through spacetime",
   "author": "danman",
   "tags": "Duals, Chokepoints, Learny",
-  "enjoyment": "4.64",
+  "enjoyment": "5.2",
   "notes": "worst",
   "creators": [
     "danman"
@@ -39,6 +39,12 @@
     },
     {
       "user": "DeadXM",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "lrexx",
       "link": "",
       "percent": 100,
       "hz": 0
