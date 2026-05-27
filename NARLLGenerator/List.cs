@@ -100,4 +100,41 @@ public static class List
         };
     }
 
+    public static ImpossibleLevel ProcessRowIMPOSSIBLE(ExcelWorksheet sheet, int row)
+    {
+        var name = sheet.Cells[row, 2].Text;
+        if (string.IsNullOrWhiteSpace(name)) return null;
+
+        var idText = sheet.Cells[row, 3].Text;
+        if (!int.TryParse(idText, out var id)) return null;
+
+        var fpsText = sheet.Cells[row, 4].Text;
+        if (!int.TryParse(fpsText, out var fps)) return null;
+
+        var author = sheet.Cells[row, 5].Text;
+
+        var creators = author
+            .Split(',', StringSplitOptions.TrimEntries).ToList();
+
+        var bottingText = sheet.Cells[row, 6].Text;
+        if (!int.TryParse(bottingText, out var bottingEnjoyment)) return null;
+
+        var wr_0 = sheet.Cells[row, 7].Text;
+        var wr_0_holder = sheet.Cells[row, 8].Text;
+        var wr_run = sheet.Cells[row, 9].Text;
+        var wr_run_holder = sheet.Cells[row, 10].Text;
+
+        return new ImpossibleLevel
+        {
+            name = name,
+            id = id,
+            fps = fps,
+            author = author,
+            botting_enjoyment = bottingEnjoyment,
+            wr_0 = wr_0,
+            wr_0_holder = wr_0_holder,
+            wr_run = wr_run,
+            wr_run_holder = wr_run_holder       
+        };
+    }
 }

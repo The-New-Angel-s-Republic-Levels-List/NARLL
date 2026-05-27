@@ -1,5 +1,5 @@
 import { store } from "../main.js";
-import { fetchEditors, fetchUnverifiedList } from "../content.js";
+import { fetchUnverifiedList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 
@@ -90,32 +90,12 @@ export default {
                     <p>Select a level to view details.</p>
                 </div>
             </div>
-
-                <div class="meta-container">
-                    <div class="meta">
-                        <div class="errors" v-show="errors.length > 0">
-                            <p class="error" v-for="error of errors">{{ error }}</p>
-                        </div>
-                        <template v-if="editors">
-                            <h3>List Editors</h3>
-                            <ol class="editors">
-                                <li v-for="editor in editors">
-                                    <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role">
-                                    <a v-if="editor.link" class="type-label-lg link" target="_blank" :href="editor.link">{{ editor.name }}</a>
-                                    <p v-else>{{ editor.name }}</p>
-                                </li>
-                            </ol>
-                        </template>
-                          <h2><a href="https://docs.google.com/document/d/1_xeCrzN2xmG1X5PQix6BEqDfBCg22rB08TNjXyRXg4M/edit?usp=sharing" target="_blank" style="color: blue; text-decoration: underline;">NARLL Guidelines</a></h2>
-                    </div>
-                </div>
             </div>
         </main>
     `,
 
     data: () => ({
         list: [],
-        editors: [],
         loading: true,
         errors: [],
         search: "",
@@ -147,7 +127,6 @@ export default {
     async mounted() {
         try {
             this.list = await fetchUnverifiedList();
-            this.editors = await fetchEditors();
 
             if (!this.list) {
                 this.errors.push("Failed to load unverified list.");
@@ -158,11 +137,6 @@ export default {
                         .map(([_, err]) => `Failed to load level (${err}.json)`)
                 );
             }
-
-            if (!this.editors) {
-                this.errors.push("Failed to load editors.");
-            }
-
         } catch (e) {
             console.error(e);
             this.errors.push("Unexpected error while loading page.");
