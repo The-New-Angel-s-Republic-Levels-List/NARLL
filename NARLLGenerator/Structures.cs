@@ -48,7 +48,7 @@ public class ImpossibleLevel
 {
     public string name {get; set;}
     public int id {get; set;}
-    public int fps {get; set;}
+    public string fps {get; set;}
     public string author {get; set;}
     public int botting_enjoyment {get; set;}
 

@@ -117,7 +117,7 @@ var imp_listJson = JsonSerializer.Serialize(imp_nameList, new JsonSerializerOpti
 
 File.WriteAllText("data/_list.json", listJson);
 File.WriteAllText("dataextra/unverified/_list.json", unv_listJson);
-File.WriteAllText("dataextra/impossible/_list.json", unv_listJson);
+File.WriteAllText("dataextra/impossible/_list.json", imp_listJson);
 
 List<Creator> creatorList = CreatorList.ProcessCreators(features);
 

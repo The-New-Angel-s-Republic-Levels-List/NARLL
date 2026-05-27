@@ -108,8 +108,7 @@ public static class List
         var idText = sheet.Cells[row, 3].Text;
         if (!int.TryParse(idText, out var id)) return null;
 
-        var fpsText = sheet.Cells[row, 4].Text;
-        if (!int.TryParse(fpsText, out var fps)) return null;
+        var fps = sheet.Cells[row, 4].Text;
 
         var author = sheet.Cells[row, 5].Text;
 
