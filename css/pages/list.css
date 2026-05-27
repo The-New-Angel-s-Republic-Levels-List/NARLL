@@ -645,13 +645,18 @@
 
 .wr-card {
     background: rgba(255,255,255,0.05);
-    border-radius: 0.75rem;
+    border-radius: 12px;
 
-    padding: 1.5rem 1.75rem;
+    padding: 24px !important;
+
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 12px;
 }
 
 .wr-score {
@@ -674,7 +679,7 @@
     line-height: 1.1;
 }
 
-.wr-card p {
+.wr-card * {
     margin: 0;
 }
 
