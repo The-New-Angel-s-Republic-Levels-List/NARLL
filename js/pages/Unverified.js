@@ -125,6 +125,8 @@ export default {
     },
 
     async mounted() {
+        store.selected = null;
+        
         try {
             this.list = await fetchUnverifiedList();
 
@@ -147,7 +149,7 @@ export default {
 
     watch: {
         search() {
-            store.selected = 0;
+            store.selected = null;
         }
     }
 };
