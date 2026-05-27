@@ -16,6 +16,7 @@ var dataDir = "data";
 Directory.CreateDirectory("data");
 Directory.CreateDirectory("dataextra");
 Directory.CreateDirectory("dataextra/unverified");
+Directory.CreateDirectory("dataextra/impossible");
 foreach (var file in Directory.GetFiles(dataDir, "*.json"))
 {
     if (Path.GetFileName(file) == "_editors.json") continue;
@@ -26,6 +27,10 @@ if (File.Exists("dataextra/creators.json"))
     File.Delete("dataextra/creators.json");
 }
 foreach (var file in Directory.GetFiles("dataextra/unverified", "*.json"))
+{
+    File.Delete(file);
+}
+foreach (var file in Directory.GetFiles("dataextra/impossible", "*.json"))
 {
     File.Delete(file);
 }
