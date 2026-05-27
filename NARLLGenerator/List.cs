@@ -115,6 +115,12 @@ public static class List
         var creators = author
             .Split(',', StringSplitOptions.TrimEntries).ToList();
 
+        var link = sheet.Cells[row, 2].Hyperlink?.ToString();
+        if (link == null)
+        {
+            link = "https://www.youtube.com/watch?v=-r92Mzkd3Z0";
+        }
+
         var bottingText = sheet.Cells[row, 6].Text;
         if (!double.TryParse(bottingText, out var bottingEnjoyment)) return null;
 
@@ -130,6 +136,7 @@ public static class List
             fps = fps,
             author = author,
             botting_enjoyment = bottingEnjoyment,
+            showcase = link,
             wr_0 = wr_0,
             wr_0_holder = wr_0_holder,
             wr_run = wr_run,
