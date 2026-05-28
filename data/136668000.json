@@ -5,7 +5,7 @@
   "name": "im at the club",
   "author": "scruffie",
   "tags": "Wave",
-  "enjoyment": "8.18",
+  "enjoyment": "8.04",
   "notes": "im at the CLUBBBB",
   "creators": [
     "scruffie"
@@ -27,6 +27,12 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "lrexx",
       "link": "",
       "percent": 100,
       "hz": 0
