@@ -1,15 +1,8 @@
 import { store } from "../main.js";
-import { fetchUnverifiedList } from "../content.js";
+import { fetchImpossibleList } from "../content.js";
+import { embed } from "../util.js";
 
 import Spinner from "../components/Spinner.js";
-
-const roleIconMap = {
-    owner: "crown",
-    admin: "user-gear",
-    helper: "user-shield",
-    dev: "code",
-    trial: "user-lock",
-};
 
 export default {
     components: { Spinner },
@@ -38,8 +31,11 @@ export default {
                         </td>
 
                         <td 
-                            class="level" 
-                            :class="{ 'active': store.selected == originalIndex, 'error': !level }"
+                            class="level"
+                            :class="{ 
+                                'active': store.selected == originalIndex,
+                                'error': !level
+                            }"
                         >
                             <button @click="store.selected = originalIndex">
                                 <span class="type-label-lg">
@@ -56,40 +52,83 @@ export default {
             </div>
 
             <div class="level-container">
+
                 <div class="level" v-if="level">
+
                     <h1>{{ level.name }}</h1>
 
+                    <iframe
+                        v-if="level.showcase"
+                        class="video"
+                        :src="embed(level.showcase)"
+                        frameborder="0"
+                    ></iframe>
+
                     <ul class="stats">
+
                         <li>
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id }}</p>
                         </li>
+
                         <li>
-                            <div class="type-title-sm">Author</div>
+                            <div class="type-title-sm">Creator</div>
                             <p>{{ level.author }}</p>
                         </li>
+
                         <li>
-                            <div class="type-title-sm">Verifier</div>
-                            <p>{{ level.verifier }}</p>
+                            <div class="type-title-sm">FPS Required</div>
+                            <p>{{ level.fps }}</p>
                         </li>
+
                         <li>
-                            <div class="type-title-sm">Progress</div>
-                            <p>{{ level.progress }}</p>
+                            <div class="type-title-sm">Botting Enjoyment</div>
+                            <p>{{ level.botting_enjoyment }}/10</p>
                         </li>
+
                     </ul>
+
+                    <h2>Records</h2>
+
+                    <div class="wr-grid">
+
+                        <div class="wr-card">
+                            <div class="type-title-sm">WR from 0%</div>
+                            <p class="wr-score">{{ level.wr_0 }}</p>
+
+                            <div class="type-title-sm holder-label">Holder</div>
+                            <p>{{ level.wr_0_holder }}</p>
+                        </div>
+
+                        <div class="wr-card">
+                            <div class="type-title-sm">WR Run</div>
+                            <p class="wr-score">{{ level.wr_run }}</p>
+
+                            <div class="type-title-sm holder-label">Holder</div>
+                            <p>{{ level.wr_run_holder }}</p>
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <div v-else-if="store.selected == null" class="level center">
-                    <h2>Unverified Levels</h2>
-                    <p>The following levels on the left are unverified and thus cannot be on the list.</p>
+
+                    <h2>Impossible Levels List</h2>
+
                     <p>
-                        Keep in mind, a lot of the levels may not be list worthy (i.e not on par with the current standards) 
-                        as they were created a long time ago.
-                        Please confirm with a moderator before attempting to verify one.
+                        The levels are the left are considered impossible
+                        or near impossible under human limits.
                     </p>
+
+                    <p>
+                        On the right are the additional rules for submitting levels and records.
+                    </p>
+
                     <p>Select a level to view details.</p>
+
                 </div>
-            </div>
+
             </div>
         </main>
     `,
@@ -99,8 +138,7 @@ export default {
         loading: true,
         errors: [],
         search: "",
-        store,
-        roleIconMap
+        store
     }),
 
     computed: {
@@ -128,15 +166,17 @@ export default {
         store.selected = null;
         
         try {
-            this.list = await fetchUnverifiedList();
+            this.list = await fetchImpossibleList();
 
             if (!this.list) {
-                this.errors.push("Failed to load unverified list.");
+                this.errors.push("Failed to load impossible list.");
             } else {
                 this.errors.push(
                     ...this.list
                         .filter(([_, err]) => err)
-                        .map(([_, err]) => `Failed to load level (${err}.json)`)
+                        .map(([_, err]) =>
+                            `Failed to load level (${err}.json)`
+                        )
                 );
             }
         } catch (e) {
@@ -145,6 +185,10 @@ export default {
         }
 
         this.loading = false;
+    },
+
+    methods: {
+        embed
     },
 
     watch: {

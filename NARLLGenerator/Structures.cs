@@ -43,3 +43,20 @@ public class UnverifiedLevel
     public string verifier {get; set;}
     public string progress{get; set;}
 }
+
+public class ImpossibleLevel
+{
+    public string name {get; set;}
+    public int id {get; set;}
+    public string fps {get; set;}
+    public string author {get; set;}
+    public double botting_enjoyment {get; set;}
+    public string showcase { get; set; }
+
+    public string wr_0 {get; set;}
+    public string wr_0_holder {get; set;}
+    
+    public string wr_run {get; set;}
+    public string wr_run_holder {get; set;}
+
+}

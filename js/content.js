@@ -71,6 +71,38 @@ export async function fetchUnverifiedList() {
     }
 }
 
+export async function fetchImpossibleList() {
+    const listResult = await fetch(`/dataextra/impossible/_list.json`);
+
+    try {
+        const list = await listResult.json();
+
+        return await Promise.all(
+            list.map(async (id, index) => {
+                const res = await fetch(`/dataextra/impossible/${id}.json`);
+
+                try {
+                    const level = await res.json();
+
+                    return [
+                        {
+                            ...level,
+                            id,
+                        },
+                        null,
+                    ];
+                } catch {
+                    console.error(`Failed to load impossible level #${index + 1} (${id}).`);
+                    return [null, id];
+                }
+            })
+        );
+    } catch {
+        console.error(`Failed to load impossible list.`);
+        return null;
+    }
+}
+
 export async function fetchEditors() {
     try {
         const editorsResults = await fetch(`${dir}/_editors.json`);

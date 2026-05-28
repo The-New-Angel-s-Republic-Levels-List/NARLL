@@ -16,6 +16,7 @@ var dataDir = "data";
 Directory.CreateDirectory("data");
 Directory.CreateDirectory("dataextra");
 Directory.CreateDirectory("dataextra/unverified");
+Directory.CreateDirectory("dataextra/impossible");
 foreach (var file in Directory.GetFiles(dataDir, "*.json"))
 {
     if (Path.GetFileName(file) == "_editors.json") continue;
@@ -29,15 +30,21 @@ foreach (var file in Directory.GetFiles("dataextra/unverified", "*.json"))
 {
     File.Delete(file);
 }
+foreach (var file in Directory.GetFiles("dataextra/impossible", "*.json"))
+{
+    File.Delete(file);
+}
 
 var allLevels = new List<Level>();
 var unverifiedLevels = new List<UnverifiedLevel>();
+var impossibleLevels = new List<ImpossibleLevel>();
 var features = new List<Level>();
 
 
 var sheet1 = package.Workbook.Worksheets["NARLL"];
 var sheet2 = package.Workbook.Worksheets["Legacy List"];
 var sheet3 = package.Workbook.Worksheets["NARUL"];
+var sheet4 = package.Workbook.Worksheets["NARILL"];
 
 var stream2 = await Util.DownloadSheetAsync("1WKjdpJr67pCnjRGVtIWpUx3PE-P4PBHXglYcUxPFgPs");
 Dictionary<string, double> enjoymentValues = Enjoyment.GetEnjoymentMappings(stream2);
@@ -76,6 +83,20 @@ for (int row = 40; row > 0; row--)
     unverifiedLevels.Add(level);
 }
 
+for (int row = 3; row <= 50; row++)
+{
+    var level = List.ProcessRowIMPOSSIBLE(sheet4, row);
+    if (level == null) continue;
+
+    var json = JsonSerializer.Serialize(level, new JsonSerializerOptions
+    {
+        WriteIndented = true
+    });
+
+    File.WriteAllText($"dataextra/impossible/{level.id.ToString()}.json", json);
+    impossibleLevels.Add(level);
+}
+
 var nameList = allLevels.Select(l => l.id).ToList();
 var listJson = JsonSerializer.Serialize(nameList, new JsonSerializerOptions
 {
@@ -88,8 +109,15 @@ var unv_listJson = JsonSerializer.Serialize(unv_nameList, new JsonSerializerOpti
     WriteIndented = true
 });
 
+var imp_nameList = impossibleLevels.Select(l => l.id).ToList();
+var imp_listJson = JsonSerializer.Serialize(imp_nameList, new JsonSerializerOptions
+{
+    WriteIndented = true
+});
+
 File.WriteAllText("data/_list.json", listJson);
 File.WriteAllText("dataextra/unverified/_list.json", unv_listJson);
+File.WriteAllText("dataextra/impossible/_list.json", imp_listJson);
 
 List<Creator> creatorList = CreatorList.ProcessCreators(features);
 
