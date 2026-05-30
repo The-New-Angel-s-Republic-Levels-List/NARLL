@@ -112,7 +112,7 @@ export default {
 
                 </div>
 
-                <div v-else-if="store.selected == null" class="level center">
+                <div v-else-if="store.selected == null" class="level welcome">
 
                     <h2>Impossible Levels List</h2>
                 
