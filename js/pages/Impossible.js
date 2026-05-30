@@ -115,18 +115,62 @@ export default {
                 <div v-else-if="store.selected == null" class="level center">
 
                     <h2>Impossible Levels List</h2>
-
+                
                     <p>
-                        The levels are the left are considered impossible
-                        or near impossible under human limits.
+                        The levels on the left are considered impossible or near-impossible
+                        under current human limits.
                     </p>
-
+                
                     <p>
-                        On the right are the additional rules for submitting levels and records.
+                        Select a level to view details.
                     </p>
-
-                    <p>Select a level to view details.</p>
-
+                
+                    <hr>
+                
+                    <h2>Additional rules for NARILL</h2>
+                
+                    <p><em>All rules are subject to change.</em></p>
+                
+                    <ol>
+                        <li>Levels must not be copied or stolen. Only original levels and legitimate remakes are allowed.</li>
+                        <li>Hiding or obstructing gameplay does not count as difficulty. Invisible gameplay is not allowed.</li>
+                        <li>Levels cannot exceed 16 CPS. For 2-player levels, the limit is 10 CPS per player independently.</li>
+                        <li>Levels must have reasonable effort put into them.</li>
+                        <li>Levels must contain at least 7 seconds of gameplay.</li>
+                        <li>Levels cannot be unnerfed versions of existing levels.</li>
+                        <li>All levels must have been created after ID <strong>140971830</strong>.</li>
+                        <li>Do not spam objects solely to create lag. All objects must serve a purpose.</li>
+                        <li>Levels may require common FPS values (60, 120, 144, 240, 360, 420, etc.). Unusual FPS requirements are not allowed.</li>
+                        <li>Swift clicks are limited to a maximum of 3 clicks within a single frame.</li>
+                    </ol>
+                
+                    <h3>Submitting Levels</h3>
+                
+                    <ol>
+                        <li>
+                            Submissions must include:
+                            <ul>
+                                <li>Creator name(s)</li>
+                                <li>Level ID</li>
+                                <li>Preferred name on the list</li>
+                                <li>Editor length</li>
+                                <li>Gameplay length</li>
+                            </ul>
+                        </li>
+                
+                        <li>
+                            Not required, but recommended: provide a layout showcase with hitboxes enabled.
+                        </li>
+                    </ol>
+                
+                    <h3>Runs / World Records</h3>
+                
+                    <ol>
+                        <li>Include your preferred name and run percentage(s).</li>
+                        <li>All runs must be legitimate.</li>
+                        <li>Live Discord runs are accepted if sufficient proof is provided.</li>
+                    </ol>
+                
                 </div>
 
             </div>
