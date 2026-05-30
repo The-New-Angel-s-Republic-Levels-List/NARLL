@@ -13,6 +13,13 @@
   ],
   "verifier": "mold",
   "verification": "https://youtu.be/SqFQ805Vadc",
-  "records": [],
+  "records": [
+    {
+      "user": "blue_orbe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
