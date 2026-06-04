@@ -20,7 +20,7 @@ public static class CreatorList
 
             if (level.featured == "top")
                 basePoints = 6;
-            else if (level.featured == "feature")
+            else if (level.featured == "featured")
                 basePoints = 4;
             else if (level.featured == "highlight")
                 basePoints = 2;
