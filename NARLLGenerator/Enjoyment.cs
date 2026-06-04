@@ -5,12 +5,9 @@ namespace NARLLGenerator;
 
 public static class Enjoyment
 {
-    public static Dictionary<string, double> GetEnjoymentMappings(MemoryStream file)
+    public static Dictionary<string, double> GetEnjoymentMappings(ExcelPackage package)
     {
-        ExcelPackage.License.SetNonCommercialPersonal("goop");
-        using var package = new ExcelPackage(file);
-
-        var mainSheet = package.Workbook.Worksheets["Ratings"];
+        var mainSheet = package.Workbook.Worksheets["Enjoyment"];
 
         int rows = mainSheet.Dimension.Rows;
         int columns = mainSheet.Dimension.Columns;

@@ -47,7 +47,7 @@ var sheet3 = package.Workbook.Worksheets["NARUL"];
 var sheet4 = package.Workbook.Worksheets["NARILL"];
 
 var stream2 = await Util.DownloadSheetAsync("1WKjdpJr67pCnjRGVtIWpUx3PE-P4PBHXglYcUxPFgPs");
-Dictionary<string, double> enjoymentValues = Enjoyment.GetEnjoymentMappings(stream2);
+Dictionary<string, double> enjoymentValues = Enjoyment.GetEnjoymentMappings(package);
 
 
 for (int row = 3; row <= 100; row++)
