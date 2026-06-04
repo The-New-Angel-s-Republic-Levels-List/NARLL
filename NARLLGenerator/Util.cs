@@ -46,7 +46,7 @@ public static class Util
         {
             return "featured";
         }
-        else if (hexa = "#FCE5CD")
+        else if (hexa == "#FCE5CD")
         {
             return "highlight";
         }
