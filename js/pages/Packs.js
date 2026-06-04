@@ -99,6 +99,7 @@ export default {
                             :class="{
                                 active: selectedLevel === i,
                                 error: !level,
+                                'level-highlight' : level && level.featured === 'highlight',
                                 'level-top': level && level.featured === 'top',
                                 'level-featured': level && level.featured === 'featured',
                                 'level-angel': level && level.featured === 'award'

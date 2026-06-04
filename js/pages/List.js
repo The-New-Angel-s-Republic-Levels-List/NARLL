@@ -103,6 +103,7 @@ export default {
                                 { 'active': store.selected == originalIndex, 'error': !level },
                                 {
                                 'level-top': level?.featured === 'top',
+                                'level-highlight': level?.featured === 'highlight',
                                 'level-featured': level?.featured === 'featured',
                                 'level-angel': level?.featured === 'award'
                                 }
@@ -219,7 +220,7 @@ export default {
                         The website is a modified version of TSL. 
                     </p>
                     <p>
-                        Levels highlighted in light pink are Featured, dark purple are Top Featured, and special colored are awarded the Angel Award.
+                        Levels highlighted in light pink are Highlighted, pink are Featured and dark purple are Top Featured. Special colored are awarded the Angel Award.
                     </p>
                     <p>
                         Have fun and don't forget to join the <a href="https://discord.gg/zeroshi" target="_blank" style="text-decoration: underline;">discord! :3</a>

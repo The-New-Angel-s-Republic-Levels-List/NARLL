@@ -13,7 +13,14 @@ public static class CreatorList
             if (level.creators == null || level.creators.Count == 0)
                 continue;
 
-            int basePoints = level.featured == "top" ? 6 : 3;
+            int basePoints = 0;
+
+	    if (level.featured == "top")
+                basePoints = 6;
+	    else if (level.featured == "feature")
+    		basePoints = 4;
+	    else if (level.featured == "highlight")
+    		basePoints = 2;
 
             double pointsPerCreator = (double)basePoints / level.creators.Count;
 
