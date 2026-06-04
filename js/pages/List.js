@@ -256,7 +256,7 @@ export default {
                     <div class="changelog-box">
                         <template v-if="mode === 'changelog'">
                             <div v-for="entry in changelog" class="changelog-entry">
-                                <h3 class="changelog-date">{{ formatDate(entry.date) }}</h3>
+                                <h3 class="changelog-date">{{ entry.date }}</h3>
                                 <ul class="changelog-list">
                                     <li v-for="change in entry.changes">
                                         - <span v-html="formatChange(change)"></span>
@@ -268,7 +268,7 @@ export default {
                         <template v-else-if="mode === 'pending'">
                             <div v-for="entry in pending" class="changelog-entry">
                                 <p class="changelog-list">
-                                    - <span v-html="formatChange(entry.text)"></span> places on {{ formatDate(entry.date) }}
+                                    - <span v-html="formatChange(entry.text)"></span> places on {{ entry.date }}
                                 </p>
                             </div>
                         </template>
@@ -302,7 +302,7 @@ export default {
                             </li>
                         </ol>
                     </template>
-                      <h2><a href="https://docs.google.com/document/d/1_xeCrzN2xmG1X5PQix6BEqDfBCg22rB08TNjXyRXg4M/edit?usp=sharing" target="_blank" style="color: blue; text-decoration: underline;">NARLL Guidelines</a></h2>
+                      <h2><a href="https://docs.google.com/document/d/1_xeCrzN2xmG1X5PQix6BEqDfBCg22rB08TNjXyRXg4M/edit?usp=sharing" target="_blank" style="color: #AEC6CF; text-decoration: underline;">NARLL Guidelines</a></h2>
                       <img src="https://media1.tenor.com/m/2KLu6op2pHEAAAAd/uma-umamusume.gif"
                     style="width: 100%; max-width: 300px; border-radius: 0.5rem; margin-top: 0.5rem;">
                 </div>
@@ -504,13 +504,6 @@ export default {
             setTimeout(() => {
                 this.copied = false;
             }, 1000);
-        },
-        formatDate(date) {
-        return new Date(date).toLocaleDateString('en-GB', {
-            day: '2-digit',
-            month: 'short',
-            year: 'numeric'
-            });
         },
         formatChange(text) {
             return text
