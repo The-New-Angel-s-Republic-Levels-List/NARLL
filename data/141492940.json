@@ -12,6 +12,19 @@
   ],
   "verifier": "markehl",
   "verification": "https://youtu.be/ACAJS69Wulc",
-  "records": [],
+  "records": [
+    {
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": "yes"
 }

@@ -5,7 +5,7 @@
   "name": "Last Time",
   "author": "Rosieel",
   "tags": "Cube, Timings",
-  "enjoyment": "5.93",
+  "enjoyment": "5.54",
   "notes": "",
   "creators": [
     "Rosieel"
@@ -27,6 +27,12 @@
     },
     {
       "user": "Trizzy",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cloud",
       "link": "",
       "percent": 100,
       "hz": 0

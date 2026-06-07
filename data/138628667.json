@@ -5,7 +5,7 @@
   "name": "talk to me",
   "author": "Hyacinth",
   "tags": "Wave",
-  "enjoyment": "7.38",
+  "enjoyment": "7.2",
   "notes": "only wave tag is lowk tuff",
   "creators": [
     "Hyacinth"
@@ -33,6 +33,12 @@
     },
     {
       "user": "Bintii",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "brush",
       "link": "",
       "percent": 100,
       "hz": 0
