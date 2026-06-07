@@ -16,6 +16,15 @@
     "best": "\u2605 Spaceless Unleashed \u2605"
   },
   {
+    "user": "miles",
+    "points": 10,
+    "featured": [
+      "scary scary john",
+      "\u2726 scary scary gabe \u2726"
+    ],
+    "best": "\u2726 scary scary gabe \u2726"
+  },
+  {
     "user": "wattiwatt",
     "points": 8,
     "featured": [
@@ -41,14 +50,6 @@
       "\u2726 PRETTY THINGS \u2726"
     ],
     "best": "\u2726 PRETTY THINGS \u2726"
-  },
-  {
-    "user": "miles",
-    "points": 6,
-    "featured": [
-      "\u2726 scary scary gabe \u2726"
-    ],
-    "best": "\u2726 scary scary gabe \u2726"
   },
   {
     "user": "EternalUMI",
