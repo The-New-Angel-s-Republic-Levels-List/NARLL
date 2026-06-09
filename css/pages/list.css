@@ -208,7 +208,7 @@
     color: var(--color-on-background);
 
     border-radius: 0.5rem;
-    border: 3px solid rgb(255, 190, 220);
+    border: none;
 }
 .page-list .list .level.level-highlight.active button {
     background: rgb(255, 190, 220);
