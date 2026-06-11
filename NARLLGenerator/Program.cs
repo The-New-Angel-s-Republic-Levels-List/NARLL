@@ -47,7 +47,7 @@ var sheet3 = package.Workbook.Worksheets["NARUL"];
 var sheet4 = package.Workbook.Worksheets["NARILL"];
 
 var stream2 = await Util.DownloadSheetAsync("1WKjdpJr67pCnjRGVtIWpUx3PE-P4PBHXglYcUxPFgPs");
-Dictionary<string, double> enjoymentValues = Enjoyment.GetEnjoymentMappings(stream2);
+Dictionary<string, double> enjoymentValues = Enjoyment.GetEnjoymentMappings(package);
 
 
 for (int row = 3; row <= 100; row++)
@@ -69,7 +69,7 @@ for (int row = 3; row <= 100; row++)
     }
 }
 
-for (int row = 40; row > 0; row--)
+for (int row = 100; row > 0; row--)
 {
     var level = List.ProcessRowUNVERIFIED(sheet3, row);
     if (level == null) continue;

@@ -5,7 +5,7 @@
   "name": "bi circles",
   "author": "itsGalaxie",
   "tags": "Cube, Timings, Wave",
-  "enjoyment": "5.95",
+  "enjoyment": "5.96",
   "notes": "NLW BTW \u003C\u003C not",
   "creators": [
     "itsGalaxie"
@@ -99,6 +99,24 @@
     },
     {
       "user": "lrexx",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cloud",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "brush",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "1D10T",
       "link": "",
       "percent": 100,
       "hz": 0

@@ -1,13 +1,47 @@
 [
   {
     "user": "Rosieel",
-    "points": 9,
+    "points": 23,
     "featured": [
+      "Rosie Ship Trials",
       "\u2605 Spaceless Unleashed \u2605",
+      "lesbian circles",
+      "sunshine",
+      "Last Time",
       "\u2605 Destined \u2605",
+      "Moonlight",
+      "Deception",
       "\u2605 spaceless \u2605"
     ],
-    "best": "\u2605 spaceless \u2605"
+    "best": "\u2605 Spaceless Unleashed \u2605"
+  },
+  {
+    "user": "miles",
+    "points": 10,
+    "featured": [
+      "\u2605 scary scary john \u2605",
+      "\u2726 scary scary gabe \u2726"
+    ],
+    "best": "\u2726 scary scary gabe \u2726"
+  },
+  {
+    "user": "wattiwatt",
+    "points": 8,
+    "featured": [
+      "\u2605 Forebitt UFO \u2605",
+      "hexa ever clear",
+      "wisteria"
+    ],
+    "best": "\u2605 Forebitt UFO \u2605"
+  },
+  {
+    "user": "blue_orbe",
+    "points": 6,
+    "featured": [
+      "Resonance",
+      "\u2605 LXVI \u2605"
+    ],
+    "best": "\u2605 LXVI \u2605"
   },
   {
     "user": "DeadXM",
@@ -18,51 +52,94 @@
     "best": "\u2726 PRETTY THINGS \u2726"
   },
   {
-    "user": "miles",
+    "user": "EternalUMI",
     "points": 6,
     "featured": [
-      "\u2726 scary scary gabe \u2726"
+      "Corruption",
+      "\u2605 71a3 \u2605"
     ],
-    "best": "\u2726 scary scary gabe \u2726"
+    "best": "\u2605 71a3 \u2605"
   },
   {
-    "user": "wattiwatt",
-    "points": 3,
+    "user": "ZajuGMD",
+    "points": 4,
     "featured": [
-      "Forebitt UFO"
+      "\u2605 kaban \u2605"
     ],
-    "best": "Forebitt UFO"
+    "best": "\u2605 kaban \u2605"
   },
   {
     "user": "aqrlr",
-    "points": 3,
+    "points": 4,
     "featured": [
       "\u2605 AREA 33 \u2605"
     ],
     "best": "\u2605 AREA 33 \u2605"
   },
   {
-    "user": "blue_orbe",
+    "user": "imorii",
+    "points": 4,
+    "featured": [
+      "Digitized Decline",
+      "gleeger"
+    ],
+    "best": "Digitized Decline"
+  },
+  {
+    "user": "mold",
     "points": 3,
     "featured": [
-      "\u2605 LXVI \u2605"
+      "sunshine",
+      "LV 124 SOG CHALLENGE"
     ],
-    "best": "\u2605 LXVI \u2605"
+    "best": "LV 124 SOG CHALLENGE"
+  },
+  {
+    "user": "amy",
+    "points": 2,
+    "featured": [
+      "pollux \uD83E\uDD8B"
+    ],
+    "best": "pollux \uD83E\uDD8B"
+  },
+  {
+    "user": "valk",
+    "points": 2,
+    "featured": [
+      "Xy76"
+    ],
+    "best": "Xy76"
+  },
+  {
+    "user": "scruffie",
+    "points": 2,
+    "featured": [
+      "Final Epstination"
+    ],
+    "best": "Final Epstination"
   },
   {
     "user": "itsGalaxie",
-    "points": 3,
+    "points": 2,
     "featured": [
-      "\u2605 low tide \u2605"
+      "hell but uwu ig idk"
     ],
-    "best": "\u2605 low tide \u2605"
+    "best": "hell but uwu ig idk"
   },
   {
-    "user": "EternalUMI",
-    "points": 3,
+    "user": "Cala",
+    "points": 1,
     "featured": [
-      "\u2605 71a3 \u2605"
+      " Requiem "
     ],
-    "best": "\u2605 71a3 \u2605"
+    "best": " Requiem "
+  },
+  {
+    "user": "Lumi",
+    "points": 1,
+    "featured": [
+      " Requiem "
+    ],
+    "best": " Requiem "
   }
 ]

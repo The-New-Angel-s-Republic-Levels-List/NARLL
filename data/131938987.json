@@ -1,11 +1,11 @@
 {
   "id": 131938987,
   "length": "0:27",
-  "featured": "",
+  "featured": "highlight",
   "name": "hexa ever clear",
   "author": "wattiwatt",
   "tags": "Timings",
-  "enjoyment": "6.78",
+  "enjoyment": "5.6",
   "notes": "hexa hasnt cleared yet",
   "creators": [
     "wattiwatt"
@@ -27,6 +27,18 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "kirzy_1225",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
       "link": "",
       "percent": 100,
       "hz": 0

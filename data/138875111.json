@@ -1,11 +1,11 @@
 {
   "id": 138875111,
   "length": "0:17",
-  "featured": "",
+  "featured": "highlight",
   "name": "gleeger",
   "author": "imorii",
   "tags": "Cube, Timings, Chokepoints",
-  "enjoyment": "8",
+  "enjoyment": "8.4",
   "notes": "its gleeging time (this needs to be moved down ngl)",
   "creators": [
     "imorii"
@@ -45,6 +45,12 @@
     },
     {
       "user": "ggunkp1",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cloud",
       "link": "",
       "percent": 100,
       "hz": 0

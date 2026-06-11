@@ -1,11 +1,11 @@
 {
   "id": 135790327,
   "length": "0:21",
-  "featured": "",
+  "featured": "highlight",
   "name": "sunshine",
   "author": "Rosieel, mold",
   "tags": "Cube, Timings",
-  "enjoyment": "",
+  "enjoyment": "5.5",
   "notes": "not even mold can save the gp",
   "creators": [
     "Rosieel",
@@ -16,6 +16,12 @@
   "records": [
     {
       "user": "blue_orbe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "nuller",
       "link": "",
       "percent": 100,
       "hz": 0

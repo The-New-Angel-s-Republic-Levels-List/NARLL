@@ -136,7 +136,7 @@ export default {
                             <h2>Best Awarded Level</h2>
                             <p>{{ creator.best }}</p>
 
-                            <h2>Featured Levels ({{ creator.featured.length }})</h2>
+                            <h2>Awarded Levels ({{ creator.featured.length }})</h2>
                             <table class="table">
                                 <tr v-for="lvl in creator.featured">
                                     <td><p>{{ lvl }}</p></td>

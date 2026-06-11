@@ -1,8 +1,8 @@
 {
   "id": 137304505,
   "length": "0:13",
-  "featured": "",
-  "name": "scary scary john",
+  "featured": "featured",
+  "name": "\u2605 scary scary john \u2605",
   "author": "miles",
   "tags": "Wave, Consistency, Timings, Ship",
   "enjoyment": "7.08",
@@ -27,6 +27,12 @@
     },
     {
       "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "nuller",
       "link": "",
       "percent": 100,
       "hz": 0

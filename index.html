@@ -10,6 +10,7 @@
         <meta property="og:url" content="https://narllist.pages.dev/">
         <meta property="og:type" content="website">
         <meta name="theme-color" content="#FA7CE9">
+        <meta name="google-site-verification" content="UvLHPqO721hSZqypyEwaDUwxNukjhyB7RGZeeq2sTds" />
         
         <title>New Angels Republic Levels List</title>
 
@@ -32,11 +33,8 @@
         <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" />
         <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
         <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="/css/components/tabs.css"
-        />
+        <link rel="stylesheet" type="text/css" href="/css/components/tabs.css"/>
+        
         <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
         <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.min.js"></script>
@@ -45,12 +43,7 @@
     </head>
     <body id="app">
         <header :class="{ dark: store.dark }">
-            <router-link 
-                to="/" 
-                class="logo" 
-                @click="store.selected = null"
-                style="cursor: pointer;"
-            >
+            <router-link to="/" class="logo" @click="store.selected = null"style="cursor: pointer;">
                 <h2>NARLL</h2>
                 <p>v5.0.0</p>
             </router-link>
@@ -72,14 +65,9 @@
                 </router-link>
             </nav>
             <div class="nav__actions">
-                <button
-                    class="nav__icon"
-                    @click.prevent="store.toggleDark()"
-                >
-                    <img
-                        :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'"
-                        alt=""
-                    />
+                
+                <button class="nav__icon" @click.prevent="store.toggleDark()">
+                    <img :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'" alt=""/>
                 </button>
 
                 <a class="nav__icon" href="https://discord.gg/zeroshi">

@@ -4,7 +4,7 @@
   "featured": "",
   "name": "Can I pet this dog",
   "author": "aqwav",
-  "tags": "Overall",
+  "tags": "Overall, Timings",
   "enjoyment": "6.69",
   "notes": "",
   "creators": [
@@ -51,6 +51,12 @@
     },
     {
       "user": "ggunkp1",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "brush",
       "link": "",
       "percent": 100,
       "hz": 0

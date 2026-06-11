@@ -5,7 +5,7 @@
   "name": "Ariamacina",
   "author": "Rosieel",
   "tags": "Wave",
-  "enjoyment": "6.33",
+  "enjoyment": "5.5",
   "notes": "best gameplay nEVER??",
   "creators": [
     "Rosieel"
@@ -21,6 +21,12 @@
     },
     {
       "user": "nuller",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
       "link": "",
       "percent": 100,
       "hz": 0

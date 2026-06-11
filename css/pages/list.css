@@ -202,6 +202,19 @@
     color: var(--color-on-primary);
 }
 
+.page-list .list .level.level-highlight button {
+    background-color: transparent;
+    background: linear-gradient(90deg,rgba(255, 220, 235, 0.25) 0%, rgba(255, 190, 220, 0.25) 70%);
+    color: var(--color-on-background);
+
+    border-radius: 0.5rem;
+    border: none;
+}
+.page-list .list .level.level-highlight.active button {
+    background: rgb(255, 190, 220);
+    color: var(--color-on-primary);
+}
+
 .id-copy {
     position: relative;
     cursor: pointer;

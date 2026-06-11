@@ -1,7 +1,7 @@
 {
   "id": 138145845,
   "length": "0:52",
-  "featured": "",
+  "featured": "highlight",
   "name": "Rosie Ship Trials",
   "author": "Rosieel",
   "tags": "Ship, Click-Sync",
@@ -12,6 +12,13 @@
   ],
   "verifier": "markehl",
   "verification": "https://youtu.be/5Sddz-W_E4I",
-  "records": [],
+  "records": [
+    {
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

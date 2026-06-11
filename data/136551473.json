@@ -5,7 +5,7 @@
   "name": "anino",
   "author": "amy",
   "tags": "Wave, Consistency",
-  "enjoyment": "6.09",
+  "enjoyment": "6.55",
   "notes": "stupid level",
   "creators": [
     "amy"
@@ -63,6 +63,12 @@
     },
     {
       "user": "lrexx",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "brush",
       "link": "",
       "percent": 100,
       "hz": 0
