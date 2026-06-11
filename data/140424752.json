@@ -5,13 +5,13 @@
   "name": "catgirl cafe",
   "author": "Hyacinth",
   "tags": "Wave",
-  "enjoyment": "",
+  "enjoyment": "8.4",
   "notes": "2 mar approved levels in one day bro",
   "creators": [
     "Hyacinth"
   ],
   "verifier": "8hzBunny",
-  "verification": "https://www.youtube.com/watch?v=-r92Mzkd3Z0",
+  "verification": "https://youtu.be/ekfgJQmuZJA",
   "records": [
     {
       "user": "mold",
@@ -21,6 +21,12 @@
     },
     {
       "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
       "link": "",
       "percent": 100,
       "hz": 0
