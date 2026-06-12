@@ -1,8 +1,13 @@
 [
     {
-        "role": "owner",
-        "name": "",
-        "link": ""
+        "role": "dev",
+        "name": "scruffiebaka",
+        "link": "https://github.com/scruffiebaka"
+    },
+    {
+        "role": "dev",
+        "name": "srcocoa",
+        "link": "https://www.youtube.com/@SR_Cocoa"
     },
     {
         "role": "admin",
@@ -19,16 +24,7 @@
         "name": "xeo_o",
         "link": "https://www.youtube.com/@xeo_o"
     },
-    {
-        "role": "dev",
-        "name": "scruffiebaka",
-        "link": "https://github.com/scruffiebaka"
-    },
-    {
-        "role": "dev",
-        "name": "srcocoa",
-        "link": "https://www.youtube.com/@SR_Cocoa"
-    },
+
     {
         "role": "helper",
         "name": "danman [▽]",
