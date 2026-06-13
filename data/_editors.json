@@ -1,8 +1,13 @@
 [
     {
-        "role": "owner",
-        "name": "",
-        "link": ""
+        "role": "dev",
+        "name": "scruffiebaka",
+        "link": "https://github.com/scruffiebaka"
+    },
+    {
+        "role": "dev",
+        "name": "srcocoa",
+        "link": "https://www.youtube.com/@SR_Cocoa"
     },
     {
         "role": "admin",
@@ -18,16 +23,6 @@
         "role": "admin",
         "name": "xeo_o",
         "link": "https://www.youtube.com/@xeo_o"
-    },
-    {
-        "role": "dev",
-        "name": "scruffiebaka",
-        "link": "https://github.com/scruffiebaka"
-    },
-    {
-        "role": "dev",
-        "name": "srcocoa",
-        "link": "https://www.youtube.com/@SR_Cocoa"
     },
     {
         "role": "helper",
@@ -46,12 +41,7 @@
     },
     {
         "role": "helper",
-        "name": "miles",
+        "name": "miles [NARILL OWNER]",
         "link": "https://www.youtube.com/@Q45-real"
-    },
-    {
-        "role": "helper",
-        "name": "aqrlr",
-        "link": "https://www.youtube.com/@aqrl7473"
     }
 ]
