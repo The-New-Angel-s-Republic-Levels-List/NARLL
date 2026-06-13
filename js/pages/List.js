@@ -94,7 +94,7 @@ export default {
                 <table class="list" v-if="list">
                     <tr v-for="([level, err, originalIndex], i) in filteredList">
                         <td class="rank">
-                            <p v-if="originalIndex + 1 <= 50" class="type-label-lg">#{{ originalIndex + 1 }}</p>
+                            <p v-if="originalIndex + 1 <= 70" class="type-label-lg">#{{ originalIndex + 1 }}</p>
                             <p v-else class="type-label-lg">L</p>
                         </td>
                         <td 
@@ -173,7 +173,7 @@ export default {
                     </ul>
                     <p>Notes: {{ level.notes }}</p>
                     <h2>Records{{ recordCountText }}</h2>
-                    <p v-if="store.selected + 1 > 50">This level does not accept new records.</p>
+                    <p v-if="store.selected + 1 > 70">This level does not accept new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
