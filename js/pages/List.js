@@ -173,7 +173,6 @@ export default {
                     </ul>
                     <p>Notes: {{ level.notes }}</p>
                     <h2>Records{{ recordCountText }}</h2>
-                    <p v-if="store.selected + 1 > 70">This level does not accept new records.</p>
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
                             <td class="percent">
