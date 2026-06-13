@@ -5,7 +5,7 @@
   "name": "\u2605 Spaceless Unleashed \u2605",
   "author": "Rosieel",
   "tags": "Wave, High-CPS, Chokepoints",
-  "enjoyment": "5.27",
+  "enjoyment": "4.75",
   "notes": "79% IS THE WORST THING EVER; official startpos copy: 135509317",
   "creators": [
     "Rosieel"
@@ -39,6 +39,12 @@
     },
     {
       "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "markehl",
       "link": "",
       "percent": 100,
       "hz": 0

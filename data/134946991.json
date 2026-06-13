@@ -5,7 +5,7 @@
   "name": "\u2605 LXVI \u2605",
   "author": "blue_orbe",
   "tags": "Ship",
-  "enjoyment": "5.8",
+  "enjoyment": "5.17",
   "notes": "mini ship is RANCID",
   "creators": [
     "blue_orbe"
@@ -33,6 +33,12 @@
     },
     {
       "user": "That1GuyEli",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
       "link": "",
       "percent": 100,
       "hz": 0
