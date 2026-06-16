@@ -5,13 +5,26 @@
   "name": "Too Wave Carried",
   "author": "danman",
   "tags": "Timings, Swing, Robot",
-  "enjoyment": "",
+  "enjoyment": "3.67",
   "notes": "anti mar level",
   "creators": [
     "danman"
   ],
   "verifier": "danman",
   "verification": "https://youtu.be/MjFW5LEPMmw",
-  "records": [],
+  "records": [
+    {
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
