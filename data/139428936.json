@@ -5,7 +5,7 @@
   "name": "low tide",
   "author": "itsGalaxie",
   "tags": "Overall",
-  "enjoyment": "6.1",
+  "enjoyment": "6.22",
   "notes": "",
   "creators": [
     "itsGalaxie"
@@ -27,6 +27,12 @@
     },
     {
       "user": "valk",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
       "link": "",
       "percent": 100,
       "hz": 0
