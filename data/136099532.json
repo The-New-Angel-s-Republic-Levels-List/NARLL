@@ -5,7 +5,7 @@
   "name": "envy",
   "author": "Rosieel",
   "tags": "Wave",
-  "enjoyment": "6.79",
+  "enjoyment": "6.06",
   "notes": "",
   "creators": [
     "Rosieel"
@@ -81,6 +81,18 @@
     },
     {
       "user": "DapperBoi1231",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "tyuu6ihn",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Hyacinth",
       "link": "",
       "percent": 100,
       "hz": 0
