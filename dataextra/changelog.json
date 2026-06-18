@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "date": "2026-06-18",
     "changes": [
       "**Descent Into Despair** has been placed at ***#28*** and has been awarded a <u>***Top Feature!***</u> This change pushes **envy** into the *legacy list*.",
@@ -11,6 +12,13 @@
       "**Takis Crunch** has been lowered from #4 to ***#5***.",
 
       "**Lunacy** and **Xeopolis** have both been awarded a <u>**Feature!**</u>"
+=======
+    "date": "2026-06-17",
+    "changes": [
+      "**PUNK BISH** has been placed ***#24***. This change pushes **envy 2** out of the *main list*.",
+      
+        "**wisteria** has been raised from #34 to ***#27***."
+>>>>>>> ea02b77fcf8d66481851917c1f2d9521cca8f02f
     ]
   },
   {
