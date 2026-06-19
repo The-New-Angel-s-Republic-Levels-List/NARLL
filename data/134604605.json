@@ -5,7 +5,7 @@
   "name": "Final Epstination",
   "author": "scruffie",
   "tags": "Wave, Timings",
-  "enjoyment": "6.45",
+  "enjoyment": "5.81",
   "notes": "epstein\u0027s resting place",
   "creators": [
     "scruffie"
@@ -57,6 +57,12 @@
     },
     {
       "user": "Skurple76",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "vex",
       "link": "",
       "percent": 100,
       "hz": 0
