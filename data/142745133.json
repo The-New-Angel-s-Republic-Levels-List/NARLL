@@ -11,7 +11,7 @@
     "Rosie"
   ],
   "verifier": "vex",
-  "verification": "https://www.youtube.com/watch?v=-r92Mzkd3Z0",
+  "verification": "https://www.youtube.com/watch?v=kID-4SDrWsk",
   "records": [
     {
       "user": "Skurple76",
@@ -33,6 +33,12 @@
     },
     {
       "user": "flamewall",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "kirzy_1225",
       "link": "",
       "percent": 100,
       "hz": 0
