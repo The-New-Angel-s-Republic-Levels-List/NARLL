@@ -5,7 +5,7 @@
   "name": "Claustromorphic",
   "author": "danman",
   "tags": "Chokepoints, Timings",
-  "enjoyment": "",
+  "enjoyment": "7.6",
   "notes": "im claustrophobic",
   "creators": [
     "danman"
@@ -15,6 +15,12 @@
   "records": [
     {
       "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
       "link": "",
       "percent": 100,
       "hz": 0
