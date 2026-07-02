@@ -1,7 +1,7 @@
 {
   "id": 143112658,
   "length": "0:17",
-  "featured": "",
+  "featured": "featured",
   "name": "Malen Sie Es Rot",
   "author": "DeadXM",
   "tags": "Ball, Timings",
@@ -12,6 +12,13 @@
   ],
   "verifier": "DeadXM",
   "verification": "https://youtu.be/lPFb0MF-azI=5eiypH2UpejcOtPi",
-  "records": [],
+  "records": [
+    {
+      "user": "wattiwatt",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
