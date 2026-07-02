@@ -12,6 +12,13 @@
   ],
   "verifier": "DeadXM",
   "verification": "https://youtu.be/lPFb0MF-azI=5eiypH2UpejcOtPi",
-  "records": [],
+  "records": [
+    {
+      "user": "wattiwatt",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
