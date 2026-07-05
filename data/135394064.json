@@ -12,6 +12,13 @@
   ],
   "verifier": "markehl",
   "verification": "https://youtu.be/M3Q_zFlGMhU",
-  "records": [],
+  "records": [
+    {
+      "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
