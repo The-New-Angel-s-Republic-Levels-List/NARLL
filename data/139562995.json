@@ -6,61 +6,12 @@
   "author": "aqwav",
   "tags": "Overall, Timings",
   "enjoyment": "6.69",
-  "notes": "",
+  "notes": "yes",
   "creators": [
     "aqwav"
   ],
   "verifier": "mold",
   "verification": "https://youtu.be/64XDYkrb5hk",
-  "records": [
-    {
-      "user": "markehl",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "DeadXM",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "danman",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "xeo",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "valk",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "vex",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "ggunkp1",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "brush",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    }
-  ],
-  "nong": "yes"
+  "records": [],
+  "nong": ""
 }

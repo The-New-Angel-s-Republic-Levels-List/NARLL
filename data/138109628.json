@@ -12,49 +12,6 @@
   ],
   "verifier": "itsGalaxie",
   "verification": "https://youtu.be/fO5lQt2xE28",
-  "records": [
-    {
-      "user": "vex",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "mold",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "Gaseba",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "xeo",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "aqrlr",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "mineraljk",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "DeadXM",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    }
-  ],
+  "records": [],
   "nong": ""
 }

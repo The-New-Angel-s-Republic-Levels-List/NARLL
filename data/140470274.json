@@ -6,12 +6,19 @@
   "author": "blue_orbe",
   "tags": "Timings, Memory, Wave",
   "enjoyment": "",
-  "notes": "placement subject to change",
+  "notes": "",
   "creators": [
     "blue_orbe"
   ],
   "verifier": "blue_orbe",
   "verification": "https://youtu.be/QCU4F80ajPg",
-  "records": [],
+  "records": [
+    {
+      "user": "placement subject to change",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

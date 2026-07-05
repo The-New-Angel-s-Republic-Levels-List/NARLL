@@ -12,31 +12,6 @@
   ],
   "verifier": "xeo",
   "verification": "https://www.youtube.com/watch?v=QP-UweobEnE",
-  "records": [
-    {
-      "user": "mold",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "Gaseba",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "humptwe",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "DeadXM",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    }
-  ],
+  "records": [],
   "nong": ""
 }

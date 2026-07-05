@@ -12,37 +12,6 @@
   ],
   "verifier": "markehl",
   "verification": "https://youtu.be/GWqol2QDF0I",
-  "records": [
-    {
-      "user": "mold",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "valk",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "DeadXM",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "xeo",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "blue_orbe",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    }
-  ],
+  "records": [],
   "nong": ""
 }

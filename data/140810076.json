@@ -12,37 +12,6 @@
   ],
   "verifier": "mold",
   "verification": "https://youtu.be/l5jPHXdFI6o",
-  "records": [
-    {
-      "user": "nuller",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "wattiwatt",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "Cloud",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "kirzy_1225",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "stelav123",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    }
-  ],
+  "records": [],
   "nong": ""
 }

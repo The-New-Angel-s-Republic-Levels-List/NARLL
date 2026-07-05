@@ -6,13 +6,20 @@
   "author": "Cala, Lumi",
   "tags": "Overall, Chokepoints",
   "enjoyment": "",
-  "notes": "GG",
+  "notes": "",
   "creators": [
     "Cala",
     "Lumi"
   ],
   "verifier": "Cala",
   "verification": "https://youtu.be/FfTt6AmD2f8",
-  "records": [],
+  "records": [
+    {
+      "user": "GG",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
