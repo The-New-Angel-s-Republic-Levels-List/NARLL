@@ -6,7 +6,7 @@
   "author": "imorii",
   "tags": "Wave",
   "enjoyment": "",
-  "notes": "",
+  "notes": "waveslop8",
   "creators": [
     "imorii"
   ],
@@ -14,7 +14,13 @@
   "verification": "https://youtu.be/R-KKQ5-65zU",
   "records": [
     {
-      "user": "waveslop8",
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "nuller",
       "link": "",
       "percent": 100,
       "hz": 0

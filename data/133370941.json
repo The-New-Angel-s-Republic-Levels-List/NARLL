@@ -12,6 +12,49 @@
   ],
   "verifier": "Rosie",
   "verification": "https://youtu.be/AJe0Pzjz7hM",
-  "records": [],
+  "records": [
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mineraljk",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "tyuu6ihn",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Hyacinth",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurlarpeur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

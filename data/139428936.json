@@ -12,6 +12,31 @@
   ],
   "verifier": "mold",
   "verification": "https://youtu.be/qqIWUQz75eQ",
-  "records": [],
+  "records": [
+    {
+      "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "valk",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

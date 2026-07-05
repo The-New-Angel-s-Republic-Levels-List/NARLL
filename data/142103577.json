@@ -6,7 +6,7 @@
   "author": "aqwav",
   "tags": "Wave",
   "enjoyment": "",
-  "notes": "yes",
+  "notes": "mar approved",
   "creators": [
     "aqwav"
   ],
@@ -14,11 +14,29 @@
   "verification": "https://youtu.be/ACAJS69Wulc",
   "records": [
     {
-      "user": "mar approved",
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "nuller",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "kirzy_1225",
       "link": "",
       "percent": 100,
       "hz": 0
     }
   ],
-  "nong": ""
+  "nong": "yes"
 }

@@ -12,6 +12,55 @@
   ],
   "verifier": "vex",
   "verification": "https://www.youtube.com/watch?v=kID-4SDrWsk",
-  "records": [],
+  "records": [
+    {
+      "user": "Skurple76",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "VictoryChaser",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "flamewall",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "kirzy_1225",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cloud",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

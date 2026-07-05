@@ -6,12 +6,25 @@
   "author": "Fearflora",
   "tags": "Wave",
   "enjoyment": "",
-  "notes": "yes",
+  "notes": "",
   "creators": [
     "Fearflora"
   ],
   "verifier": "markehl",
   "verification": "https://youtu.be/SnoxPfQZOoE",
-  "records": [],
-  "nong": ""
+  "records": [
+    {
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
+  "nong": "yes"
 }

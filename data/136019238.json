@@ -12,6 +12,85 @@
   ],
   "verifier": "Rosie",
   "verification": "https://www.youtube.com/watch?v=I43LCT-afaA",
-  "records": [],
+  "records": [
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cala",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "amy",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mineraljk",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "DeadXM",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Drag0nB0rn07",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "ggunkp1",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

@@ -12,6 +12,43 @@
   ],
   "verifier": "EternalUMI",
   "verification": "https://youtu.be/Hcu-6H0zxAQ",
-  "records": [],
+  "records": [
+    {
+      "user": "cookie",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "wattiwatt",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "PolkaDotzz",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

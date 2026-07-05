@@ -12,6 +12,19 @@
   ],
   "verifier": "valk",
   "verification": "https://www.youtube.com/watch?v=-r92Mzkd3Z0",
-  "records": [],
+  "records": [
+    {
+      "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "stelav123",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
