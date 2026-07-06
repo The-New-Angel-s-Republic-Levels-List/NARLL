@@ -77,10 +77,89 @@
         ]
     },
 
-    
     "Cloud": {
         "flags": [
             "tr"
         ]
-    }
+    },
+    
+    "xeo": {
+        "flags": [
+            "lt"
+        ]
+    },
+    
+    "blue_orbe": {
+        "flags": [
+            "fr"
+        ]
+    },
+    
+    "wattiwatt": {
+        "flags": [
+            "hn"
+        ]
+    },
+    
+    "amy": {
+        "flags": [
+            "id"
+        ]
+    },
+    
+    "Cala": {
+        "flags": [
+            "us"
+        ]
+    },
+        
+    "cookie": {
+        "flags": [
+            "us"
+        ]
+    },
+    
+    "valk": {
+        "flags": [
+            "au"
+        ]
+    },
+
+    "Toupeurvibreur": {
+        "flags": [
+            "fr"
+        ]
+    },
+
+    "danman": {
+        "flags": [
+            "ie"
+        ]
+    },
+
+    "DeadXM": {
+        "flags": [
+            "gb"
+        ]
+    },
+
+
+    "Alex": {
+        "flags": [
+            "gb"
+        ]
+    },
+
+    "flamewall": {
+        "flags": [
+            "jm"
+        ]
+    },
+
+    
+    "juyeko": {
+        "flags": [
+            "fr"
+        ]
+    },
 }
