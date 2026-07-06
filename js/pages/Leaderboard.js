@@ -1,4 +1,4 @@
-import { fetchLeaderboard, fetchCreators } from "../content.js";
+import { fetchLeaderboard, fetchCreators, fetchUsers } from "../content.js";
 import { localize } from "../util.js";
 import Spinner from "../components/Spinner.js";
 
@@ -85,9 +85,20 @@ export default {
                             </td>
 
                             <td class="user" :class="{ 'active': selected == i }">
-                                <button @click="selected = i">
-                                    <span class="type-label-lg">{{ ientry.user }}</span>
-                                </button>
+                                <div class="user-row">
+                                    <button @click="selected = i">
+                                        <span class="type-label-lg">{{ ientry.user }}</span>
+                                    </button>
+
+                                    <div class="flag-container">
+                                        <img
+                                            v-for="flag in ientry.flags.slice(0, 3)"
+                                            :key="flag"
+                                            class="flag"
+                                            :src="'/assets/flags/' + flag + '.svg'"
+                                        >
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -98,7 +109,18 @@ export default {
 
                         <h1>
                             #{{ mode === 'list' ? entry.rank : creator.rank }}
-                            {{ mode === 'list' ? entry.user : creator.user }}
+                            <div class="player-name">
+                                <span>{{ mode === 'list' ? entry.user : creator.user }}</span>
+                                    <img
+                                        v-for="flag in (mode === 'list'
+                                            ? entry.flags
+                                            : creator.flags)"
+                                            :key="flag"
+                                            class="flag large"
+                                            :src="'/assets/flags/' + flag + '.svg'"
+                                            :alt="flag"
+                                    >
+                            </div>
                         </h1>
 
                         <h3>
@@ -166,20 +188,28 @@ export default {
     },
 
     async mounted() {
+        const users = await fetchUsers();
+
         const [leaderboard, err] = await fetchLeaderboard();
         this.err = err;
 
         this.leaderboard = computeRanks(
             leaderboard.sort((a, b) => b.total - a.total),
             "total"
-        );
+        ).map(player => ({
+            ...player,
+            flags: users[player.user]?.flags ?? []
+        }));
 
         const creators = await fetchCreators();
 
         this.creators = computeRanks(
             (creators || []).sort((a, b) => b.points - a.points),
             "points"
-        );
+        ).map(player => ({
+             ...player,
+             flags: users[player.user]?.flags ?? []
+        }));
 
         this.loading = false;
     }

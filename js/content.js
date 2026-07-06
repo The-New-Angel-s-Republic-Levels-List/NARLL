@@ -227,6 +227,15 @@ export async function fetchPending(){
     }
 }
 
+export async function fetchUsers(){
+    try {
+        const res = await fetch('/dataextra/users.json');
+        return await res.json();
+    } catch{
+        return null;
+    }
+}
+
 export async function fetchBanned(){
     try {
         const res = await fetch('/dataextra/banned.json');
