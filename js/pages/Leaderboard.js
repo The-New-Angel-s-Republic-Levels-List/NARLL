@@ -92,7 +92,7 @@ export default {
 
                                     <div class="flag-container">
                                         <img
-                                            v-for="flag in ientry.flags.slice(0, 3)"
+                                            v-for="flag in (ientry.flags.length ? ientry.flags : ['un'])"
                                             :key="flag"
                                             class="flag"
                                             :src="'/assets/flags/' + flag + '.svg'"
@@ -106,22 +106,25 @@ export default {
 
                 <div class="player-container">
                     <div class="player" v-if="mode === 'list' ? entry : creator">
-
-                        <h1>
-                            #{{ mode === 'list' ? entry.rank : creator.rank }}
-                            <div class="player-name">
-                                <span>{{ mode === 'list' ? entry.user : creator.user }}</span>
-                                    <img
-                                        v-for="flag in (mode === 'list'
-                                            ? entry.flags
-                                            : creator.flags)"
-                                            :key="flag"
-                                            class="flag large"
-                                            :src="'/assets/flags/' + flag + '.svg'"
-                                            :alt="flag"
-                                    >
+                    
+                        <div class="player-header">
+                            <h1>
+                                #{{ mode === 'list' ? entry.rank : creator.rank }}
+                                {{ mode === 'list' ? entry.user : creator.user }}
+                            </h1>
+                        
+                            <div class="flag-container">
+                                <img
+                                    v-for="flag in ((mode === 'list' ? entry.flags : creator.flags).length
+                                        ? (mode === 'list' ? entry.flags : creator.flags)
+                                        : ['un'])"
+                                    :key="flag"
+                                    class="flag large"
+                                    :src="'/assets/flags/' + flag + '.svg'"
+                                    :alt="flag"
+                                >
                             </div>
-                        </h1>
+                        </div>
 
                         <h3>
                             {{ mode === 'list' ? entry.total : (creator.points + ' points') }}
