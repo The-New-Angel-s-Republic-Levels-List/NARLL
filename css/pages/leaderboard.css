@@ -162,6 +162,12 @@
 .flag {
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    object-fit: contain;
+    flex: 0 0 24px;
 }
 
 .user-row {
@@ -180,6 +186,23 @@
     gap: 4px;
     margin-left: 12px;
     flex-shrink: 0;
+}
+
+.player-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.player-header h1 {
+    margin: 0;
+}
+
+.player-header .flag-container {
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
 /*scruffie: i figured shit out!!! :333333*/
