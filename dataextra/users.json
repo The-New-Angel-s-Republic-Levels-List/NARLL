@@ -69,5 +69,11 @@
         "flags": [
             "pl"
         ]
+    },
+
+    "Rosie": {
+        "flags": [
+            "kr"
+        ]
     }
 }
