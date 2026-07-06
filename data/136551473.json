@@ -1,11 +1,11 @@
 {
   "id": 136551473,
   "length": "0:06",
-  "featured": "",
+  "featured": "featured",
   "name": "anino",
   "author": "amy",
   "tags": "Wave, Consistency",
-  "enjoyment": "6.55",
+  "enjoyment": "6.46",
   "notes": "stupid level",
   "creators": [
     "amy"
@@ -51,12 +51,6 @@
     },
     {
       "user": "vex",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "Drag0nB0rn07",
       "link": "",
       "percent": 100,
       "hz": 0

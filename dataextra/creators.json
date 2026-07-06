@@ -1,154 +1,105 @@
 [
   {
     "user": "Rosie",
-    "points": 33,
-    "featured": [
-      "Rosie Ship Trials",
-      "\u2605 Spaceless Unleashed \u2605",
-      "lesbian circles",
-      "sunshine",
-      "\u2726 Descent Into Despair \u2726",
-      "\u2605 Lunacy \u2605",
-      "Last Time",
-      "\u2605 Destined \u2605",
-      "Deception",
-      "Moonlight",
-      "\u2605 spaceless \u2605"
-    ],
-    "best": "\u2726 Descent Into Despair \u2726"
-  },
-  {
-    "user": "DeadXM",
-    "points": 12,
-    "featured": [
-      "\u2605 Malen Sie Es Rot \u2605",
-      "BAILE",
-      "\u2726 PRETTY THINGS \u2726"
-    ],
-    "best": "\u2726 PRETTY THINGS \u2726"
-  },
-  {
-    "user": "miles",
     "points": 10,
     "featured": [
-      "\u2605 scary scary john \u2605",
-      "\u2726 scary scary gabe \u2726"
+      "Ariamacina",
+      "Last Time",
+      "You and Me",
+      "Moonlight"
     ],
-    "best": "\u2726 scary scary gabe \u2726"
+    "best": "Last Time"
+  },
+  {
+    "user": "EternalUMI",
+    "points": 10,
+    "featured": [
+      "Cookie Cat \uD83C\uDF6A\uD83C\uDF6A\uD83C\uDF6A",
+      "Corruption",
+      "\u2605 71a3 \u2605"
+    ],
+    "best": "Corruption"
   },
   {
     "user": "wattiwatt",
     "points": 8,
     "featured": [
       "\u2605 Forebitt UFO \u2605",
-      "hexa ever clear",
       "wisteria"
     ],
     "best": "\u2605 Forebitt UFO \u2605"
   },
   {
     "user": "blue_orbe",
-    "points": 6,
+    "points": 8,
     "featured": [
       "Resonance",
       "\u2605 LXVI \u2605"
     ],
-    "best": "\u2605 LXVI \u2605"
+    "best": "Resonance"
   },
   {
-    "user": "EternalUMI",
+    "user": "danman",
     "points": 6,
     "featured": [
-      "Corruption",
-      "\u2605 71a3 \u2605"
+      "Too Wave Carried",
+      "finality",
+      "tear through spacetime"
     ],
-    "best": "\u2605 71a3 \u2605"
+    "best": "Too Wave Carried"
   },
   {
-    "user": "ZajuGMD",
-    "points": 4,
+    "user": "mold",
+    "points": 6,
     "featured": [
-      "\u2605 kaban \u2605"
+      "LV 5 SSOH CHALLENGE",
+      "ifasteio anglou"
     ],
-    "best": "\u2605 kaban \u2605"
+    "best": "LV 5 SSOH CHALLENGE"
   },
   {
-    "user": "aqrlr",
+    "user": "hexation37",
     "points": 4,
     "featured": [
-      "\u2605 AREA 33 \u2605"
+      "IMAWANOKIWA"
     ],
-    "best": "\u2605 AREA 33 \u2605"
+    "best": "IMAWANOKIWA"
+  },
+  {
+    "user": "DeadXM",
+    "points": 4,
+    "featured": [
+      "\u2726 PRETTY THINGS \u2726"
+    ],
+    "best": "\u2726 PRETTY THINGS \u2726"
+  },
+  {
+    "user": "itsGalaxie",
+    "points": 4,
+    "featured": [
+      "bladeawamba "
+    ],
+    "best": "bladeawamba "
+  },
+  {
+    "user": "amy",
+    "points": 4,
+    "featured": [
+      "anino"
+    ],
+    "best": "anino"
   },
   {
     "user": "imorii",
     "points": 4,
     "featured": [
-      "Digitized Decline",
       "gleeger"
     ],
-    "best": "Digitized Decline"
-  },
-  {
-    "user": "mold",
-    "points": 3,
-    "featured": [
-      "sunshine",
-      "LV 124 SOG CHALLENGE"
-    ],
-    "best": "LV 124 SOG CHALLENGE"
-  },
-  {
-    "user": "aqwav",
-    "points": 2,
-    "featured": [
-      "\u2605 xeopolis \u2605"
-    ],
-    "best": "\u2605 xeopolis \u2605"
-  },
-  {
-    "user": "unidoez",
-    "points": 2,
-    "featured": [
-      "\u2605 xeopolis \u2605"
-    ],
-    "best": "\u2605 xeopolis \u2605"
-  },
-  {
-    "user": "amy",
-    "points": 2,
-    "featured": [
-      "pollux \uD83E\uDD8B"
-    ],
-    "best": "pollux \uD83E\uDD8B"
-  },
-  {
-    "user": "scruffie",
-    "points": 2,
-    "featured": [
-      "Final Epstination"
-    ],
-    "best": "Final Epstination"
-  },
-  {
-    "user": "valk",
-    "points": 2,
-    "featured": [
-      "Xy76"
-    ],
-    "best": "Xy76"
-  },
-  {
-    "user": "itsGalaxie",
-    "points": 2,
-    "featured": [
-      "hell but uwu ig idk"
-    ],
-    "best": "hell but uwu ig idk"
+    "best": "gleeger"
   },
   {
     "user": "Cala",
-    "points": 1,
+    "points": 2,
     "featured": [
       " Requiem "
     ],
@@ -156,10 +107,58 @@
   },
   {
     "user": "Lumi",
-    "points": 1,
+    "points": 2,
     "featured": [
       " Requiem "
     ],
     "best": " Requiem "
+  },
+  {
+    "user": "aqrlr",
+    "points": 2,
+    "featured": [
+      "\u2605 AREA 33 \u2605"
+    ],
+    "best": "\u2605 AREA 33 \u2605"
+  },
+  {
+    "user": "miles",
+    "points": 2,
+    "featured": [
+      "\u2605 scary scary john \u2605"
+    ],
+    "best": "\u2605 scary scary john \u2605"
+  },
+  {
+    "user": "sznapis",
+    "points": 2,
+    "featured": [
+      "slope map"
+    ],
+    "best": "slope map"
+  },
+  {
+    "user": "abr0611",
+    "points": 2,
+    "featured": [
+      "turn the lights on"
+    ],
+    "best": "turn the lights on"
+  },
+  {
+    "user": "aqwav",
+    "points": 1,
+    "featured": [
+      "\u2605 xeopolis \u2605"
+    ],
+    "best": "\u2605 xeopolis \u2605"
+  },
+  {
+    "user": "unidoez",
+    "points": 1,
+    "featured": [
+      "\u2605 xeopolis \u2605"
+    ],
+    "best": "\u2605 xeopolis \u2605"
   }
 ]
