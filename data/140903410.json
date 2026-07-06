@@ -12,6 +12,13 @@
   ],
   "verifier": "mold",
   "verification": "https://youtu.be/PF2aM4kYXEM",
-  "records": [],
+  "records": [
+    {
+      "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
