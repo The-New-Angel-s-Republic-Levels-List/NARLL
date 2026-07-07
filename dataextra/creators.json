@@ -1,11 +1,12 @@
 [
   {
     "user": "Rosie",
-    "points": 33,
+    "points": 36,
     "featured": [
       "Rosie Ship Trials",
       "\u2605 Spaceless Unleashed \u2605",
       "lesbian circles",
+      "Rocket Fuel",
       "sunshine",
       "\u2726 Descent Into Despair \u2726",
       "\u2605 Lunacy \u2605",
@@ -56,15 +57,6 @@
     "best": "\u2605 LXVI \u2605"
   },
   {
-    "user": "EternalUMI",
-    "points": 6,
-    "featured": [
-      "Corruption",
-      "\u2605 71a3 \u2605"
-    ],
-    "best": "\u2605 71a3 \u2605"
-  },
-  {
     "user": "ZajuGMD",
     "points": 4,
     "featured": [
@@ -90,6 +82,15 @@
     "best": "Digitized Decline"
   },
   {
+    "user": "EternalUMI",
+    "points": 4,
+    "featured": [
+      "Corruption",
+      "\u2605 71a3 \u2605"
+    ],
+    "best": "Corruption"
+  },
+  {
     "user": "mold",
     "points": 3,
     "featured": [
@@ -113,6 +114,14 @@
       "\u2605 xeopolis \u2605"
     ],
     "best": "\u2605 xeopolis \u2605"
+  },
+  {
+    "user": "Aspect",
+    "points": 2,
+    "featured": [
+      "Britney Sclears"
+    ],
+    "best": "Britney Sclears"
   },
   {
     "user": "amy",
@@ -161,5 +170,13 @@
       " Requiem "
     ],
     "best": " Requiem "
+  },
+  {
+    "user": "Cloud",
+    "points": 1,
+    "featured": [
+      "Rocket Fuel"
+    ],
+    "best": "Rocket Fuel"
   }
 ]
