@@ -1,7 +1,7 @@
 [
   {
     "user": "Rosie",
-    "points": 34,
+    "points": 36,
     "featured": [
       "Rosie Ship Trials",
       "\u2605 Spaceless Unleashed \u2605",
@@ -57,15 +57,6 @@
     "best": "\u2605 LXVI \u2605"
   },
   {
-    "user": "EternalUMI",
-    "points": 6,
-    "featured": [
-      "Corruption",
-      "\u2605 71a3 \u2605"
-    ],
-    "best": "\u2605 71a3 \u2605"
-  },
-  {
     "user": "ZajuGMD",
     "points": 4,
     "featured": [
@@ -89,6 +80,15 @@
       "gleeger"
     ],
     "best": "Digitized Decline"
+  },
+  {
+    "user": "EternalUMI",
+    "points": 4,
+    "featured": [
+      "Corruption",
+      "\u2605 71a3 \u2605"
+    ],
+    "best": "Corruption"
   },
   {
     "user": "mold",
