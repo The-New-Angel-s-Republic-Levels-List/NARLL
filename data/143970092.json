@@ -5,7 +5,7 @@
   "name": "Snoh",
   "author": "Aspect",
   "tags": "Timings",
-  "enjoyment": "",
+  "enjoyment": "6.03",
   "notes": "",
   "creators": [
     "Aspect"
@@ -15,6 +15,18 @@
   "records": [
     {
       "user": "DeadXM",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Valk",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
       "link": "",
       "percent": 100,
       "hz": 0
