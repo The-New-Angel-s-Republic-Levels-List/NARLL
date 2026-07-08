@@ -155,11 +155,52 @@
             "jm"
         ]
     },
-
-    
+   
     "juyeko": {
         "flags": [
             "fr"
         ]
-    }
+    },
+
+    "Gaseba": {
+        "flags": [
+            "fr"
+        ]
+    },
+        
+    "kirzy_1225": {
+        "flags": [
+            "ua"
+        ]
+    },
+        
+    "Oddpepper": {
+        "flags": [
+            "ki"
+        ]
+    },
+        
+    "mono": {
+        "flags": [
+            "br"
+        ]
+    },
+        
+    "lrexx": {
+        "flags": [
+            "ru"
+        ]
+    },
+        
+    "EternalUMI": {
+        "flags": [
+            "pl"
+        ]
+    },
+        
+    "ivory": {
+        "flags": [
+            "jo"
+        ]
+    },
 }
