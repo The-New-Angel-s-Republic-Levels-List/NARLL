@@ -1,7 +1,7 @@
 {
   "id": 144056620,
   "length": "1:23",
-  "featured": "",
+  "featured": "top",
   "name": "Interstellar",
   "author": "Rosie",
   "tags": "Cube, Ship, Chokepoints",
@@ -12,6 +12,13 @@
   ],
   "verifier": "Toupeurvibreur",
   "verification": "https://youtu.be/F8WeSBjDhGA",
-  "records": [],
+  "records": [
+    {
+      "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
