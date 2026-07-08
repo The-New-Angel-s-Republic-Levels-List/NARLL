@@ -1,23 +1,13 @@
 [
     {
-        "role": "dev",
-        "name": "scruffiebaka",
-        "link": "https://github.com/scruffiebaka"
-    },
-    {
-        "role": "dev",
-        "name": "srcocoa",
-        "link": "https://www.youtube.com/@SR_Cocoa"
+        "role": "admin",
+        "name": "xeo_o [🐀]",
+        "link": "https://www.youtube.com/@xeo_o"
     },
     {
         "role": "admin",
         "name": "vexenous 🦈 [夜に駆ける]",
         "link": "https://www.youtube.com/@vexenous"
-    },
-    {
-        "role": "admin",
-        "name": "xeo_o [🐀]",
-        "link": "https://www.youtube.com/@xeo_o"
     },
     {
         "role": "helper",
@@ -31,6 +21,11 @@
     },
     {
         "role": "helper",
+        "name": "watty",
+        "link": "https://youtube.com/@wattiwatt"
+    },
+    {
+        "role": "helper",
         "name": "imorii",
         "link": "https://www.youtube.com/@iimoriii"
     },
@@ -38,5 +33,15 @@
         "role": "helper",
         "name": "miles [NARILL OWNER]",
         "link": "https://www.youtube.com/@Q45-real"
+    },
+    {
+        "role": "dev",
+        "name": "scruffiebaka",
+        "link": "https://github.com/scruffiebaka"
+    },
+    {
+        "role": "dev",
+        "name": "srcocoa",
+        "link": "https://www.youtube.com/@SR_Cocoa"
     }
 ]
