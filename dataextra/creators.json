@@ -1,7 +1,7 @@
 [
   {
     "user": "Rosie",
-    "points": 48,
+    "points": 50,
     "featured": [
       "Rosie Ship Trials",
       "\u2605 Spaceless Unleashed \u2605",
@@ -15,6 +15,7 @@
       "Last Time",
       "\u2605 Destined \u2605",
       "\u2605 Phoenix A \u2605",
+      "Dynamism",
       "Deception",
       "Moonlight",
       "\u2605 spaceless \u2605"
@@ -51,6 +52,14 @@
     "best": "\u2605 Forebitt UFO \u2605"
   },
   {
+    "user": "ash8",
+    "points": 6,
+    "featured": [
+      "\u2726 Bidont Alert \u2726"
+    ],
+    "best": "\u2726 Bidont Alert \u2726"
+  },
+  {
     "user": "blue_orbe",
     "points": 6,
     "featured": [
@@ -74,6 +83,14 @@
       "\u2605 AREA 33 \u2605"
     ],
     "best": "\u2605 AREA 33 \u2605"
+  },
+  {
+    "user": "Difinay",
+    "points": 4,
+    "featured": [
+      "\u2605 NAR\u0027s Worst Nightmare \u2605"
+    ],
+    "best": "\u2605 NAR\u0027s Worst Nightmare \u2605"
   },
   {
     "user": "imorii",
