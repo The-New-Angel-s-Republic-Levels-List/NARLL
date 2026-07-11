@@ -5,7 +5,7 @@
   "name": "Final Aggression",
   "author": "lrexx",
   "tags": "Wave, Cube",
-  "enjoyment": "3.5",
+  "enjoyment": "3.88",
   "notes": "icedcave slop boo",
   "creators": [
     "lrexx"
@@ -21,6 +21,12 @@
     },
     {
       "user": "humptwe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Aspect",
       "link": "",
       "percent": 100,
       "hz": 0
