@@ -103,7 +103,7 @@
     
     "amy": {
         "flags": [
-            "id"
+            "ph"
         ]
     },
     
@@ -207,6 +207,18 @@
     "miles": {
         "flags": [
             "ca"
+        ]
+    },
+
+    "aqrlr": {
+        "flags": [
+            "id"
+        ]
+    },
+
+        "Solidgold135": {
+        "flags": [
+            "us"
         ]
     }
 }
