@@ -13,6 +13,13 @@
   ],
   "verifier": "Cloud",
   "verification": "https://youtu.be/al5pXVXuR6Y",
-  "records": [],
+  "records": [
+    {
+      "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }

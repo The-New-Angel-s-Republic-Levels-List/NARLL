@@ -5,7 +5,7 @@
   "name": "BAILE",
   "author": "DeadXM",
   "tags": "\nWave",
-  "enjoyment": "8.17",
+  "enjoyment": "7.8",
   "notes": "this is my first time doing this im sorry if i make a mistake :sob: -rosie",
   "creators": [
     "DeadXM"
@@ -21,6 +21,12 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
       "link": "",
       "percent": 100,
       "hz": 0

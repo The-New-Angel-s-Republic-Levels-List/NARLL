@@ -5,7 +5,7 @@
   "name": "\u2605 Phoenix A \u2605",
   "author": "Rosie",
   "tags": "Cube, Timings, Chokepoints ",
-  "enjoyment": "6.25",
+  "enjoyment": "5.5",
   "notes": "",
   "creators": [
     "Rosie"
@@ -27,6 +27,18 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "DeadXM",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Cloud",
       "link": "",
       "percent": 100,
       "hz": 0

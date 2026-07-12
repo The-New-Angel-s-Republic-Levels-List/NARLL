@@ -5,7 +5,7 @@
   "name": "catgirl cafe",
   "author": "Hyacinth",
   "tags": "Wave",
-  "enjoyment": "7.08",
+  "enjoyment": "6.51",
   "notes": "2 mar approved levels in one day bro",
   "creators": [
     "Hyacinth"
@@ -57,6 +57,12 @@
     },
     {
       "user": "tyuu6ihn",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Oddpepper",
       "link": "",
       "percent": 100,
       "hz": 0
