@@ -1,5 +1,6 @@
 [
-    {    
+    "whatisgoingon": [
+    {     
         "text": "EVIL THINGS | ID 144673252",
         "date": "2026-07-14"
     },
@@ -10,6 +11,5 @@
     {    
         "text": "Dark Blossom | ID 133764602",
         "date": "2026-07-15"
-    },
-    "text"
+    }
 ]
