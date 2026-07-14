@@ -5,7 +5,7 @@
   "name": " Requiem ",
   "author": "Cala, Lumi",
   "tags": "Overall, Chokepoints",
-  "enjoyment": "",
+  "enjoyment": "7",
   "notes": "GG",
   "creators": [
     "Cala",
@@ -16,6 +16,12 @@
   "records": [
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Aspect",
       "link": "",
       "percent": 100,
       "hz": 0
