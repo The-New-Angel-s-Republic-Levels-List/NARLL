@@ -5,7 +5,7 @@
   "name": "\u2726 PRETTY THINGS \u2726",
   "author": "DeadXM",
   "tags": "Timings, Ball",
-  "enjoyment": "8.98",
+  "enjoyment": "9.06",
   "notes": "",
   "creators": [
     "DeadXM"
@@ -81,6 +81,12 @@
     },
     {
       "user": "Oddpepper",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "unaura",
       "link": "",
       "percent": 100,
       "hz": 0
