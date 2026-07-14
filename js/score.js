@@ -12,12 +12,12 @@ export function score(rank, percent) {
         // anchor points for customizable curve !!
         const anchors = [
             { r: 1,  s: 100 },
-            { r: 10, s: 80  },
-            { r: 20, s: 60  },
-            { r: 30, s: 40  },
-            { r: 40, s: 30  },
-            { r: 50, s: 20  },
-            { r: 60, s: 10  },
+            { r: 10, s: 70  },
+            { r: 20, s: 50  },
+            { r: 30, s: 35  },
+            { r: 40, s: 20  },
+            { r: 50, s: 10  },
+            { r: 60, s: 5   },
             { r: 70, s: 1   }
         ];
         // find seg and interpolate shit
