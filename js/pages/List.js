@@ -200,8 +200,8 @@ export default {
                     <h3>Statistics</h3>
                     <div class="list-stats">
                         <p>The list currently has <span ref="levelCount"></span> levels</p>
-                        <p> This list has {{ stats.highlightCount }} Highlighted Levels, {{ stats.featuredCount }} Featured Levels, 
-                            {{ stats.topFeaturedCount }} Top Featured Levels, and {{ stats.angelAwardCount }} Angel Award Levels! 
+                        <p> This list has <span ref="highlightCount"></span> Highlighted Levels, <span ref="featuredCount"></span> Featured Levels, 
+                            <span ref="topFeaturedCount"></span> Top Featured Levels, and <span ref="angelAwardCount"></span> Angel Award Levels! 
                         </p>
                         <p>
                             Best player:
@@ -540,18 +540,24 @@ export default {
             this.selectedTags = [];
         },
         animateCounter() {
-            if (!this.$refs.levelCount) return;
-
             const CountUp = window.countUp?.CountUp;
             if (!CountUp) return;
-
-            const counter = new CountUp(
-                this.$refs.levelCount,
-                this.list.length,
-                { duration: 1 }
-            );
-
-            counter.start();
+        
+            const counters = [
+                ["levelCount", this.list.length],
+                ["highlightCount", this.stats.highlightCount],
+                ["featuredCount", this.stats.featuredCount],
+                ["topFeaturedCount", this.stats.topFeaturedCount],
+                ["angelAwardCount", this.stats.angelAwardCount],
+            ];
+        
+            for (const [ref, value] of counters) {
+                if (!this.$refs[ref]) continue;
+        
+                new CountUp(this.$refs[ref], value, {
+                    duration: 1
+                }).start();
+            }
         },
         angelAwardClass(level) {
             if (level?.featured !== "award") return "";
