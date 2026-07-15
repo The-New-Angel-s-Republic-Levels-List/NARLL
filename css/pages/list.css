@@ -551,12 +551,35 @@
 
 .rainbow-text {
     background: linear-gradient(
-        90deg,red, orange, yellow, green, cyan, blue, violet, red
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
     );
-    background-size: 300% 100%;
+    background-size: 200% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbowMove 3s linear infinite;
+}
+
+@keyframes rainbowMove {
+    from {
+        background-position: 0% 0;
+    }
+    to {
+        background-position: -100% 0;
+    }
 }
 
 @keyframes rainbowMove {
