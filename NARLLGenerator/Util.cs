@@ -50,6 +50,10 @@ public static class Util
         {
             return "highlight";
         }
+        else if (hexa == "FFB1FF")
+        {
+            return "award";
+        }
         else
         {
             return "";
