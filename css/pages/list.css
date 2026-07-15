@@ -552,20 +552,16 @@
 .rainbow-text {
     background: linear-gradient(
         90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
+        #5BCEFA,
+        #F5A9B8,
+        #FFFFFF,
+        #F5A9B8,
+        #5BCEFA,
+        #5BCEFA,
+        #F5A9B8,
+        #FFFFFF,
+        #F5A9B8,
+        #5BCEFA
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;
@@ -580,11 +576,6 @@
     to {
         background-position: -100% 0;
     }
-}
-
-@keyframes rainbowMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
 }
 
 .list-stats span {
