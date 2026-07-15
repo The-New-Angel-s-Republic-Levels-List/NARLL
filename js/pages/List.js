@@ -14,6 +14,10 @@ const roleIconMap = {
     trial: "user-lock",
 };
 
+const angelAwardColors = {
+    143673297: "default"
+};
+
 export default {
     components: { Spinner, LevelAuthors },
     template: `
@@ -106,7 +110,8 @@ export default {
                                 'level-highlight': level?.featured === 'highlight',
                                 'level-featured': level?.featured === 'featured',
                                 'level-angel': level?.featured === 'award'
-                                }
+                                },
+                                angelAwardClass(level)
                             ]"
                         >
                             <button @click="store.selected = originalIndex">
@@ -195,6 +200,9 @@ export default {
                     <h3>Statistics</h3>
                     <div class="list-stats">
                         <p>The list currently has <span ref="levelCount"></span> levels</p>
+                        <p> This list has {{ stats.highlightCount }} Highlighted Levels, {{ stats.featuredCount }} Featured Levels, 
+                            {{ stats.topFeaturedCount }} Top Featured Levels, and {{ stats.angelAwardCount }} Angel Award Levels! 
+                        </p>
                         <p>
                             Best player:
                             <span class="rainbow-text">
@@ -447,7 +455,12 @@ export default {
             return {
                 levelCount: this.list?.length ?? 0,
                 bestPlayer: this.leaderboard?.[0]?.user ?? "NA",
-                bestCreator: this.creatorsBoard?.[0]?.user ?? "NA"
+                bestCreator: this.creatorsBoard?.[0]?.user ?? "NA",
+        
+                featuredCount: this.list.filter(([level]) => level?.featured === "featured").length,
+                highlightCount: this.list.filter(([level]) => level?.featured === "highlight").length,
+                topFeaturedCount: this.list.filter(([level]) => level?.featured === "top").length,
+                angelAwardCount: this.list.filter(([level]) => level?.featured === "award").length,
             };
         }
     },
@@ -539,6 +552,12 @@ export default {
             );
 
             counter.start();
+        },
+        angelAwardClass(level) {
+            if (level?.featured !== "award") return "";
+        
+            const color = angelAwardColors[level.id];
+            return color ? `level-angel${color}` : "";
         }
     },
     watch: {
