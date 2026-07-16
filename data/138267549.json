@@ -5,7 +5,7 @@
   "name": "Takis Crunch",
   "author": "ash8",
   "tags": "Timings",
-  "enjoyment": "6.32",
+  "enjoyment": "6.93",
   "notes": "random level by random dude verified by random guy",
   "creators": [
     "ash8"
@@ -33,6 +33,12 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Aspect",
       "link": "",
       "percent": 100,
       "hz": 0

@@ -5,7 +5,7 @@
   "name": "\u2605 EVIL THINGS \u2605",
   "author": "DeadXM",
   "tags": "Ball, Timings",
-  "enjoyment": "7.43",
+  "enjoyment": "7.34",
   "notes": "",
   "creators": [
     "DeadXM"
@@ -27,6 +27,12 @@
     },
     {
       "user": "blue_orbe",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "unaura",
       "link": "",
       "percent": 100,
       "hz": 0
