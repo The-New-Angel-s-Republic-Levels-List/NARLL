@@ -1,0 +1,41 @@
+.page-list .list .level.level-angel-bidontalert button {
+    background: linear-gradient(
+        90deg,
+        rgba(220, 40, 40, 0.3) 0%,
+        rgba(255, 90, 40, 0.3) 25%,
+        rgba(255, 140, 40, 0.3) 50%,
+        rgba(255, 90, 40, 0.3) 75%,
+        rgba(220, 40, 40, 0.3) 100%
+    );
+
+    color: var(--color-on-background);
+
+    border-radius: 0.5rem;
+    border: 3px solid #ff6b2c;
+}
+
+.page-list .list .level.level-angel-bidontalert.active button {
+    background: #ff6b2c;
+    color: var(--color-on-primary);
+}
+
+.page-list .list .level.level-angel-fallenangel button {
+    background: linear-gradient(
+        90deg,
+        rgba(120, 0, 0, 0.3) 0%,
+        rgba(180, 20, 20, 0.3) 25%,
+        rgba(255, 60, 60, 0.3) 50%,
+        rgba(180, 20, 20, 0.3) 75%,
+        rgba(120, 0, 0, 0.3) 100%
+    );
+
+    color: var(--color-on-background);
+
+    border-radius: 0.5rem;
+    border: 3px solid #d92626;
+}
+
+.page-list .list .level.level-angel-fallenangel.active button {
+    background: #d92626;
+    color: var(--color-on-primary);
+}

@@ -15,7 +15,8 @@ const roleIconMap = {
 };
 
 const angelAwardColors = {
-    143673297: "default"
+    143673297: "bidontalert",
+    144833494: "fallenangel"
 };
 
 export default {
