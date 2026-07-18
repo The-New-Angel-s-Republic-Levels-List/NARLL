@@ -102,8 +102,7 @@ export default {
                                 'level-highlight' : level && level.featured === 'highlight',
                                 'level-top': level && level.featured === 'top',
                                 'level-featured': level && level.featured === 'featured',
-                                'level-angel': level && level.featured === 'award'
-                                
+                                'level-angel': level && level.featured === 'award'   
                             }"
                         >
                             <button @click="selectedLevel = i">
