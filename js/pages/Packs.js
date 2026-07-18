@@ -61,15 +61,22 @@ export default {
 
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm">Points</div>
-                            <p>{{ score(selectedLevel + 1, 100) }}</p>
+                            <div class="type-title-sm">Placement</div>
+                            <p>{{ currentRank ? "#" + currentRank : "-" }}</p>
                         </li>
+
+                        <li>
+                            <div class="type-title-sm">Points</div>
+                            <p>{{ currentRank ? score(currentRank, 100) : "-" }}</p>
+                        </li>
+
                         <li>
                             <div class="type-title-sm">ID</div>
                             <p class="type-label-lg link" @click="copyText(level.id)">
                                 {{ level.id }}
                             </p>
                         </li>
+
                         <li>
                             <div class="type-title-sm">Length</div>
                             <p>{{ level.length }}</p>
@@ -145,6 +152,12 @@ export default {
     },
 
     computed: {
+        currentRank() {
+            if (!this.level || !this.fullList) return null;
+
+            const index = this.fullList.findIndex(([lvl]) => lvl?.id === this.level.id);
+            return index === -1 ? null : index + 1;
+        },
         currentPackLevels() {
             return this.packLevels[this.selectedPack];
         },
