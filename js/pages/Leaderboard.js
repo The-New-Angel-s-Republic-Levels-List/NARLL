@@ -213,7 +213,10 @@ export default {
             "total"
         ).map(player => {
 
-            const completed = new Set(player.completed.map(lvl => lvl.id));
+            const completed = new Set([
+                ...player.completed.map(lvl => lvl.id),
+                ...player.verified.map(lvl => lvl.id)
+            ]);
 
             const badges = packs.filter(pack =>
                 pack.levels.every(id => completed.has(id))
