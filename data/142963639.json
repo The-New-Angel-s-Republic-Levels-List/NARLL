@@ -5,7 +5,7 @@
   "name": "MINDBREAK",
   "author": "blue_orbe",
   "tags": "Wave, Click-Sync",
-  "enjoyment": "8.66",
+  "enjoyment": "9",
   "notes": "",
   "creators": [
     "blue_orbe"
@@ -21,6 +21,12 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Aspect",
       "link": "",
       "percent": 100,
       "hz": 0
