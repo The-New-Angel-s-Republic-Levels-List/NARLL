@@ -5,7 +5,7 @@
   "name": " \u2727 Fallen Angel \u2727",
   "author": "Rosie",
   "tags": "Timings, Ball, Ship",
-  "enjoyment": "8",
+  "enjoyment": "7",
   "notes": "the angel has been banished (2nd angel award)",
   "creators": [
     "Rosie"
@@ -21,6 +21,12 @@
     },
     {
       "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "mold",
       "link": "",
       "percent": 100,
       "hz": 0
