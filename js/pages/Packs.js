@@ -1,7 +1,6 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { angelawardColors } from "../list.js";
 import { fetchList, fetchPacks } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
@@ -104,6 +103,7 @@ export default {
                                 'level-top': level && level.featured === 'top',
                                 'level-featured': level && level.featured === 'featured',
                                 'level-angel': level && level.featured === 'award'
+                                
                             }"
                         >
                             <button @click="selectedLevel = i">
