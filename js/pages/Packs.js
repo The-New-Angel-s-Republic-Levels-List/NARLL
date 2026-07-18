@@ -15,8 +15,10 @@ export default {
         </main>
 
         <main v-else class="page-list">
-
             <div class="list-container">
+            
+                <h2 style="margin:0 0 8px 0;">Packs</h2>
+                
                 <table class="list">
                     <tr v-for="(pack, i) in packs" :key="i">
                         <td 
@@ -32,6 +34,7 @@ export default {
             </div>
 
             <div class="level-container">
+
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
 
@@ -89,6 +92,8 @@ export default {
             </div>
 
             <div class="meta-container">
+                <h2 style="margin:0 0 8px 0;">Levels</h2>
+                
                 <table class="list" v-if="currentPackLevels">
                     <tr v-for="([level, err], i) in currentPackLevels" :key="i">
                         <td 
