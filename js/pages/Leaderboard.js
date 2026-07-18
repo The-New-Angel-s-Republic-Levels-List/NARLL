@@ -1,4 +1,4 @@
-import { fetchLeaderboard, fetchCreators, fetchUsers } from "../content.js";
+import { fetchLeaderboard, fetchCreators, fetchUsers, fetchPacks } from "../content.js";
 import { localize } from "../util.js";
 import Spinner from "../components/Spinner.js";
 
@@ -126,6 +126,17 @@ export default {
                             </div>
                         </div>
 
+                        <div class="badge-container">
+                            <span
+                                v-for="badge in entry.badges"
+                                :key="badge.id"
+                                class="pack-badge type-label-lg"
+                                :style="{ background: badge.gradient }"
+                            >
+                                {{ badge.name }}
+                            </span>
+                        </div>
+
                         <h3>
                             {{ mode === 'list' ? entry.total : (creator.points + ' points') }}
                         </h3>
@@ -192,6 +203,7 @@ export default {
 
     async mounted() {
         const users = await fetchUsers();
+        const packs = await fetchPacks();
 
         const [leaderboard, err] = await fetchLeaderboard();
         this.err = err;
@@ -199,10 +211,20 @@ export default {
         this.leaderboard = computeRanks(
             leaderboard.sort((a, b) => b.total - a.total),
             "total"
-        ).map(player => ({
-            ...player,
-            flags: users[player.user]?.flags ?? []
-        }));
+        ).map(player => {
+
+            const completed = new Set(player.completed.map(lvl => lvl.id));
+
+            const badges = packs.filter(pack =>
+                pack.levels.every(id => completed.has(id))
+            );
+
+            return {
+                ...player,
+                flags: users[player.user]?.flags ?? [],
+                badges
+            };
+        });
 
         const creators = await fetchCreators();
 

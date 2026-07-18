@@ -25,8 +25,16 @@ export default {
                             class="level"
                             :class="{ active: selectedPack === i }"
                         >
-                            <button @click="selectPack(i)">
-                                <span class="type-label-lg">{{ pack.name }}</span>
+                            <button
+                                @click="selectPack(i)"
+                                :style="selectedPack === i
+                                    ? {}
+                                    : { background: pack.gradient }"
+                            >
+                                <span class="type-label-lg">
+                                    {{ pack.name }}
+                                </span>
+        
                             </button>
                         </td>
                     </tr>
