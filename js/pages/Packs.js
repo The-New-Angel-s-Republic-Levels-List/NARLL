@@ -1,6 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
+import { angelawardColors } from "../list.js";
 import { fetchList, fetchPacks } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
