@@ -126,7 +126,7 @@ export default {
                             </div>
                         </div>
 
-                        <div class="badge-container">
+                        <div class="badge-container" v-if="mode === 'list'">
                             <span
                                 v-for="badge in entry.badges"
                                 :key="badge.id"
