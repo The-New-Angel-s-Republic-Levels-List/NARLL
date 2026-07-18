@@ -200,6 +200,15 @@ export async function fetchCreators() {
     }
 }
 
+export async function fetchAwards() {
+    try {
+        const res = await fetch("/dataextra/awardcolors.json");
+        return await res.json();
+    } catch {
+        return {};
+    }
+}
+
 export async function fetchPacks() {
     try {
         const res = await fetch('/dataextra/packs.json');

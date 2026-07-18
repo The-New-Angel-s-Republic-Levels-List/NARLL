@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchList, fetchPacks } from "../content.js";
+import { fetchList, fetchPacks, fetchAwards } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -16,7 +16,6 @@ export default {
 
         <main v-else class="page-list">
 
-            <!-- LEFT: PACKS -->
             <div class="list-container">
                 <table class="list">
                     <tr v-for="(pack, i) in packs" :key="i">
@@ -32,7 +31,6 @@ export default {
                 </table>
             </div>
 
-            <!-- MIDDLE: LEVEL VIEW -->
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
@@ -90,20 +88,22 @@ export default {
                 </div>
             </div>
 
-            <!-- RIGHT: LEVELS -->
             <div class="meta-container">
                 <table class="list" v-if="currentPackLevels">
                     <tr v-for="([level, err], i) in currentPackLevels" :key="i">
                         <td 
                             class="level"
-                            :class="{
-                                active: selectedLevel === i,
-                                error: !level,
-                                'level-highlight' : level && level.featured === 'highlight',
-                                'level-top': level && level.featured === 'top',
-                                'level-featured': level && level.featured === 'featured',
-                                'level-angel': level && level.featured === 'award'   
-                            }"
+                            :class="[
+                                {
+                                    active: selectedLevel === i,
+                                    error: !level,
+                                    'level-highlight': level?.featured === 'highlight',
+                                    'level-top': level?.featured === 'top',
+                                    'level-featured': level?.featured === 'featured',
+                                    'level-angel': level?.featured === 'award'
+                                },
+                                angelAwardClass(level)
+                            ]"
                         >
                             <button @click="selectedLevel = i">
                                 <span class="type-label-lg">
@@ -122,6 +122,7 @@ export default {
         return {
             fullList: null,
             packs: [],
+            awards: {},
             packLevels: {},
             selectedPack: 0,
             selectedLevel: 0,
@@ -145,7 +146,10 @@ export default {
     },
 
     async mounted() {
+
         const packs = await fetchPacks();
+        this.awards = await fetchAwards();
+
         this.packs = packs;
 
         if (this.packs.length > 0) {
@@ -179,6 +183,13 @@ export default {
 
         copyText(text) {
             navigator.clipboard.writeText(text);
+        },
+
+        angelAwardClass(level) {
+            if (level?.featured !== "award") return "";
+        
+            const color = this.awards[level.id];
+            return color ? `level-angel-${color}` : "default";
         }
     }
 };

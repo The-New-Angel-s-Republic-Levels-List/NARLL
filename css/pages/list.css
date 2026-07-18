@@ -190,14 +190,14 @@
     color: var(--color-on-primary);
 }
 
-.page-list .list .level.level-angel button {
+.page-list .list .level.level-angel-default button {
     background: linear-gradient(90deg,rgba(0, 183, 255, 0.3) 0%, rgba(255, 191, 250, 0.3) 20%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 191, 250, 0.3) 75%, rgba(0, 183, 255, 0.3) 100%);
     color: var(--color-on-background);
 
     border-radius: 0.5rem;
     border: 3px solid var(--color-primary);
 }
-.page-list .list .level.level-angel.active button {
+.page-list .list .level.level-angel-default.active button {
     background: var(--color-primary);
     color: var(--color-on-primary);
 }

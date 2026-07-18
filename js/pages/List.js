@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchChangelog, fetchPending, fetchBanned, fetchEditors, fetchList, fetchLeaderboard, fetchCreators } from "../content.js";
+import { fetchChangelog, fetchPending, fetchBanned, fetchEditors, fetchList, fetchLeaderboard, fetchCreators, fetchAwards } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -12,11 +12,6 @@ const roleIconMap = {
     helper: "user-shield",
     dev: "code",
     trial: "user-lock",
-};
-
-const angelAwardColors = {
-    143673297: "-bidontalert",
-    144833494: "-fallenangel"
 };
 
 export default {
@@ -339,7 +334,9 @@ export default {
         selectedTags: [],
         
         leaderboard: [],
-        creatorsBoard: []
+        creatorsBoard: [],
+
+        awards: []
     }),
     computed: {
         recordCountText() {
@@ -470,6 +467,8 @@ export default {
         this.list = await fetchList();
         this.editors = await fetchEditors();
 
+        this.awards = await fetchAwards();
+
         this.changelog = await fetchChangelog();
         this.pending = await fetchPending();
         this.banned = await fetchBanned();
@@ -563,8 +562,8 @@ export default {
         angelAwardClass(level) {
             if (level?.featured !== "award") return "";
         
-            const color = angelAwardColors[level.id];
-            return color ? `level-angel${color}` : "";
+            const color = this.awards[level.id];
+            return color ? `level-angel-${color}` : "default";
         }
     },
     watch: {
