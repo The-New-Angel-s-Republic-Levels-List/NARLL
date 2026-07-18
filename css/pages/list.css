@@ -14,6 +14,8 @@
 .page-list .list {
     width: 100%;
     table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 8px;
 }
 .page-list .list .rank {
     text-align: right;
