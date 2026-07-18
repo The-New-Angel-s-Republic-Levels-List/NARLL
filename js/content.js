@@ -105,7 +105,7 @@ export async function fetchImpossibleList() {
 
 export async function fetchEditors() {
     try {
-        const editorsResults = await fetch(`${dir}/_editors.json`);
+        const editorsResults = await fetch(`/dataextra/editors.json`);
         const editors = await editorsResults.json();
         return editors;
     } catch {

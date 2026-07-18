@@ -500,7 +500,9 @@ export default {
         this.loading = false;
 
         this.$nextTick(() => {
-            this.animateCounter();
+            requestAnimationFrame(() => {
+                this.animateCounter();
+            });
         });
     },
     methods: {
