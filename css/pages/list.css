@@ -261,7 +261,7 @@
     box-sizing: border-box;
 
     background-color: var(--color-changelog);
-    color: var(--color-changelog);
+    color: var(--color-on-background);
 }
 
 .page-list .list-container .search-bar:focus {
@@ -441,7 +441,7 @@
 
 .sort-filter input {
     background-color: var(--color-changelog);
-    color: var(--color-changelog);
+    color: var(--color-on-background);
 }
 
 .sort-filter input::placeholder {
@@ -498,7 +498,7 @@
     border-radius: 0.4rem;
     border: 1px solid #dfdfdf;
     background-color: var(--color-changelog);
-    color: var(--color-changelog);
+    color: var(--color-on-background);
     cursor: pointer;
 }
 
