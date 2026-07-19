@@ -85,11 +85,11 @@ public static class List
         var idText = sheet.Cells[row, 2].Text;
         if (!int.TryParse(idText, out var id)) return null;
         
-        var author = sheet.Cells[row, 3].Text;
-        var verifier = sheet.Cells[row, 4].Text;
+        var author = sheet.Cells[row, 5].Text;
+        var verifier = sheet.Cells[row, 6].Text;
 
-        var progress = sheet.Cells[row, 5].Text;
-        var notes = sheet.Cells[row, 6].Text;
+        var progress = sheet.Cells[row, 7].Text;
+        var notes = sheet.Cells[row, 8].Text;
 
         return new UnverifiedLevel
         {
