@@ -5,7 +5,7 @@
   "name": "Snoh",
   "author": "Aspect",
   "tags": "Timings",
-  "enjoyment": "6.03",
+  "enjoyment": "6.82",
   "notes": "\u2764\uFE0F it snoh ///// it snew",
   "creators": [
     "Aspect"
@@ -27,6 +27,12 @@
     },
     {
       "user": "mold",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "bluamek",
       "link": "",
       "percent": 100,
       "hz": 0
