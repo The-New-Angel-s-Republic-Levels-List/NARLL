@@ -79,17 +79,17 @@ public static class List
     
     public static UnverifiedLevel ProcessRowUNVERIFIED(ExcelWorksheet sheet, int row)
     {
-        var name = sheet.Cells[row, 1].Text;
+        var name = sheet.Cells[row, 2].Text;
         if (string.IsNullOrWhiteSpace(name)) return null;
 
-        var idText = sheet.Cells[row, 2].Text;
+        var idText = sheet.Cells[row, 3].Text;
         if (!int.TryParse(idText, out var id)) return null;
         
-        var author = sheet.Cells[row, 5].Text;
-        var verifier = sheet.Cells[row, 6].Text;
+        var author = sheet.Cells[row, 6].Text;
+        var verifier = sheet.Cells[row, 7].Text;
 
-        var progress = sheet.Cells[row, 7].Text;
-        var notes = sheet.Cells[row, 8].Text;
+        var progress = sheet.Cells[row, 8].Text;
+        var notes = sheet.Cells[row, 11].Text;
 
         return new UnverifiedLevel
         {
