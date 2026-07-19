@@ -1,50 +1,74 @@
 [
-  {
-    "id": "triple-t",
-    "name": "Triple T Pack 🥹",
-    "gradient": "linear-gradient(90deg, #8b5a3c, #b07a52)",
-    "levels": [138267549, 140674641, 133147559, 134835820]
-  },
-  {
-    "id": "remake",
-    "name": "Remake Pack",
-    "gradient": "linear-gradient(90deg, #7c4dff, #9d6bff)",
-    "levels": [134320925, 139630332, 143880748, 138145845, 138416537]
-  },
-  {
-    "id": "remake-2",
-    "name": "Remake Pack II",
-    "gradient": "linear-gradient(90deg, #6a5cff, #8a7dff)",
-    "levels": [135454335, 140470274, 144056620, 137388785, 142745133]
-  },
-  {
-    "id": "angel",
-    "name": "Angel Pack",
-    "gradient": "linear-gradient(90deg, #5bcffb, #f5abb9, #ffffff, #f5abb9, #5bcffb)",
-    "levels": [143673297, 144833494]
-  },
-  {
-    "id": "awarded",
-    "name": "Awarded Pack",
-    "gradient": "linear-gradient(90deg, #9b5cff, #d86cff, #ff7fb3)",
-    "levels": [144056620, 142745133, 137974837, 135417369]
-  },
-  {
-    "id": "beginner",
-    "name": "Beginner Pack",
-    "gradient": "linear-gradient(90deg, #4caf50, #7ec850)",
-    "levels": [136485628, 132290691, 132659505, 136099532, 132550912]
-  },
-  {
-    "id": "intermediate",
-    "name": "Intermediate Pack",
-    "gradient": "linear-gradient(90deg, #d4b000, #f0cf4a)",
-    "levels": [142745133, 143423885, 136668000, 134926737, 137974837]
-  },
-  {
-    "id": "advanced",
-    "name": "Advanced Pack",
-    "gradient": "linear-gradient(90deg, #d64545, #ff6b6b)",
-    "levels": [131938987, 142963639, 138267549, 133676767, 132016520]
-  }
+    {
+        "id": "triple-t",
+        "name": "Triple T Pack 🥹",
+        "gradient": "linear-gradient(90deg, #8b5a3c, #b07a52)",
+        "levels": [138267549, 140674641, 133147559, 134835820]
+    },
+    {
+        "id": "remake",
+        "name": "Remake Pack",
+        "gradient": "linear-gradient(90deg, #7c4dff, #9d6bff)",
+        "levels": [134320925, 139630332, 143880748, 138145845, 138416537]
+    },
+    {
+        "id": "remake-2",
+        "name": "Remake Pack II",
+        "gradient": "linear-gradient(90deg, #6a5cff, #8a7dff)",
+        "levels": [135454335, 140470274, 144056620, 137388785, 142745133]
+    },
+    {
+        "id": "angel",
+        "name": "Angel Pack",
+        "gradient": "linear-gradient(90deg, #5bcffb, #f5abb9, #ffffff, #f5abb9, #5bcffb)",
+        "levels": [143673297, 144833494]
+    },
+    {
+        "id": "awarded",
+        "name": "Awarded Pack",
+        "gradient": "linear-gradient(90deg, #9b5cff, #d86cff, #ff7fb3)",
+        "levels": [144056620, 142745133, 137974837, 135417369]
+    },
+    {
+        "id": "beginner",
+        "name": "Beginner Pack",
+        "gradient": "linear-gradient(90deg, #4caf50, #7ec850)",
+        "levels": [136485628, 132290691, 132659505, 136099532, 132550912]
+    },
+    {
+        "id": "intermediate",
+        "name": "Intermediate Pack",
+        "gradient": "linear-gradient(90deg, #d4b000, #f0cf4a)",
+        "levels": [142745133, 143423885, 136668000, 134926737, 137974837]
+    },
+    {
+        "id": "advanced",
+        "name": "Advanced Pack",
+        "gradient": "linear-gradient(90deg, #d64545, #ff6b6b)",
+        "levels": [131938987, 142963639, 138267549, 133676767, 132016520]
+    },
+    {
+        "id": "layout",
+        "name": "Layout Pack",
+        "gradient": "linear-gradient(90deg, rgba(120, 125, 135, 0.45) 0%, rgba(70, 75, 90, 0.45) 100%)",
+        "levels": [142963639, 137020920, 133676767, 140674641, 132016520]
+    },
+    {
+        "id": "ship",
+        "name": "Ship Pack",
+        "gradient": "linear-gradient(90deg, rgba(80, 180, 255, 0.40) 0%, rgba(30, 90, 220, 0.45) 100%)",
+        "levels": [143880748, 138145845, 144039670, 134967058, 140903410]
+    },
+    {
+        "id": "memory",
+        "name": "Memory Pack",
+        "gradient": "linear-gradient(90deg, rgba(130, 70, 220, 0.40) 0%, rgba(55, 30, 150, 0.45) 100%)",
+        "levels": [140458666, 144039670, 135207027, 134566466]
+    },
+    {
+        "id": "scary",
+        "name": "Scary Scary Pack",
+        "gradient": "linear-gradient(90deg, rgba(150, 0, 35, 0.45) 0%, rgba(35, 0, 0, 0.55) 100%)",
+        "levels": [137304505, 135417369]
+    }
 ]
