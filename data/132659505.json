@@ -5,7 +5,7 @@
   "name": "sog v2 jellicide",
   "author": "Sevras",
   "tags": "Duals",
-  "enjoyment": "7.1",
+  "enjoyment": "7.18",
   "notes": "",
   "creators": [
     "Sevras"
@@ -81,6 +81,12 @@
     },
     {
       "user": "hexation37",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Bluamek",
       "link": "",
       "percent": 100,
       "hz": 0
