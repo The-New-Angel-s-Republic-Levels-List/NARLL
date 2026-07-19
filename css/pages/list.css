@@ -260,8 +260,8 @@
     font-size: 1rem;
     box-sizing: border-box;
 
-    background-color: var(--color-background);
-    color: var(--color-on-background);
+    background-color: var(--color-changelog);
+    color: var(--color-changelog);
 }
 
 .page-list .list-container .search-bar:focus {
@@ -440,8 +440,8 @@
 }
 
 .sort-filter input {
-    background-color: var(--color-background);
-    color: var(--color-on-background);
+    background-color: var(--color-changelog);
+    color: var(--color-changelog);
 }
 
 .sort-filter input::placeholder {
@@ -449,14 +449,37 @@
 }
 
 .sort-filter select {
-    background-color: #ffffff;
-    color: #000000;
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0 0.75rem;
+
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
 }
 
 .sort-filter button {
-    background-color: #ffffff;
-    color: #000000;
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0 0.75rem;
+
+    font-family: "Lexend Deca", sans-serif;
     cursor: pointer;
+
+    transition: filter 150ms ease, transform 100ms ease;
+}
+
+.sort-filter button:hover {
+    filter: brightness(1.1);
+}
+
+.sort-filter button:active {
+    transform: scale(0.96);
 }
 
 .search-box {
@@ -465,13 +488,17 @@
     gap: 0.5rem;
 }
 
+.search-bar::placeholder {
+    color: var(--color-on-background);
+}
+
 .filter-toggle {
-    height: 32px;
+    height: 46px;
     padding: 0 0.7rem;
     border-radius: 0.4rem;
     border: 1px solid #dfdfdf;
-    background-color: var(--color-background);
-    color: var(--color-on-background);
+    background-color: var(--color-changelog);
+    color: var(--color-changelog);
     cursor: pointer;
 }
 
@@ -759,6 +786,78 @@
     font-family: "Lexend Deca", sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: .45rem;
+}
+
+.filter-group label {
+    font-size: .85rem;
+    opacity: .75;
+    font-weight: 600;
+}
+
+.filter-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.filter-row > * {
+    flex: 1;
+}
+
+.sort-direction {
+    flex: 0 0 auto;
+}
+
+.range-separator {
+    flex: 0;
+    opacity: .6;
+}
+
+.close-filter {
+    flex: 0 !important;
+    width: 36px;
+}
+
+.sort-direction {
+    flex: 0 0 auto !important;
+    white-space: nowrap;
+}
+
+.clear-filters {
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.tag-count {
+    opacity: .6;
+    font-weight: normal;
+}
+
+.range-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+.range-inputs input {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */

@@ -36,22 +36,67 @@ export default {
                     </button>
 
                     <div v-if="showFilters" class="sort-filter">
-                        <select v-model="sortBy">
-                            <option :value="null">None</option>
-                            <option value="name">Name</option>
-                            <option value="enjoyment">Enjoyment</option>
-                            <option value="victors">Victors</option>
-                        </select>
 
-                        <button @click="sortDir = sortDir === 'asc' ? 'desc' : 'asc'">
-                            {{ sortDir === 'asc' ? '⬆️' : '⬇️' }}
-                        </button>
+                    <div class="filter-header">
+                        <span class="type-label-lg">Sort & Filters</span>
+                    </div>
 
-                        <button @click="clearFilters">Clear</button>
+                    <div class="filter-group">
+                        <label>Sort By</label>
 
+                        <div class="filter-row">
+                            <select v-model="sortBy">
+                                <option :value="null">None (Placement)</option>
+                                <option value="name">Name</option>
+                                <option value="enjoyment">Enjoyment</option>
+                                <option value="victors">Victors</option>
+                            </select>
+
+                            <button
+                                class="sort-direction"
+                                @click="sortDir = sortDir === 'asc' ? 'desc' : 'asc'"
+                            >
+                                {{ sortDir === 'asc' ? '↑ Asc' : '↓ Desc' }}
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Creator</label>
+
+                        <input
+                            v-model="filters.creator"
+                            placeholder="Search creator..."
+                        />
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Enjoyment</label>
+
+                        <div class="range-inputs">
+                            <input
+                                type="number"
+                                v-model="filters.enjoymentMin"
+                                placeholder="Minimum"
+                                @input="filters.enjoymentMin = $event.target.value === '' ? null : Number($event.target.value)"
+                            />
+
+                            <input
+                                type="number"
+                                v-model="filters.enjoymentMax"
+                                placeholder="Maximum"
+                                @input="filters.enjoymentMax = $event.target.value === '' ? null : Number($event.target.value)"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
                         <details class="tag-dropdown">
                             <summary class="type-label-lg">
-                                Tags ({{ selectedTags.length }})
+                                Tags
+                                <span class="tag-count">
+                                    ({{ selectedTags.length }} selected)
+                                </span>
                             </summary>
 
                             <div class="tag-filter">
@@ -67,27 +112,21 @@ export default {
                                     >
 
                                     <span>
-                                        {{ tag.tag }} ({{ tag.count }})
+                                        {{ tag.tag }}
+                                        ({{ tag.count }})
                                     </span>
                                 </label>
                             </div>
                         </details>
+                    </div>
 
-                        <input v-model="filters.creator" placeholder="Creator" />
+                    <button
+                        class="clear-filters"
+                        @click="clearFilters"
+                    >
+                        Clear Filters
+                    </button>
 
-                        <input 
-                            type="number"
-                            v-model="filters.enjoymentMin"
-                            placeholder="Min Enjoyment"
-                            @input="filters.enjoymentMin = $event.target.value === '' ? null : Number($event.target.value)"
-                        />
-
-                        <input 
-                            type="number"
-                            v-model="filters.enjoymentMax"
-                            placeholder="Max Enjoyment"
-                            @input="filters.enjoymentMax = $event.target.value === '' ? null : Number($event.target.value)"
-                        />
                     </div>
                 </div>
 
