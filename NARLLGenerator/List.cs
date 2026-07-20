@@ -89,7 +89,6 @@ public static class List
         var verifier = sheet.Cells[row, 7].Text;
 
         var progress = sheet.Cells[row, 8].Text;
-        var notes = sheet.Cells[row, 11].Text;
 
         return new UnverifiedLevel
         {
@@ -97,8 +96,7 @@ public static class List
             id = id,
             author = author,
             verifier = verifier,
-            progress = progress,
-            notes = notes    
+            progress = progress,  
         };
     }
 
