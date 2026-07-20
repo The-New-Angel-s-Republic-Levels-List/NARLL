@@ -25,7 +25,7 @@ public static class List
             link = "https://www.youtube.com/watch?v=-r92Mzkd3Z0";
         }
 
-        var victorsRaw = sheet.Cells[row, 10].Text;
+        var victorsRaw = sheet.Cells[row, 9].Text;
 
         var records = victorsRaw
             .Split(',', StringSplitOptions.RemoveEmptyEntries)
@@ -41,8 +41,8 @@ public static class List
         var creators = author
             .Split(',', StringSplitOptions.TrimEntries).ToList();
 
-        var notes = sheet.Cells[row, 11].Text;
-        var nong = sheet.Cells[row, 12].Text;
+        var notes = sheet.Cells[row, 10].Text;
+        var nong = sheet.Cells[row, 11].Text;
 
         var feature = "";
         ExcelColor fillColor = sheet.Cells[row, 2].Style.Fill.BackgroundColor;
