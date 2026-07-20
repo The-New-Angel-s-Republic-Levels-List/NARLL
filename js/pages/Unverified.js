@@ -74,11 +74,7 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">Progress</div>
-                            <p>{{ level.verifier }}</p>
-                        </li>
-                        <li>
-                            <div class="type-title-sm">Notes</div>
-                            <p>{{ level.notes }}</p>
+                            <p>{{ level.progress }}</p>
                         </li>
                     </ul>
                 </div>
