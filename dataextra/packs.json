@@ -30,6 +30,12 @@
         "levels": [144056620, 142745133, 137974837, 135417369]
     },
     {
+        "id": "baby",
+        "name": "Baby Pack",
+        "gradient": "linear-gradient(90deg, #53afed, #279ee8)",
+        "levels": [134320925, 143673297, 139630332]
+    },
+    {
         "id": "beginner",
         "name": "Beginner Pack",
         "gradient": "linear-gradient(90deg, #4caf50, #7ec850)",
