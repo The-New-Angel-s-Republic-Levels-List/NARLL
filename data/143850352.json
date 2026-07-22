@@ -5,7 +5,7 @@
   "name": "Rocket Fuel",
   "author": "Cloud, Rosie",
   "tags": "Wave",
-  "enjoyment": "7.8",
+  "enjoyment": "8.1",
   "notes": "",
   "creators": [
     "Cloud",
@@ -22,6 +22,12 @@
     },
     {
       "user": "markehl",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Orey0",
       "link": "",
       "percent": 100,
       "hz": 0
