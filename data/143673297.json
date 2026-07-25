@@ -5,7 +5,7 @@
   "name": "\u2727 Bidont Alert \u2727",
   "author": "ash8",
   "tags": "Wave, Memory",
-  "enjoyment": "",
+  "enjoyment": "9.33",
   "notes": "peak alert (gg first angel award)",
   "creators": [
     "ash8"
@@ -15,6 +15,12 @@
   "records": [
     {
       "user": "AtlasKay",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "nuller",
       "link": "",
       "percent": 100,
       "hz": 0
