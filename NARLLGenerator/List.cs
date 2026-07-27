@@ -98,9 +98,6 @@ public static class List
         
         var progress = sheet.Cells[row, 8].Text;
         var wr_holder = sheet.Cells[row, 9].Text;
-        
-        var creators = author
-            .Split(',', StringSplitOptions.TrimEntries).ToList();
 
         var notes = sheet.Cells[row, 10].Text;
         var nong = sheet.Cells[row, 11].Text;
@@ -120,9 +117,8 @@ public static class List
             length = length,
             author = author,
             tags = tags,
-            creators = creators,
             verifier = verifier,
-            showcase = showcase,
+            verification = verification,
             progress = progress,
             wr_holder = wr_holder,
             notes = notes,
