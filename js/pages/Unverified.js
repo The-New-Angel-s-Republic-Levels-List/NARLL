@@ -118,7 +118,10 @@ export default {
         errors: [],
         search: "",
         store,
-        roleIconMap
+        roleIconMap,
+
+        awards: []
+        
     }),
 
     computed: {
