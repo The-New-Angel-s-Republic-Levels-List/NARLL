@@ -84,19 +84,49 @@ public static class List
 
         var idText = sheet.Cells[row, 3].Text;
         if (!int.TryParse(idText, out var id)) return null;
-        
+
+        var length = sheet.Cells[row, 4].Text;
+        var tags = sheet.Cells[row, 5].Text;
         var author = sheet.Cells[row, 6].Text;
         var verifier = sheet.Cells[row, 7].Text;
 
+        var showcase = sheet.Cells[row, 2].Hyperlink?.ToString();
+        if (showcase == null)
+        {
+            showcase = "https://www.youtube.com/watch?v=-r92Mzkd3Z0";
+        }
+        
         var progress = sheet.Cells[row, 8].Text;
+        var wr_holder = sheet.Cells[row, 9].Text;
+        
+        var creators = author
+            .Split(',', StringSplitOptions.TrimEntries).ToList();
+
+        var notes = sheet.Cells[row, 10].Text;
+        var nong = sheet.Cells[row, 11].Text;
+
+        var feature = "";
+        ExcelColor fillColor = sheet.Cells[row, 2].Style.Fill.BackgroundColor;
+        if (fillColor.Rgb != null)
+        {
+            feature = Util.GetFeatureStatus(fillColor.Rgb.Substring(2));
+        }
 
         return new UnverifiedLevel
         {
             name = name,
+            featured = feature,
             id = id,
+            length = length,
             author = author,
+            tags = tags,
+            creators = creators,
             verifier = verifier,
-            progress = progress,  
+            showcase = showcase,
+            progress = progress,
+            wr_holder = wr_holder,
+            notes = notes,
+            nong = nong
         };
     }
 
