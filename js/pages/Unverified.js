@@ -138,10 +138,17 @@ export default {
       .filter(([level]) => level?.name?.toLowerCase().includes(q));
   },
 
-  video() {
-    return embed(this.level?.showcase);
-  }
-},
+     video() {
+            if (!this.level.showcase) {
+                return embed(this.level.verification);
+            }
+
+            return embed(
+                this.toggledShowcase
+                    ? this.level.showcase
+                    : this.level.verification
+            );
+        },
 
     }
 
