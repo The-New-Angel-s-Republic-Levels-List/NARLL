@@ -73,7 +73,7 @@ export default {
                         <p>{{ level.tags || "NA" }}</p>
                     </div>
                     <div class="id-copy">
-                      <LevelAuthors :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
+                      <LevelAuthors :author="level.author" :verifier="level.verifier"></LevelAuthors>
                       <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     </div>
                     <ul class="stats">
