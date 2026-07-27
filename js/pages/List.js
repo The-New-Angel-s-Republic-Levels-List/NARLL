@@ -264,6 +264,9 @@ export default {
                     <p>
                         Have fun and don't forget to join the <a href="https://discord.gg/zeroshi" target="_blank" style="text-decoration: underline;">discord! :3</a>
                     </p>
+                    <p>
+                        Additionally you can download the NONGs not found in Jukebox via the <a href="https://drive.google.com/drive/folders/1ndwNvdaohdMEefFVYUojYuyt_uTNp9aD?usp=drive_link" target="_blank" style="text-decoration: underline;"> NONG drive!</a>
+                    </p>
 
                     <div class="nav selector">
                         <button 
