@@ -12,6 +12,13 @@
   ],
   "verifier": "mold",
   "verification": "https://youtu.be/wC5LPVoGiZY",
-  "records": [],
-  "nong": ""
+  "records": [
+    {
+      "user": "nuller",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
+  "nong": "yes"
 }
