@@ -47,7 +47,6 @@ public class UnverifiedLevel
     public string progress { get; set; }
     public string wr_holder { get; set; }
     public string showcase { get; set; }
-    public List<string> creators { get; set; }
     public string notes {get; set;}
     public string nong {get; set;}
 }
