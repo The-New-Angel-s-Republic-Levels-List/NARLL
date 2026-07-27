@@ -90,7 +90,7 @@ public static class List
         var author = sheet.Cells[row, 6].Text;
         var verifier = sheet.Cells[row, 7].Text;
 
-        var showcase = sheet.Cells[row, 2].Hyperlink?.ToString();
+        var link = sheet.Cells[row, 2].Hyperlink?.ToString();
         if (showcase == null)
         {
             showcase = "https://www.youtube.com/watch?v=-r92Mzkd3Z0";
@@ -118,7 +118,7 @@ public static class List
             author = author,
             tags = tags,
             verifier = verifier,
-            verification = verification,
+            verification = link,
             progress = progress,
             wr_holder = wr_holder,
             notes = notes,
