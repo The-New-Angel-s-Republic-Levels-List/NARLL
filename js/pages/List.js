@@ -203,7 +203,7 @@ export default {
                             <div class="type-title-sm">Length</div>
                             <p>{{ level.length }}</p>
                         </li>
-                        <li v-if="level.nong && level.nong !== 'yes'">
+                        <li v-if="level.nong !== ''">
                             <div class="id-copy nong-icon">
                                 <img src="/assets/nong/back.png" class="back">
                                 <img src="/assets/nong/front.png" class="front">
