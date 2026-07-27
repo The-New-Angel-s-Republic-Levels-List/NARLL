@@ -1,9 +1,7 @@
 import { store } from "../main.js";
-import { embed } from "../util.js";
-import { fetchUnverifiedList, fetchAwards } from "../content.js";
+import { fetchUnverifiedList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
-import LevelAuthors from "../components/List/LevelAuthors.js";
 
 const roleIconMap = {
     owner: "crown",
@@ -41,16 +39,7 @@ export default {
 
                         <td 
                             class="level" 
-                            :class="[
-                                { 'active': store.selected == originalIndex, 'error': !level },
-                                {
-                                'level-top': level?.featured === 'top',
-                                'level-highlight': level?.featured === 'highlight',
-                                'level-featured': level?.featured === 'featured',
-                                'level-angel': level?.featured === 'award'
-                                },
-                                angelAwardClass(level)
-                            ]"   
+                            :class="{ 'active': store.selected == originalIndex, 'error': !level }"
                         >
                             <button @click="store.selected = originalIndex">
                                 <span class="type-label-lg">
@@ -65,37 +54,30 @@ export default {
                     No results found.
                 </p>
             </div>
+
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
-                    <div class="tags" v-if="level.tags">
-                        <div class="type-title-sm">Tags</div>
-                        <p>{{ level.tags || "NA" }}</p>
-                    </div>
-                    <div class="id-copy">
-                      <LevelAuthors :author="level.author" :verifier="level.verifier"></LevelAuthors>
-                      <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
-                    </div>
-                    <ul class="stats">
-                     <li>
-                       <div class="type-title-sm">WR Holder</div>
-                       <p>{{ level.wr_holder }}</p>
-                    </li>
-                    <li>
-                        <div class="type-title-sm">Length</div>
-                        <p>{{ level.length }}</p>
-                    </li>
-                        <li v-if="level.nong !== ''">
-                        <div class="id-copy nong-icon">
-                         <img src="/assets/nong/back.png" class="back">
-                         <img src="/assets/nong/front.png" class="front">
-                         <span class="tooltip">{{ level.nong }}</span>
-                    </div>
-                </li>
-            </ul>
 
-                    <p>Notes: {{ level.notes }}</p>
-            </div>
+                    <ul class="stats">
+                        <li>
+                            <div class="type-title-sm">ID</div>
+                            <p>{{ level.id }}</p>
+                        </li>
+                        <li>
+                            <div class="type-title-sm">Author</div>
+                            <p>{{ level.author }}</p>
+                        </li>
+                        <li>
+                            <div class="type-title-sm">Verifier</div>
+                            <p>{{ level.verifier }}</p>
+                        </li>
+                        <li>
+                            <div class="type-title-sm">Progress</div>
+                            <p>{{ level.progress }}</p>
+                        </li>
+                    </ul>
+                </div>
 
                 <div v-else-if="store.selected == null" class="level center">
                     <h2>Unverified Levels</h2>
@@ -118,103 +100,56 @@ export default {
         errors: [],
         search: "",
         store,
-        roleIconMap,
-
-        awards: []
-        
+        roleIconMap
     }),
 
     computed: {
-  level() {
-    if (store.selected === null) return null;
-    return this.list[store.selected]?.[0];
-  },
-
-  filteredList() {
-    if (!this.search) {
-      return this.list.map((item, i) => [...item, i]);
-    }
-
-    const q = this.search.toLowerCase();
-    return this.list
-      .map((item, i) => [...item, i])
-      .filter(([level]) => level?.name?.toLowerCase().includes(q));
-  },
-
-     video() {
-            if (!this.level.showcase) {
-                return embed(this.level.verification);
-            }
-
-            return embed(
-                this.toggledShowcase
-                    ? this.level.showcase
-                    : this.level.verification
-            );
+        level() {
+            if (store.selected === null) return null;
+            return this.list[store.selected]?.[0];
         },
 
-    }
+        filteredList() {
+            if (!this.search) {
+                return this.list.map((item, i) => [...item, i]);
+            }
 
-   async mounted() {
-        // Hide loading spinner
-        this.list = await fetchUnverifiedList()
+            const q = this.search.toLowerCase();
 
-        this.awards = await fetchAwards();
+            return this.list
+                .map((item, i) => [...item, i])
+                .filter(([level]) =>
+                    level?.name?.toLowerCase().includes(q)
+                );
+        }
+    },
 
-        // Error handling
-        if (!this.list) {
-            this.errors = [
-                "Failed to load list. Retry in a few minutes or notify list staff.",
-            ];
-        } else {
-            this.errors.push(
-                ...this.list
-                    .filter(([_, err]) => err)
-                    .map(([_, err]) => {
-                        return `Failed to load level. (${err}.json)`;
-                    })
+    async mounted() {
+        store.selected = null;
+        
+        try {
+            this.list = await fetchUnverifiedList();
+
+            if (!this.list) {
+                this.errors.push("Failed to load unverified list.");
+            } else {
+                this.errors.push(
+                    ...this.list
+                        .filter(([_, err]) => err)
+                        .map(([_, err]) => `Failed to load level (${err}.json)`)
+                );
+            }
+        } catch (e) {
+            console.error(e);
+            this.errors.push("Unexpected error while loading page.");
         }
 
         this.loading = false;
-
-        this.$nextTick(() => {
-            requestAnimationFrame(() => {
-                this.animateCounter();
-            });
-        });
     },
-    methods: {
-        embed,
-        copyText(text) {
-            navigator.clipboard.writeText(text);
-            this.copied = true;
 
-            setTimeout(() => {
-                this.copied = false;
-            }, 1000);
-        },
-        formatChange(text) {
-            return text
-                .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>")
-                .replace(/\*(.*?)\*/g, "<i>$1</i>");
-        },
-        angelAwardClass(level) {
-            if (level?.featured !== "award") return "";
-        
-            const color = this.awards[level.id];
-            return color ? `level-angel-${color}` : "default";
-        }
-    },
     watch: {
         search() {
             store.selected = null;
-        },
-        "store.selected"(val) {
-            if (val === null) {
-                this.$nextTick(() => {
-                    this.animateCounter();
-                });
-            }
         }
     }
 };
