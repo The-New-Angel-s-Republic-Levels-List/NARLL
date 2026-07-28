@@ -45,6 +45,7 @@ public class UnverifiedLevel
     public string notes {get; set;}
     public List<string> creators { get; set; }
     public string verifier { get; set; }
+    public string showcase { get; set; }
     public string progress { get; set; }
     public string wr_holder { get; set; }
     public string nong {get; set;}
