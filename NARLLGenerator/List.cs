@@ -95,7 +95,7 @@ public static class List
             feature = Util.GetFeatureStatus(fillColor.Rgb.Substring(2));
         }
 
-        var link = sheet.Cells[row, 2].Hyperlink?.ToString();
+        var link = sheet.Cells[row, 1].Hyperlink?.ToString();
         if (link == null)
         {
             link = "NA";

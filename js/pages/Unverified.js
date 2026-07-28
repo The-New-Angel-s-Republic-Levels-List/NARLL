@@ -1,4 +1,5 @@
 import { store } from "../main.js";
+import { embed } from "../util.js";
 import { fetchUnverifiedList } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
@@ -39,7 +40,18 @@ export default {
 
                         <td 
                             class="level" 
-                            :class="{ 'active': store.selected == originalIndex, 'error': !level }"
+                            :class="[
+                                { 
+                                    'active': store.selected == originalIndex,
+                                    'error': !level
+                                },
+                                {
+                                    'level-top': level?.featured === 'top',
+                                    'level-highlight': level?.featured === 'highlight',
+                                    'level-featured': level?.featured === 'featured',
+                                    'level-angel-default': level?.featured === 'award'
+                                }
+                            ]"
                         >
                             <button @click="store.selected = originalIndex">
                                 <span class="type-label-lg">
@@ -56,40 +68,76 @@ export default {
             </div>
 
             <div class="level-container">
+
                 <div class="level" v-if="level">
+
                     <h1>{{ level.name }}</h1>
+
+                    <div class="tags" v-if="level.tags">
+                        <div class="type-title-sm">Tags</div>
+                        <p>{{ level.tags }}</p>
+                    </div>
 
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id }}</p>
                         </li>
+
                         <li>
                             <div class="type-title-sm">Author</div>
-                            <p>{{ level.author }}</p>
+                            <p>{{ level.creators?.join(", ") }}</p>
                         </li>
+
                         <li>
                             <div class="type-title-sm">Verifier</div>
                             <p>{{ level.verifier }}</p>
                         </li>
+
                         <li>
                             <div class="type-title-sm">Progress</div>
                             <p>{{ level.progress }}</p>
                         </li>
+
+                        <li>
+                            <div class="type-title-sm">Length</div>
+                            <p>{{ level.length }}</p>
+                        </li>
                     </ul>
+
+                    <iframe
+                        v-if="video"
+                        class="video"
+                        id="videoframe"
+                        :src="video"
+                        frameborder="0">
+                    </iframe>
+
+                    <p>
+                        Notes: {{ level.notes || "None" }}
+                    </p>
+
+                    <p v-if="level.wr_holder">
+                        WR Holder: {{ level.wr_holder }}
+                    </p>
+
+                    <p v-if="level.nong">
+                        NONG: {{ level.nong }}
+                    </p>
+
                 </div>
 
                 <div v-else-if="store.selected == null" class="level center">
                     <h2>Unverified Levels</h2>
                     <p>The following levels on the left are unverified and thus cannot be on the list.</p>
                     <p>
-                        Keep in mind, a lot of the levels may not be list worthy (i.e not on par with the current standards) 
-                        as they were created a long time ago.
+                        Keep in mind, a lot of the levels may not be list worthy 
+                        (i.e not on par with the current standards) as they were created a long time ago.
                         Please confirm with a moderator before attempting to verify one.
                     </p>
                     <p>Select a level to view details.</p>
                 </div>
-            </div>
+
             </div>
         </main>
     `,
@@ -121,6 +169,14 @@ export default {
                 .filter(([level]) =>
                     level?.name?.toLowerCase().includes(q)
                 );
+        },
+
+        video() {
+            if (!this.level || this.level.showcase === "NA") {
+                return null;
+            }
+
+            return embed(this.level.showcase);
         }
     },
 

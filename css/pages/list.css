@@ -78,6 +78,12 @@
     font-size: 20px;
     line-height: 28px;
 }
+.page-list .level-container .level .tags p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
 .page-list .level-container .level .enjoyment {
     position: absolute;
     top: 4.5rem;
