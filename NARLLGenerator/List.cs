@@ -117,7 +117,7 @@ public static class List
         {
             id = id,
             length = length,
-            featured = featured,
+            featured = feature,
             name = name,
             tags = tags,
             notes = notes,
