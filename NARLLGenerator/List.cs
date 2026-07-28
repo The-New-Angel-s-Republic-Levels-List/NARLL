@@ -79,24 +79,54 @@ public static class List
     
     public static UnverifiedLevel ProcessRowUNVERIFIED(ExcelWorksheet sheet, int row)
     {
-        var name = sheet.Cells[row, 2].Text;
+        var name = sheet.Cells[row, 1].Text;
         if (string.IsNullOrWhiteSpace(name)) return null;
 
-        var idText = sheet.Cells[row, 3].Text;
+        var idText = sheet.Cells[row, 2].Text;
         if (!int.TryParse(idText, out var id)) return null;
-        
-        var author = sheet.Cells[row, 6].Text;
-        var verifier = sheet.Cells[row, 7].Text;
 
-        var progress = sheet.Cells[row, 8].Text;
+        var author = sheet.Cells[row, 5].Text;
+        var length = sheet.Cells[row, 3].Text;
+
+        var feature = "";
+        ExcelColor fillColor = sheet.Cells[row, 2].Style.Fill.BackgroundColor;
+        if (fillColor.Rgb != null)
+        {
+            feature = Util.GetFeatureStatus(fillColor.Rgb.Substring(2));
+        }
+
+        var link = sheet.Cells[row, 2].Hyperlink?.ToString();
+        if (link == null)
+        {
+            link = "NA";
+        }
+
+        var tags = sheet.Cells[row, 4].Text;
+        
+        var creators = author
+            .Split(',', StringSplitOptions.TrimEntries).ToList();
+
+        var verifier = sheet.Cells[row, 6].Text;
+        var progress = sheet.Cells[row, 7].Text;
+        var wr_holder = sheet.Cells[row, 8].Text;
+
+        var notes = sheet.Cells[row, 9].Text;
+        var nong = sheet.Cells[row, 10].Text;
 
         return new UnverifiedLevel
         {
-            name = name,
             id = id,
-            author = author,
+            length = length,
+            featured = featured,
+            name = name,
+            tags = tags,
+            notes = notes,
+            creators = creators,
             verifier = verifier,
-            progress = progress,  
+            showcase = link,
+            progress = progress,
+            wr_holder = wr_holder,
+            nong = nong
         };
     }
 
