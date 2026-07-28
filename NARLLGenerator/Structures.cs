@@ -37,11 +37,17 @@ public class Creator
 
 public class UnverifiedLevel
 {
-    public string name {get; set;}
-    public int id {get; set;}
-    public string author {get; set;}
-    public string verifier {get; set;}
-    public string progress{get; set;}
+    public int id { get; set; }
+    public string length {get; set;}
+    public string featured {get; set;}
+    public string name { get; set; }
+    public string tags {get; set;}
+    public string notes {get; set;}
+    public List<string> creators { get; set; }
+    public string verifier { get; set; }
+    public string progress { get; set; }
+    public string wr_holder { get; set; }
+    public string nong {get; set;}
 }
 
 public class ImpossibleLevel
