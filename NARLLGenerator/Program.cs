@@ -69,7 +69,7 @@ for (int row = 3; row <= 100; row++)
     }
 }
 
-for (int row = 3; row <= 50; row--)
+for (int row = 3; row <= 50; row++)
 {
     var level = List.ProcessRowUNVERIFIED(sheet3, row);
     if (level == null) continue;
