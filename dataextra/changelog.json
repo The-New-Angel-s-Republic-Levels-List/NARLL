@@ -1,4 +1,10 @@
-[ {
+[  {
+    "date": "2026-07-29",
+    "changes": [
+     "**intentional** has been placed at ***#32***. This change pushes **Destined** into the *legacy list*."
+    ]
+  },
+  {
     "date": "2026-07-28",
     "changes": [
      "**corridor** has been placed at ***#39***. This change pushes **Can I pet this dog** into the *legacy list*.", 
