@@ -220,18 +220,18 @@ export async function fetchPacks() {
     }
 }
 
-export async function fetchChangelog(){
+export async function fetchPending(){
     try {
-        const res = await fetch('/dataextra/changelog.json');
+        const res = await fetch('/dataextra/pending.json');
         return await res.json();
     } catch{
         return null;
     }
 }
 
-export async function fetchPending(){
+export async function fetchChangelog(){
     try {
-        const res = await fetch('/dataextra/pending.json');
+        const res = await fetch('/dataextra/changelog.json');
         return await res.json();
     } catch{
         return null;
