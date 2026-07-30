@@ -5,7 +5,7 @@
   "name": "BAILE",
   "author": "DeadXM",
   "tags": "\nWave",
-  "enjoyment": "6.84",
+  "enjoyment": "6.45",
   "notes": "markehls favorite level",
   "creators": [
     "DeadXM"
@@ -33,6 +33,12 @@
     },
     {
       "user": "unaura",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "tFluffy",
       "link": "",
       "percent": 100,
       "hz": 0
