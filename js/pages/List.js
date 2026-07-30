@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchPending, fetchChangelog, fetchBanned, fetchEditors, fetchList, fetchLeaderboard, fetchCreators, fetchAwards } from "../content.js";
+import { fetchChangelog, fetchPending, fetchBanned, fetchEditors, fetchList, fetchLeaderboard, fetchCreators, fetchAwards } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -271,18 +271,18 @@ export default {
                     <div class="nav selector">
                         <button 
                             class="nav__tab" 
-                            :class="{ 'active-tab': mode === 'pending' }" 
-                            @click="mode = 'pending'"
-                        >
-                            <span class="type-label-lg">Pending</span>
-                        </button>
-
-                        <button 
-                            class="nav__tab" 
                             :class="{ 'active-tab': mode === 'changelog' }" 
                             @click="mode = 'changelog'"
                         >
                             <span class="type-label-lg">Changelog</span>
+                        </button>
+
+                        <button 
+                            class="nav__tab" 
+                            :class="{ 'active-tab': mode === 'pending' }" 
+                            @click="mode = 'pending'"
+                        >
+                            <span class="type-label-lg">Pending</span>
                         </button>
 
                         <button 
@@ -308,8 +308,8 @@ export default {
                         </template>
 
                         <template v-else-if="mode === 'pending'">
-                            <div v-for="entry in pending" class="pending-entry">
-                                <p class="pending-list">
+                            <div v-for="entry in pending" class="changelog-entry">
+                                <p class="changelog-list">
                                     - <span v-html="formatChange(entry.text)"></span> places on {{ entry.date }}
                                 </p>
                             </div>
@@ -511,8 +511,8 @@ export default {
 
         this.awards = await fetchAwards();
 
-        this.pending = await fetchPending();
         this.changelog = await fetchChangelog();
+        this.pending = await fetchPending();
         this.banned = await fetchBanned();
 
         const [leaderboard] = await fetchLeaderboard();
