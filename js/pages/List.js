@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../score.js";
-import { fetchChangelog, fetchPending, fetchBanned, fetchEditors, fetchList, fetchLeaderboard, fetchCreators, fetchAwards } from "../content.js";
+import { fetchPending, fetchChangelog, fetchBanned, fetchEditors, fetchList, fetchLeaderboard, fetchCreators, fetchAwards } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
