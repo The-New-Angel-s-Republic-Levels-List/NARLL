@@ -356,7 +356,7 @@ export default {
         list: [],
         editors: [],
         loading: true,
-        mode: "changelog",
+        mode: "pending",
         pending: [],
         changelog: [], 
         banned: [],
