@@ -271,18 +271,18 @@ export default {
                     <div class="nav selector">
                         <button 
                             class="nav__tab" 
-                            :class="{ 'active-tab': mode === 'changelog' }" 
-                            @click="mode = 'changelog'"
-                        >
-                            <span class="type-label-lg">Changelog</span>
-                        </button>
-
-                        <button 
-                            class="nav__tab" 
                             :class="{ 'active-tab': mode === 'pending' }" 
                             @click="mode = 'pending'"
                         >
                             <span class="type-label-lg">Pending</span>
+                        </button>
+
+                        <button 
+                            class="nav__tab" 
+                            :class="{ 'active-tab': mode === 'changelog' }" 
+                            @click="mode = 'changelog'"
+                        >
+                            <span class="type-label-lg">Changelog</span>
                         </button>
 
                         <button 
@@ -296,8 +296,8 @@ export default {
                     </div>
 
                     <div class="changelog-box">
-                        <template v-if="mode === 'changelog'">
-                            <div v-for="entry in changelog" class="changelog-entry">
+                        <template v-if="mode === 'pending'">
+                            <div v-for="entry in pending" class="changelog-entry">
                                 <h3 class="changelog-date">{{ entry.date }}</h3>
                                 <ul class="changelog-list">
                                     <li v-for="change in entry.changes">
@@ -307,8 +307,8 @@ export default {
                             </div>
                         </template>
 
-                        <template v-else-if="mode === 'pending'">
-                            <div v-for="entry in pending" class="changelog-entry">
+                        <template v-else-if="mode === 'changelog'">
+                            <div v-for="entry in changelog" class="changelog-entry">
                                 <p class="changelog-list">
                                     - <span v-html="formatChange(entry.text)"></span> places on {{ entry.date }}
                                 </p>
@@ -511,8 +511,8 @@ export default {
 
         this.awards = await fetchAwards();
 
-        this.changelog = await fetchChangelog();
         this.pending = await fetchPending();
+        this.changelog = await fetchChangelog();
         this.banned = await fetchBanned();
 
         const [leaderboard] = await fetchLeaderboard();
