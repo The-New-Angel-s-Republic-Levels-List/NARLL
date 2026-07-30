@@ -271,18 +271,18 @@ export default {
                     <div class="nav selector">
                         <button 
                             class="nav__tab" 
-                            :class="{ 'active-tab': mode === 'changelog' }" 
-                            @click="mode = 'changelog'"
-                        >
-                            <span class="type-label-lg">Changelog</span>
-                        </button>
-
-                        <button 
-                            class="nav__tab" 
                             :class="{ 'active-tab': mode === 'pending' }" 
                             @click="mode = 'pending'"
                         >
                             <span class="type-label-lg">Pending</span>
+                        </button>
+
+                        <button 
+                            class="nav__tab" 
+                            :class="{ 'active-tab': mode === 'changelog' }" 
+                            @click="mode = 'changelog'"
+                        >
+                            <span class="type-label-lg">Changelog</span>
                         </button>
 
                         <button 
@@ -295,8 +295,16 @@ export default {
 
                     </div>
 
+                    <template v-if="mode === 'pending'">
+                            <div v-for="entry in pending" class="changelog-entry">
+                                <p class="changelog-list">
+                                    - <span v-html="formatChange(entry.text)"></span> places on {{ entry.date }}
+                                </p>
+                            </div>
+                        </template>
+
                     <div class="changelog-box">
-                        <template v-if="mode === 'changelog'">
+                        <template v-else-if="mode === 'changelog'">
                             <div v-for="entry in changelog" class="changelog-entry">
                                 <h3 class="changelog-date">{{ entry.date }}</h3>
                                 <ul class="changelog-list">
@@ -304,14 +312,6 @@ export default {
                                         - <span v-html="formatChange(change)"></span>
                                     </li>
                                 </ul>
-                            </div>
-                        </template>
-
-                        <template v-else-if="mode === 'pending'">
-                            <div v-for="entry in pending" class="changelog-entry">
-                                <p class="changelog-list">
-                                    - <span v-html="formatChange(entry.text)"></span> places on {{ entry.date }}
-                                </p>
                             </div>
                         </template>
 
