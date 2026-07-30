@@ -294,7 +294,8 @@ export default {
                         </button>
 
                     </div>
-
+                    
+                <div class="changelog-box">
                     <template v-if="mode === 'pending'">
                             <div v-for="entry in pending" class="changelog-entry">
                                 <p class="changelog-list">
@@ -303,7 +304,6 @@ export default {
                             </div>
                         </template>
 
-                    <div class="changelog-box">
                         <template v-else-if="mode === 'changelog'">
                             <div v-for="entry in changelog" class="changelog-entry">
                                 <h3 class="changelog-date">{{ entry.date }}</h3>
