@@ -5,7 +5,7 @@
   "name": "Sahara",
   "author": "Rosie",
   "tags": "Cube",
-  "enjoyment": "5.67",
+  "enjoyment": "5.77",
   "notes": "",
   "creators": [
     "Rosie"
@@ -27,12 +27,6 @@
     },
     {
       "user": "DeadXM",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "mold",
       "link": "",
       "percent": 100,
       "hz": 0

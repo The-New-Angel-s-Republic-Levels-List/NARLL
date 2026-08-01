@@ -5,7 +5,7 @@
   "name": "sunshine",
   "author": "Rosie, mold",
   "tags": "Cube, Timings",
-  "enjoyment": "7.25",
+  "enjoyment": "6.8",
   "notes": "not even mold can save the gp",
   "creators": [
     "Rosie",
@@ -14,6 +14,12 @@
   "verifier": "mold",
   "verification": "https://youtu.be/lficWMSfs2I",
   "records": [
+    {
+      "user": "JohnHuman",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
     {
       "user": "blue_orbe",
       "link": "",

@@ -5,7 +5,7 @@
   "name": "\u2605 spaceless \u2605",
   "author": "Rosie",
   "tags": "Cube, Timings",
-  "enjoyment": "6.77",
+  "enjoyment": "6.67",
   "notes": "in order now, most victors on a narll level \u003C3",
   "creators": [
     "Rosie"
@@ -13,12 +13,6 @@
   "verifier": "Rosie",
   "verification": "https://www.youtube.com/watch?v=jxDK1hzrMSw",
   "records": [
-    {
-      "user": "mold",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
     {
       "user": "aqrlr",
       "link": "",
@@ -87,6 +81,12 @@
     },
     {
       "user": "troof",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "JohnHuman",
       "link": "",
       "percent": 100,
       "hz": 0

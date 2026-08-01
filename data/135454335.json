@@ -5,7 +5,7 @@
   "name": "\u2605 Spaceless Unleashed \u2605",
   "author": "Rosie",
   "tags": "Wave, Ship, High-CPS, Chokepoints",
-  "enjoyment": "4.15",
+  "enjoyment": "4.7",
   "notes": "79% IS THE WORST THING EVER \u003C\u003Cmold ur just bad",
   "creators": [
     "Rosie"
@@ -15,6 +15,12 @@
   "records": [
     {
       "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "JohnHuman",
       "link": "",
       "percent": 100,
       "hz": 0
@@ -45,12 +51,6 @@
     },
     {
       "user": "markehl",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
-    {
-      "user": "mold",
       "link": "",
       "percent": 100,
       "hz": 0

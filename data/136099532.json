@@ -5,7 +5,7 @@
   "name": "envy",
   "author": "Rosie",
   "tags": "Wave",
-  "enjoyment": "6.15",
+  "enjoyment": "6.11",
   "notes": "",
   "creators": [
     "Rosie"
@@ -13,12 +13,6 @@
   "verifier": "Rosie",
   "verification": "https://youtu.be/zZjFrdkyED0",
   "records": [
-    {
-      "user": "mold",
-      "link": "",
-      "percent": 100,
-      "hz": 0
-    },
     {
       "user": "vex",
       "link": "",
