@@ -5,7 +5,7 @@
   "name": "71a3",
   "author": "EternalUMI",
   "tags": "Wave",
-  "enjoyment": "6.52",
+  "enjoyment": "6.68",
   "notes": "best wave level for beginners",
   "creators": [
     "EternalUMI"
@@ -81,6 +81,12 @@
     },
     {
       "user": "Zspectral",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Buxoch",
       "link": "",
       "percent": 100,
       "hz": 0
