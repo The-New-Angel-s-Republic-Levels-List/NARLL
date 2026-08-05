@@ -297,8 +297,8 @@ export default {
                     
                 <div class="changelog-box">
                     <template v-if="mode === 'pending'">
-                       <h3>Pending</h3>
-                       <p><small>(please play these 🥹)</small></p>
+                       <h3 class="changelog-date"> Pending </h3>
+                       <p class="changelog-date"> (please play these 🥹) </p>
                             <div v-for="entry in pending" class="changelog-entry">
                                 <p class="changelog-list">
                                     - <span v-html="formatChange(entry.text)"></span> places on {{ entry.date }}
