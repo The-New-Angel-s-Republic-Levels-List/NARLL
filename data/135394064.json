@@ -5,7 +5,7 @@
   "name": "\u2605 AREA 33 \u2605",
   "author": "aqrlr",
   "tags": "Wave",
-  "enjoyment": "",
+  "enjoyment": "8",
   "notes": "vsc 2",
   "creators": [
     "aqrlr"
@@ -15,6 +15,12 @@
   "records": [
     {
       "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "brush",
       "link": "",
       "percent": 100,
       "hz": 0
