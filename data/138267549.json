@@ -5,7 +5,7 @@
   "name": "Takis Crunch",
   "author": "ash8",
   "tags": "Timings, Wave",
-  "enjoyment": "8.32",
+  "enjoyment": "8.43",
   "notes": "random level by random dude verified by random guy",
   "creators": [
     "ash8"
@@ -33,6 +33,12 @@
     },
     {
       "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "ash8",
       "link": "",
       "percent": 100,
       "hz": 0
