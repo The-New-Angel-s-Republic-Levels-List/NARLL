@@ -1,4 +1,11 @@
-[ {
+[ 
+  {
+    "date": "2026-08-08",
+    "changes": [
+     "**Unnerfed Dry Out** has been placed at ***#5***. This change pushes **balance** into the *legacy list*."
+    ]
+  }, 
+  {
     "date": "2026-08-06",
     "changes": [
      "**AREA 33** has been lowered from #8 to ***#21***.",
