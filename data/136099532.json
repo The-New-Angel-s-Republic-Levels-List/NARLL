@@ -5,7 +5,7 @@
   "name": "envy",
   "author": "Rosie",
   "tags": "Wave",
-  "enjoyment": "6.11",
+  "enjoyment": "6.4",
   "notes": "",
   "creators": [
     "Rosie"
@@ -87,6 +87,12 @@
     },
     {
       "user": "Hyacinth",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0

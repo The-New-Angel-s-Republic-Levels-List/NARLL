@@ -5,7 +5,7 @@
   "name": "Corruption",
   "author": "EternalUMI",
   "tags": "Wave, High-CPS",
-  "enjoyment": "8",
+  "enjoyment": "8.05",
   "notes": "",
   "creators": [
     "EternalUMI"
@@ -81,6 +81,12 @@
     },
     {
       "user": "ggunkp1",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0

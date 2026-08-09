@@ -5,7 +5,7 @@
   "name": "envy 2",
   "author": "Rosie",
   "tags": "Overall, Unbalanced",
-  "enjoyment": "5.79",
+  "enjoyment": "5.88",
   "notes": "",
   "creators": [
     "Rosie"
@@ -57,6 +57,12 @@
     },
     {
       "user": "Gaseba",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0

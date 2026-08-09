@@ -5,7 +5,7 @@
   "name": "Moonlight",
   "author": "Rosie",
   "tags": "Cube, Timings",
-  "enjoyment": "5.75",
+  "enjoyment": "5.76",
   "notes": "",
   "creators": [
     "Rosie"
@@ -129,6 +129,12 @@
     },
     {
       "user": "hexation37",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0
