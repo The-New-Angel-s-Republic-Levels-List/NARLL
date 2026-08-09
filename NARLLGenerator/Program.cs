@@ -50,7 +50,7 @@ var stream2 = await Util.DownloadSheetAsync("1WKjdpJr67pCnjRGVtIWpUx3PE-P4PBHXgl
 Dictionary<string, double> enjoymentValues = Enjoyment.GetEnjoymentMappings(package);
 
 
-for (int row = 3; row <= 100; row++)
+for (int row = 3; row <= 200; row++)
 {
     var level = List.ProcessRowMAIN(sheet1, row, enjoymentValues);
     if (level == null) continue;
@@ -69,7 +69,7 @@ for (int row = 3; row <= 100; row++)
     }
 }
 
-for (int row = 3; row <= 50; row++)
+for (int row = 3; row <= 70; row++)
 {
     var level = List.ProcessRowUNVERIFIED(sheet3, row);
     if (level == null) continue;
@@ -83,7 +83,7 @@ for (int row = 3; row <= 50; row++)
     unverifiedLevels.Add(level);
 }
 
-for (int row = 3; row <= 50; row++)
+for (int row = 3; row <= 70; row++)
 {
     var level = List.ProcessRowIMPOSSIBLE(sheet4, row);
     if (level == null) continue;
