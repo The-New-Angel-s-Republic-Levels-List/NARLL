@@ -5,7 +5,7 @@
   "name": "Deception",
   "author": "Rosie",
   "tags": "Overall",
-  "enjoyment": "6.95",
+  "enjoyment": "6.88",
   "notes": "",
   "creators": [
     "Rosie"
@@ -81,6 +81,12 @@
     },
     {
       "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0
