@@ -278,7 +278,9 @@
 .changelog-box {
     flex: 1;
     min-height: 200px;
-    min-width: 500px;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
     max-height: 400px;
 
     overflow-y: auto;
@@ -559,6 +561,8 @@
 
 .changelog-box {
     margin-top: 0.4rem;
+    width: 80%;
+    max-width: none;
 }
 
 .page-list .selector .nav__tab {
@@ -566,11 +570,6 @@
     padding: 0.35rem 0.75rem;
     justify-content: center;
     text-align: center;
-}
-
-.page-list .selector {
-    padding: 0.25rem 2rem 0.25rem 0.75rem;
-    gap: 1.5rem; 
 }
 
 .list-stats {
@@ -864,6 +863,34 @@
 .range-inputs input {
     width: 100%;
     box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .page-list .level-container .level.welcome {
+        width: 100%;
+        max-width: none;
+        padding-right: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .page-list .selector {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0.25rem 0.5rem;
+        gap: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .page-list .selector .nav__tab {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0.35rem 0.25rem;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* scruffie: bruh i have no idea what im doing idek if this works bru" */
