@@ -5,7 +5,7 @@
   "name": "\u2605 LOSEYOURMIND \u2605",
   "author": "ash8",
   "tags": "Wave",
-  "enjoyment": "",
+  "enjoyment": "7.53",
   "notes": "yo w ash",
   "creators": [
     "ash8"
@@ -15,6 +15,12 @@
   "records": [
     {
       "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Oddpepper",
       "link": "",
       "percent": 100,
       "hz": 0
