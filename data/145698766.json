@@ -5,7 +5,7 @@
   "name": " \u2605 Sog Never Clear \u2605",
   "author": "scruffie",
   "tags": "Wave, Unbalanced",
-  "enjoyment": "6.38",
+  "enjoyment": "5.7",
   "notes": "",
   "creators": [
     "scruffie"
@@ -33,6 +33,12 @@
     },
     {
       "user": "sha",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Toupeurvibreur",
       "link": "",
       "percent": 100,
       "hz": 0
