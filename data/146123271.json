@@ -12,6 +12,13 @@
   ],
   "verifier": "ash8",
   "verification": "https://youtu.be/sCNPuVGcWn8",
-  "records": [],
+  "records": [
+    {
+      "user": "Seungbinbi",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
