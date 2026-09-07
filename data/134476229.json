@@ -5,7 +5,7 @@
   "name": "turn the lights on",
   "author": "abr0611",
   "tags": "Ship",
-  "enjoyment": "5.61",
+  "enjoyment": "5.81",
   "notes": "",
   "creators": [
     "abr0611"
@@ -87,6 +87,12 @@
     },
     {
       "user": "Toupeurvibreur",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0
