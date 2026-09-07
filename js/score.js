@@ -4,7 +4,7 @@ export function score(rank, percent) {
     rank = Number(rank);
     percent = Number(percent);
     if (isNaN(rank) || isNaN(percent)) return 0;
-    if (rank > 100) return 0;
+    if (rank > 100) return 1;
 
     let base = 0;
 
