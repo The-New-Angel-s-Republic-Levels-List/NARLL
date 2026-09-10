@@ -12,6 +12,13 @@
   ],
   "verifier": "ash8",
   "verification": "https://youtu.be/09IaZgH2Axo",
-  "records": [],
+  "records": [
+    {
+      "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
