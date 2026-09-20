@@ -12,6 +12,13 @@
   ],
   "verifier": "blue_orbe",
   "verification": "https://youtu.be/8nqxGjpE1iE",
-  "records": [],
+  "records": [
+    {
+      "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
