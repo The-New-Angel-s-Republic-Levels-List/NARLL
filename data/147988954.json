@@ -5,7 +5,7 @@
   "name": "Tears for my love",
   "author": "blue_orbe",
   "tags": "Ship",
-  "enjoyment": "",
+  "enjoyment": "5.5",
   "notes": "",
   "creators": [
     "blue_orbe"
@@ -15,6 +15,12 @@
   "records": [
     {
       "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0
