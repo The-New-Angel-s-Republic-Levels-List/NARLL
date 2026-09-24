@@ -5,7 +5,7 @@
   "name": "the sog files",
   "author": "itsGalaxie",
   "tags": "Cube",
-  "enjoyment": "8.73",
+  "enjoyment": "8.48",
   "notes": "move up?",
   "creators": [
     "itsGalaxie"
@@ -69,6 +69,12 @@
     },
     {
       "user": "dapr",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "nuller",
       "link": "",
       "percent": 100,
       "hz": 0
