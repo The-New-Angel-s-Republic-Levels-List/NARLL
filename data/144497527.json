@@ -5,7 +5,7 @@
   "name": "WOKEscapes",
   "author": "Cloud",
   "tags": "Wave",
-  "enjoyment": "6.45",
+  "enjoyment": "6.16",
   "notes": "",
   "creators": [
     "Cloud"
@@ -27,6 +27,12 @@
     },
     {
       "user": "vex",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
       "link": "",
       "percent": 100,
       "hz": 0

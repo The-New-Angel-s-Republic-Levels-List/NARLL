@@ -5,7 +5,7 @@
   "name": "Last Time",
   "author": "Rosie",
   "tags": "Cube, Timings",
-  "enjoyment": "4.07",
+  "enjoyment": "4.05",
   "notes": "",
   "creators": [
     "Rosie"
@@ -27,6 +27,12 @@
     },
     {
       "user": "kirzy_1225",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
       "link": "",
       "percent": 100,
       "hz": 0

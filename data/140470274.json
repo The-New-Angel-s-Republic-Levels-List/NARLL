@@ -12,6 +12,13 @@
   ],
   "verifier": "blue_orbe",
   "verification": "https://youtu.be/VD4ortyWx_U",
-  "records": [],
+  "records": [
+    {
+      "user": "xeo",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    }
+  ],
   "nong": ""
 }
