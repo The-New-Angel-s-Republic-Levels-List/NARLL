@@ -133,7 +133,7 @@ export default {
                 <table class="list" v-if="list">
                     <tr v-for="([level, err, originalIndex], i) in filteredList">
                         <td class="rank">
-                            <p v-if="originalIndex + 1 <= 70" class="type-label-lg">#{{ originalIndex + 1 }}</p>
+                            <p v-if="originalIndex + 1 <= 100" class="type-label-lg">#{{ originalIndex + 1 }}</p>
                             <p v-else class="type-label-lg">L</p>
                         </td>
                         <td 
