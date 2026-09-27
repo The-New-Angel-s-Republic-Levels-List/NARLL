@@ -12,13 +12,13 @@ export function score(rank, percent) {
         // anchor points for customizable curve !!
         const anchors = [
             { r: 1,  s: 100 },
-            { r: 10, s: 70  },
-            { r: 20, s: 50  },
-            { r: 30, s: 35  },
-            { r: 40, s: 20  },
-            { r: 50, s: 10  },
-            { r: 60, s: 5   },
-            { r: 70, s: 1   }
+            { r: 15, s: 70  },
+            { r: 30, s: 50  },
+            { r: 40, s: 30  },
+            { r: 50, s: 20  },
+            { r: 60, s: 10  },
+            { r: 80, s: 5   },
+            { r: 100, s: 1   }
         ];
         // find seg and interpolate shit
         for (let i = 0; i < anchors.length - 1; i++) {
@@ -50,3 +50,4 @@ export function round(num) {
 //SCRUFFIE WAS HERE :3
 //MOLD ADDED ANCHOR POINTS HERE :3
 //scruffie changed this file again
+//vex did something
