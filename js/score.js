@@ -8,7 +8,7 @@ export function score(rank, percent) {
 
     let base = 0;
 
-    if (rank <= 70) {
+    if (rank <= 100) {
         // anchor points for customizable curve !!
         const anchors = [
             { r: 1,  s: 100 },
