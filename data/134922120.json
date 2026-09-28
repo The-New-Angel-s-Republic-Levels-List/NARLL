@@ -5,7 +5,7 @@
   "name": "elixir of despair",
   "author": "vex",
   "tags": "Wave, Chokepoints",
-  "enjoyment": "4.51",
+  "enjoyment": "4.45",
   "notes": "top 4 btw rip",
   "creators": [
     "vex"
@@ -45,6 +45,12 @@
     },
     {
       "user": "brush",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0
