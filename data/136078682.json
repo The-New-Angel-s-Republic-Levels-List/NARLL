@@ -5,7 +5,7 @@
   "name": "Brokilicide",
   "author": "Feefs11",
   "tags": "Overall, Timings",
-  "enjoyment": "6.6",
+  "enjoyment": "6.3",
   "notes": "",
   "creators": [
     "Feefs11"
@@ -45,6 +45,12 @@
     },
     {
       "user": "ggunkp1",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0

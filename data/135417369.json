@@ -5,7 +5,7 @@
   "name": "\u2726 scary scary gabe \u2726",
   "author": "qant.",
   "tags": "Cube, Ship, Timings",
-  "enjoyment": "6.75",
+  "enjoyment": "6.68",
   "notes": " qant. qant. qant. Peak",
   "creators": [
     "qant."
@@ -75,6 +75,12 @@
     },
     {
       "user": "ggunkp1",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0
