@@ -1,20 +1,24 @@
 [
   {
     "user": "Rosie",
-    "points": 58,
+    "points": 71,
     "featured": [
       "\u2605 Rosie Ship Trials \u2605",
       "\u2605 Spaceless Unleashed \u2605",
       "lesbian circles",
+      "Flight Horizon",
       "\u2726 Interstellar \u2726",
       "Rocket Fuel",
       "It Always Ends",
-      "sunshine",
+      "\u2605 Moral \u2605",
+      "Ariamacina",
       "\u2726 Descent Into Despair \u2726",
-      "\u2605 Lunacy \u2605",
+      "Lunacy ",
       "Last Time",
+      "You and Me",
       " \u2726 Fallen Angel \u2726",
       "\u2605 Phoenix A \u2605",
+      "\u2726 All I Want is You \u2726",
       "\u2605 Destined \u2605",
       "Dynamism",
       "Deception",
@@ -25,24 +29,27 @@
     "best": "\u2726 Interstellar \u2726"
   },
   {
+    "user": "ash8",
+    "points": 18,
+    "featured": [
+      "\u2727 Bidont Alert \u2727",
+      "Just This Once",
+      "Takis Crunch",
+      "\u2605 LOSEYOURMIND \u2605"
+    ],
+    "best": "\u2727 Bidont Alert \u2727"
+  },
+  {
     "user": "DeadXM",
     "points": 16,
     "featured": [
       "\u2605 Malen Sie Es Rot \u2605",
-      "\u2605 EVIL THINGS \u2605",
+      "IT NEVER ENDS",
+      "EVIL THINGS",
       "BAILE",
       "\u2726 PRETTY THINGS \u2726"
     ],
     "best": "\u2726 PRETTY THINGS \u2726"
-  },
-  {
-    "user": "ash8",
-    "points": 14,
-    "featured": [
-      "\u2727 Bidont Alert \u2727",
-      "\u2605 LOSEYOURMIND \u2605"
-    ],
-    "best": "\u2727 Bidont Alert \u2727"
   },
   {
     "user": "qant.",
@@ -52,6 +59,16 @@
       "\u2726 scary scary gabe \u2726"
     ],
     "best": "\u2726 scary scary gabe \u2726"
+  },
+  {
+    "user": "aqwav",
+    "points": 6,
+    "featured": [
+      "\u2605 xeopolis \u2605",
+      "Blueberry Faygo",
+      "Can I pet this dog"
+    ],
+    "best": "\u2605 xeopolis \u2605"
   },
   {
     "user": "blue_orbe",
@@ -64,22 +81,13 @@
   },
   {
     "user": "mold",
-    "points": 5,
+    "points": 6,
     "featured": [
-      "sunshine",
+      "S.T.O.N.E. Reborn",
       "LV 124 SOG CHALLENGE",
       "LV 5 SSOH CHALLENGE"
     ],
-    "best": "LV 124 SOG CHALLENGE"
-  },
-  {
-    "user": "aqwav",
-    "points": 4,
-    "featured": [
-      "\u2605 xeopolis \u2605",
-      "Can I pet this dog"
-    ],
-    "best": "\u2605 xeopolis \u2605"
+    "best": "S.T.O.N.E. Reborn"
   },
   {
     "user": "Aspect",
@@ -99,14 +107,6 @@
     "best": "\u2605 kaban \u2605"
   },
   {
-    "user": "aqrlr",
-    "points": 4,
-    "featured": [
-      "\u2605 AREA 33 \u2605"
-    ],
-    "best": "\u2605 AREA 33 \u2605"
-  },
-  {
     "user": "scruffie",
     "points": 4,
     "featured": [
@@ -121,6 +121,15 @@
       "\u2605 NAR\u0027s Worst Nightmare \u2605"
     ],
     "best": "\u2605 NAR\u0027s Worst Nightmare \u2605"
+  },
+  {
+    "user": "dapr",
+    "points": 4,
+    "featured": [
+      "CCYYCC",
+      "Tetramethylammonium Pentafluoroxenate"
+    ],
+    "best": "CCYYCC"
   },
   {
     "user": "itsGalaxie",
@@ -147,6 +156,30 @@
       "\u2605 xeopolis \u2605"
     ],
     "best": "\u2605 xeopolis \u2605"
+  },
+  {
+    "user": "Toupeurvibreur",
+    "points": 2,
+    "featured": [
+      "Toviwa"
+    ],
+    "best": "Toviwa"
+  },
+  {
+    "user": "aqrlr",
+    "points": 2,
+    "featured": [
+      "AREA 33"
+    ],
+    "best": "AREA 33"
+  },
+  {
+    "user": "Hyacinth",
+    "points": 2,
+    "featured": [
+      "intentional"
+    ],
+    "best": "intentional"
   },
   {
     "user": "amy",
