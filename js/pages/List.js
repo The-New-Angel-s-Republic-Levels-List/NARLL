@@ -347,7 +347,7 @@ export default {
                         </ol>
                     </template>
                       <h2><a href="https://docs.google.com/document/d/1_xeCrzN2xmG1X5PQix6BEqDfBCg22rB08TNjXyRXg4M/edit?usp=sharing" target="_blank" style="color: #AEC6CF; text-decoration: underline;">NARLL Guidelines</a></h2>
-                      <img src="https://media1.tenor.com/m/2KLu6op2pHEAAAAd/uma-umamusume.gif"
+                      <img src="https://klipy.com/gifs/rice-shower-uma-musume-7"
                     style="width: 100%; max-width: 300px; border-radius: 0.5rem; margin-top: 0.5rem;">
                 </div>
             </div>
