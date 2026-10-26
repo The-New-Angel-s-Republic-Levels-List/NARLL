@@ -150,6 +150,15 @@
     "best": "Corruption"
   },
   {
+    "user": "Lumi",
+    "points": 3,
+    "featured": [
+      " Requiem ",
+      "Trxst"
+    ],
+    "best": "Trxst"
+  },
+  {
     "user": "unidoez",
     "points": 2,
     "featured": [
@@ -215,14 +224,6 @@
   },
   {
     "user": "Cala",
-    "points": 1,
-    "featured": [
-      " Requiem "
-    ],
-    "best": " Requiem "
-  },
-  {
-    "user": "Lumi",
     "points": 1,
     "featured": [
       " Requiem "
