@@ -5,7 +5,7 @@
   "name": "\u2605 NAR\u0027s Worst Nightmare \u2605",
   "author": "Difinay",
   "tags": "Timings, Chokepoints",
-  "enjoyment": "",
+  "enjoyment": "6.57",
   "notes": "",
   "creators": [
     "Difinay"
@@ -15,6 +15,12 @@
   "records": [
     {
       "user": "Aspect",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "Seungbinbi",
       "link": "",
       "percent": 100,
       "hz": 0
