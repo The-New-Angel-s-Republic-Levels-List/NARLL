@@ -33,9 +33,31 @@
         <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
         <script type="module" src="/js/main.js"></script>
     </head>
     <body id="app">
+        <div id="tsparticles"></div>
+
+        <div class="christmas-decorations">
+            <img
+                src="/assets/deco/tree.png"
+                class="christmas-tree"
+                alt=""
+            />
+
+            <div class="snowman-container">
+                <img
+                    src="/assets/deco/snowman.png"
+                    class="christmas-snowman"
+                    alt="Snowman"
+                />
+                <span class="snowman-tooltip">
+                    Merry Christmas! Thank you for being a part of NARLL! -scruffie
+                </span>
+            </div>
+        </div>
+
         <header :class="{ dark: store.dark }">
             <router-link to="/" class="logo" @click="store.selected = null"style="cursor: pointer;">
                 <h2>NARLL</h2>

@@ -1,4 +1,5 @@
 import routes from './routes.js';
+import { initChristmas } from "./christmas.js";
 
 export const store = Vue.reactive({
     dark: localStorage.getItem('dark') !== 'false',
@@ -20,3 +21,5 @@ const router = VueRouter.createRouter({
 app.use(router);
 
 app.mount('#app');
+
+initChristmas();

@@ -173,3 +173,75 @@ h2 a:hover {
         transform: translateY(0);
     }
 }
+
+.christmas-decorations {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.christmas-tree {
+    position: absolute;
+    width: clamp(400px, 14vw, 600px);
+    bottom: 0;
+    right: 0;
+}
+
+.snowman-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: auto;
+}
+
+.christmas-snowman {
+    position: absolute;
+    width: clamp(250px, 14vw, 400px);
+    bottom: 0;
+    left: 0;
+}
+
+.snowman-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    background: #fff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+}
+
+.snowman-container:hover .snowman-tooltip {
+    opacity: 1;
+    font-family: 'Lexend Deca', sans-serif;
+    visibility: visible;
+}
+
+#tsparticles {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+
+header,
+router-view {
+    position: relative;
+    z-index: 1;
+}
+
+.christmas-decorations {
+    z-index: 2;
+}
