@@ -90,6 +90,16 @@
     "best": "S.T.O.N.E. Reborn"
   },
   {
+    "user": "dapr",
+    "points": 6,
+    "featured": [
+      "CCYYCC",
+      "Tetramethylammonium Pentafluoroxenate",
+      "h4vnt3d"
+    ],
+    "best": "CCYYCC"
+  },
+  {
     "user": "Aspect",
     "points": 4,
     "featured": [
@@ -121,15 +131,6 @@
       "\u2605 NAR\u0027s Worst Nightmare \u2605"
     ],
     "best": "\u2605 NAR\u0027s Worst Nightmare \u2605"
-  },
-  {
-    "user": "dapr",
-    "points": 4,
-    "featured": [
-      "CCYYCC",
-      "Tetramethylammonium Pentafluoroxenate"
-    ],
-    "best": "CCYYCC"
   },
   {
     "user": "itsGalaxie",
