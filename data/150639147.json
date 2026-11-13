@@ -5,7 +5,7 @@
   "name": "Trxst",
   "author": "Lumi",
   "tags": "Wave, Consistency",
-  "enjoyment": "8.27",
+  "enjoyment": "8.45",
   "notes": "",
   "creators": [
     "Lumi"
@@ -21,6 +21,12 @@
     },
     {
       "user": "Seungbinbi",
+      "link": "",
+      "percent": 100,
+      "hz": 0
+    },
+    {
+      "user": "xeo",
       "link": "",
       "percent": 100,
       "hz": 0
