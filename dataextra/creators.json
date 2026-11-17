@@ -91,9 +91,10 @@
   },
   {
     "user": "Aspect",
-    "points": 4,
+    "points": 5,
     "featured": [
       "Britney Sclears",
+      "ScarY LvL",
       "Snoh"
     ],
     "best": "Britney Sclears"
@@ -237,5 +238,13 @@
       "Rocket Fuel"
     ],
     "best": "Rocket Fuel"
+  },
+  {
+    "user": "Dapr",
+    "points": 1,
+    "featured": [
+      "ScarY LvL"
+    ],
+    "best": "ScarY LvL"
   }
 ]
